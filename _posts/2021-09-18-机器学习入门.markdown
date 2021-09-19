@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "机器学习入门"
+date:   2021-09-09 07:50:01 +0800
+categories: jekyll update
+---
+
+
+![relic-greate wall](https://tse1-mm.cn.bing.net/th/id/OIP-C.hHOGwP3NxcAFd8BiiUcHjwHaEK?pid=ImgDet&rs=1)
+
+## 由[机器学习][machine-learning]的比喻想到的：
+考古团队挖掘历史遗迹，他们特意在几个星期内不去挖掘主坑。在此期间他们参观了该地区其他相关的考古遗迹，并检查了每个遗址是如何挖掘出来的。回到自己的挖掘地点后，他们将这些知识应用于挖掘周围的小坑。然后考古学家分析结果。他们根据挖掘一个坑的经验，来优化挖掘下一个坑的工作，包括预测挖掘所需时间，了解当地地形变化和模式，并制定新的策略来减少误差和工作准确性，根据这些经验，他们可以优化挖掘方法，形成挖掘主坑的战略模型。机器学习团队专注于将他们的数据集划分为训练数据和测试数据，以创建一个模型，来提高他们对未来作出决策的能力。
+
+
+### 遗迹１：
+[raku][raku-about]语言,[环境][raku-install]，
+
+### 遗迹2：
+[ruby][ruby-about]语言,[环境][ruby-install]
+
+[ruby-language][r-l]
+
+
+### 小坑１：
+[python][python-about]语言（机器学习主要语言）[环境工具][anaconda]
+
+### 小坑２：
+
+[爬虫１][ruby爬虫]
+
+<!--[爬虫２][pthon爬虫] -->
+
+### 主坑：
+<!--[算法][algorithm] -->
+机器学习及其相关算法：
+
+#### 相关课程参考：
+
+「算法设计与分析」　「人工智能原理与应用」	「大数据处理技术」「机器学习与数据挖掘」「知识产权」「信息检索」「自然语言处理」「软件建摸」「写给大家的设计书」「奔跑吧程序员」
+
+[machine-learning]:	https://baike.baidu.com/item/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/217599
+[raku-about]: https://raku.org/
+[ruby-about]: https://www.ruby-lang.org/zh_cn/
+[python-about]: https://www.python.org/
+[raku-install]:	https://rakudo.org/downloads
+[ruby-install]:	http://rvm.io/
+[r-l]:	https://poignant.guide/
+[anaconda]:	https://www.anaconda.com/
+[ruby爬虫]:	https://www.cnblogs.com/wf0117/p/9218196.html
+<<<<<<< HEAD:_posts/2021-09-18-机器学习入门.markdown
+<!--[python爬虫]:huifahui	-->  
+=======
+<!--[python爬虫]:	-->
+>>>>>>> origin/main:_posts/2021-09-18-机器学习入门.md

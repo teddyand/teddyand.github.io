@@ -54,9 +54,11 @@ class Scraper
 					 puts body.text.strip	#显示正文
 					 puts body.text.length	#显示正文字数
 					 character = character + body.text.length
-				end 			#显示博文目录最近标题												
+				end 			#显示博文目录最近标题	
+				days =(page /"p[class=atc_info]")											
+				day =days[days.length-1].text.strip
 				#dates =(page /"p[class=atc_info]")#爬取博文发表日期
-				puts "From 2016 within today You have writen #{articles} articles #{character/2}  characters"
+				puts "From #{day} to the present You have writen #{articles} articles #{character/2}  characters about #{character/2/articles} characters per article"
 			end
 			
 			

@@ -38,7 +38,7 @@ $ irb -r./scraper
 [代码详见][scraper.rb]　"run.rb“　运行结果显示为：
 <details>
 	<summary>作家岳南的新浪博客目录（截至　2012 Oct 8th）</summary>
-		<pre><code>大师之后再无大师
+	<pre><code>大师之后再无大师
 		一位走过白银时代的骑士
 		徐志摩该不该烧死？
 		南渡北归：大师远去，再无大师
@@ -56,7 +56,7 @@ $ irb -r./scraper
 		微斯人，吾谁与归？
 		一个遥远美丽的地方
 		..........
-		</code></pre>
+	</code></pre>	
 </details>
 
 

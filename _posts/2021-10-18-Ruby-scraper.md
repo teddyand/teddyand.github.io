@@ -450,9 +450,7 @@ From 2011-09-06 17:13 to the 2012-10-06 17:33 作家岳南 have writen 400 artic
 </details>
 
 
-sdalfllsafja
-dsfasfljl;asjldfjkj;wjeqt
-sdfasfdasdfasdfsafasdfasdterqtw
+## 使用Liquid Markup编写主索引文件
 
 
 [scraper.rb]: https://github.com/teddyand/teddyand.github.io/blob/main/scraper.rb

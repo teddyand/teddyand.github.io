@@ -20,4 +20,4 @@ categories: jekyll update
 [智能车PID介绍]: https://zhuanlan.zhihu.com/p/113308638
 [PID视频]: https://www.bilibili.com/video/BV1jr4y1P7qK?t=37.2
 [从零开始制作正交编码器]: https://bbs.21ic.com/icview-3172850-1-1.html
-[我的智能小车]: https://github.com/teddyand/balance-vehicle
+[我的智能小车]: https://mp.weixin.qq.com/s/lyUVf8Sz5LZWG-8bcWuVLQ

@@ -44,25 +44,38 @@ class Scraper
 			#puts @pages.links
 			@pages.each do |page| 
 				rows =(page /"a[title=\"\"]")  #爬取博文目录								
-				articles += rows.length
+				articles = rows.length
 				rows.each do  |row| 
 					 puts row.text 
 					 #puts row.values[2] 					 
 					 page1 =@agent.get(row.values[2])
 					 #puts page1 
 					 body =(page1 /"div[id=sina_keyword_ad_area2]")		#爬取博文正文
-					 #puts body.text.strip	#显示正文
+					 #puts body.text.strip.gsub(/\n\n/,'')	#显示正文
 					 #puts body.text.length	#显示正文字数
-					 character = character + body.text.length
-				end 			#显示博文目录最近标题				
+					 character += body.text.strip.gsub(/\n\n/,'').length
+				end 			#显示博文目录最近标题			
 			days =(page / "p[class=atc_info]")											
 			day =days[days.length-1].text.strip
 			present =days[0].text.strip
 			author = (page / "title").text.gsub(/[博文_新浪博客]/,'')
-			dates =(page /"p[class=atc_info]")#爬取博文发表日期
-			puts "From #{day} to the #{present} #{author} have writen #{articles} articles #{character/2}  characters about #{character/2/articles} characters per article"	
+			dates =(page /"p[class=atc_info]")#爬取博文发表日期			
+			#processed_date =DateTime.parse(dates[0].text.strip)
+			#puts dates[0].text.strip[0,10]
+			puts "From #{day} to the #{present} #{author} have writen #{articles} articles #{character/2}  characters about #{character/2/articles} characters per article"				
+			character =0
 			end	
 			
+	end
+
+	def process_title( row )
+		row.strip.gsub(/"/,'') if row
+	end
+
+	def get_filename(title ,date)
+		processed_date =DateTime.parse(date)
+		processed_title =title.downcase.gsub(/[^a-z]+/,'-')
+		"#{processed_date.strftime('%Y-%m-%d')}-#{processed_title}.md"
 	end
 end
 

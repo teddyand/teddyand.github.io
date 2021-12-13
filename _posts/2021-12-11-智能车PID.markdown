@@ -12,7 +12,7 @@ categories: jekyll update
 梦想是什么？对于年轻人来说，梦想可能是对未来的憧憬，是美好人生的开始。而对于我来说年轻时的梦想似乎飘渺不定，如蓬莱仙山般的存在。经历了岁月之后，蓦然回首原来梦想就存在于过往和当下那一段段的遗憾与失去之中，“对于只有一次生命的人生，失去便是得到！”中年人的梦想是责任与义务，如果说年轻人的眼中有山河的话，那么中年人的河山在肩上。
 
 我的制作[圆满一号][我的智能小车]；
-我看过的文章[智能车PID简介][智能车PID介绍]、[PID公式推导(略微)　加程序][PID公式和程序]、[寻迹小车PID][寻迹小车PID]、[差速巡迹有图有真相][差速寻迹]、
+我看过的文章[智能车PID简介][智能车PID介绍]、[PID公式推导(略微)　加程序][PID公式和程序]、[寻迹小车PID][寻迹小车PID]、[差速巡迹有图有真相][差速寻迹]、[一年级大牛的PID][舵机加差速的PID]
 还有视频[PID演示视频][PID视频]；
 [采集Ｎ20电机转速][从零开始制作正交编码器]。
 
@@ -21,6 +21,7 @@ categories: jekyll update
 [PID公式和程序]: https://blog.csdn.net/leafjunwing/article/details/6277390
 [寻迹小车PID]: https://blog.csdn.net/Dinvent/article/details/110263555
 [差速寻迹]: https://www.geek-workshop.com/thread-29080-1-1.html
+[舵机加差速的PID]: https://blog.csdn.net/m0_54841340/article/details/117548201
 [PID视频]: https://www.bilibili.com/video/BV1jr4y1P7qK?t=37.2
 [从零开始制作正交编码器]: https://bbs.21ic.com/icview-3172850-1-1.html
 [我的智能小车]: https://mp.weixin.qq.com/s/lyUVf8Sz5LZWG-8bcWuVLQ

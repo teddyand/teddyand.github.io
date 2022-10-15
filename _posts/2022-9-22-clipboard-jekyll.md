@@ -15,4 +15,13 @@ categories: [Language]
 
 总结：人不能拿着眼前的顺逆套用过去的失误并想着：**“如果当时我.....那么我现在就.....”**这是贪心，也许人生中的失去才是我们真正的得到。！感谢三位程序大佬的无私奉献，因为有你所以我也愿意。
 
-![为人民服务](https://img.tukuppt.com/png_preview/00/20/32/xzxqX9gvkk.jpg!/fw/780)
+![](//www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3)
+
+![](//www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3?autoplay=1&loop=1)
+
+![](//www.html5rocks.com/en/tutorials/video/basics/devstories.webm)
+
+![](//techslides.com/demos/sample-videos/small.ogv?allow=autoplay)
+
+![](//techslides.com/demos/sample-videos/small.mp4?width=400)
+

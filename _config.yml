@@ -1,7 +1,7 @@
 # Site settings
 title:          David's soup
 description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/tale"
+#baseurl:        "/tale"
 url:            "https://teddyand.github.io"
 
 

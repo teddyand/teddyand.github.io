@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "全桟工程入门"
+date:   2021-10-06 11:50:01 +0800
+categories: jekyll update
+---
+
+<img src="https://tse1-mm.cn.bing.net/th/id/R-C.511656b8ad5267ee86c692bdcd85a5d6?rik=dnAP8enrKX8doA&riu=http%3a%2f%2fwww.weinan.org%2fuploads%2fpictures%2f2011-04%2f48_1302684295.jpg&ehk=hEKh3rXbE%2buHn4BvvFupHhI%2f7zIM7Lho9Mn0BALRhqM%3d&risl=&pid=ImgRaw&r=0" alt="图片替换文本" width="900" height="150" align="bottom" />
+
+
+### 概述：
+在当今假日经济大力发展的时代，什么是保赚不陪的买卖呢？．．．对了旅店！也就是客栈　。放眼望去全国上下大江南北，无论是繁华都市还是边远荒漠　历史名城还是新兴市集，到了假日便成了人口流动的舞台。客栈中每个窗口的背后都是来自天南海北的人，有着不同的习惯文化生活背景，不同的人有着相同的目的（获得短暂的情绪放空）然后再回到各自的岗位继续努力的建设祖国。同理当今信息化时代网站建设特别是功能性网站的建设离不开各种技术（桟）比如LAMP桟（Ｌinux Apache MySQL PHP),　WAMP ,Java serverlet, Django ,Jekyll, MEAN（ＭongoDB Express AngularJS Node.js）其中每个桟（窗口后的家庭）可以由不同的技术（人员）组成。由此可以看出成为一名[全桟工程师][全桟工程师]便如同成为一名旅店经理一样需要具备一定的管理能力　协调能力和学习能力，也许可以不精专，但不能不博大（OPEN）,同时最应具备的是服务的意识（为谁服务，为何服务？怎眼服务？）
+
+### MEAN全桟简介：
+自从有了Ｎode.js,javascript的春天来了。通过javascript这一项技术，把MEAN全桟贯穿在一起。Ｎode.js是专门为Ｉ/O密集型操作和快速构建可扩展性的实时网络应用而设计的，比如一些网游聊天室照片库等。用最少的系统资源来服务大量客户端。ＭEAN包括四项技术：
+
+- MongoDB:     用来存储数据的数据库。
+- Express.js:  服务器端用来构建Web应用的后端框架。
+- AngularJS:   用来构建Ｗeb应用的前端框架。
+- Node.js:	   Javascript运行环境。
+
+MEAN全桟框架，可以将文档数据以JSON对象的格式存储在MongoDB中，然后通过基于Node和Express搭建的RESTful API获取服务器数据后，再把数据交给前端模板引擎渲染，最终形成HTML页面展示。完成这些操作只需要一种语言－－Javascript。这样一来，代码具有一致性和可维护性。另一个好处是，整个MEAN要处理的大多是JSON数据结构，而ＭongoDB中的文档对象也是JSON格式，通过RESTful API获取的后台数据也是JSON格式，正是这些一致的JSON格式，才省去格式间的转换，提高了效率。
+
+#### MEAN全桟的四大组件关系：
+![关系](https://tse2-mm.cn.bing.net/th/id/OIP-C.h0lp3_-24rmKOiQz3C_nJQHaE0?pid=ImgDet&rs=1)
+
+### MEAN桟技术简介：
+#### 入门：
+- Bootstrap介绍：
+	Bootstrap是Twitter推出的一个开源的用于前端开发工具包，由Twitter前员工创建，介于Ｌess的前端开发库，它提供了很多常用的各种CSS和JavaScript库，可发人员可以随时上手。[Bootstrap][Bootstrap]内置多种样式，即便非专业前端开发人员也能轻松使用。即使没有设计师团队，也能使用这套框架迅速构建一个网站原型，甚至一个生产环境网站。更贴切的说法是，Bootstrap是一个经典的HTML/CSS框架，它的强大在于丰富的CSS样式库－－生命力。
+
+- JavaScript介绍：
+	在Ｎode.js出现前，JavaScript算不了框架。Node.js出现后ＭEAN框架的使用使得JavaScript语言变得重要了起来，它具有大小写敏感，变量声明赋值，判断，对象，函数，循环等所有普通计算机语言的特点，对与程序员来说掌握它如同掌握其他语言一样没有太大的难度，现在市面上也有了针它的数据结构的书籍。对于初学者来说一本JavaScript大全是有必要看看的。当然随着现在物联网技术的兴起，将JavaScript与Node.js及[硬件编程][johnny]一起来学习也是一个不错的入门途径。
+
+#### 基础：
+- Node.js入门：
+	在当前这样一个效率制胜的时代，敏捷一词从来没有这样的重要了起来，在这样一个人月工程的神话时代，避免重复造轮子是软件设计人员津津乐道的事情。俗话说大树底下好乘凉，没有背景和后台的人难于立足社会，同理一种语言也如此，Ｃ语言因其接地气而屹立不倒；java语言因其覆盖面广语法精深而被人继承　；PHP因为LAMP的稳定而成为网站开发利器；PERL因其扎实的语法规则成为文本处理和系统管理的首选；PYTHON因其与时俱进的开放胸怀而成为当今人工智能科学领域的不二选择。越来越多的语言如雨后春笋般的出现，什么是我们因该接受的，什么是应该放弃的？毕竟工欲善其事才是应该首先要考虑的事情之后才是利其器。[Node.js][Node]的出现让JavaScript语言在某方面让人们有了更深的期待，从而能够与其他的脚本语言有了同等的话语权。
+
+- Express引擎：
+	[Express][E]是一个应用最为广泛的Node Module,也是一个极为成熟的后端框架。可以说Express是目前最流行的基于Node.js的Web开发框架，可以通过它快速搭建一个完整功能的网站。其包括三个核心概念:路由、中间件、模板引擎。
+
+- AngularJS框架：
+	在MEAN全桟中，Node.js和Express负责后端处理，而与网页交互的正是[AngularJS][AngularJS]，AngularJS是一种典型的MVC模式，由模型(Model)、视图(View)、控制器(Controller)三部分组成。这种方式为合理组织代码提供方便，减低了代码间的耦合度，功能结构清晰可见。Model定义了应用的数据层，在AngularJS中就是一个JavaScript对象；View视图就是HTML网页，用来展示Model数据，数据与模板引擎结合，再加AngularJS指令，从而构成丰富的HTML页面；Controller用来操作Model中的数据，起到连接模型和视图的作用。![MVC关系](https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2716786471,1093587531&fm=26&gp=0.jpg)
+
+- MongoD数据库：
+	[MogoDB][Mon]是NoSQL数据库中的佼佼者，既非关系型数据库，以键值对的形式存在，既我们熟悉的JSON数据形式。随着Web2.0网站的兴起，在应对超大规模数据量和高并发的动态网站时，传统的关系型数据库显得力不从心，NoSQL因其灵活性而获得优势。
+yes or no
+
+
+[全桟工程师]: https://baike.baidu.com/item/%E5%85%A8%E6%A0%88%E5%B7%A5%E7%A8%8B%E5%B8%88/12983270
+[Bootstrap]: https://getbootstrap.com/
+[johnny]: http://johnny-five.io/
+[Node]: http://nodejs.cn/
+[E]: https://www.expressjs.com.cn/
+[AngularJS]: https://www.angularjs.net.cn/
+[Mon]: https://www.mongodb.org.cn/

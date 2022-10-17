@@ -26,3 +26,7 @@ jobs:
 
 * 之後導航到個人倉庫主目錄並且點擊Actions並且在All Workflows下將看到剛才所創建的learn-github-actin項
 最終會看到![workflows actions job](https://docs.github.com/assets/cb-69522/images/help/images/overview-actions-result-updated-2.png)表明工作流運行正常.
+
+for more detail please reference [jekyll plugin how to](https://scaomath.github.io/blog/custom-plugins-jekyll-github/)
+
+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

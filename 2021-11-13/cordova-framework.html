@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Cordova框架试用 | David’s soup</title>
+<meta name="generator" content="Jekyll v4.2.2">
+<meta property="og:title" content="Cordova框架试用">
+<meta name="author" content="David chen">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="认识Cordova 本章将介绍一款开发者使用HTML5,Javascript和CSS等Web技术,开发手机平板电脑等运行App框架:PhoneGap/ Cordova,及及创建运行App操作界面外观的JQuery Mobile框架。前者付费后者免费 手机网页与手机App的不同 其实Cordova1就是由一个Web浏览器核心，加上插件所组成的框架。这就是为什么我们可以用网页技术创建App ——因为每个Cordova App就相当于一个定制的Web浏览器。 Cordova的环境配置 博主曾在windows 7环境与Xubuntu20.04环境成功配置了Cordova Android手机App编译环境，现就配置体会与过程记录如下： 开发Android App需要安装软件如下： Java软件开发包（JDK）; Node.js(及内置npm); Apache Ant; Android 的软件开发工具（SDK）; Cordova命令行工具。 Node.js的安装参照试玉，其余软件的安装说明见下。 下载与安装JDK Xubuntu JDK 安装2 sudo apt-get install openjdk-8-jdk java -version Windows 7 安装需要在Oracle 官网下载相应软体3 下载设置Android SDK Android开发者网页提供的标准开发工具叫作Android Studio(注：博主刚参加工作时对Visual Studio一往情深) Xubuntu下安装Android SDK 4 Win7下安装Android SDK3 为了更敏捷的学习只安装需要的SDK工具并附软体下载地址5(注：对于windows用户，建议下载.exe格式安装程序，可免除后续一些设置) 默认安装路径： C:\Users\用户名\AppData\Local\Android\android-sdk 建议改为成其他路径，方便日后系统参数设置操作 C:\Users\用户名\Android\Android-sdk 利用SDK Manager下载其他必要的库。 维持默认选取Tools里的三个工具，以及Extra里的两个选项：Android Support Library 以及Google USB Driver(驱动 Linux下可不选)。单击（安装）进行安装。 环境变量设置 在 .bashrc文件或PATH变量中添加ANDROID_HOME，值设置成安装路径。接着再添加两项路径设置如下:(注：ANDROID_HOME可自定义 ANDROID_SDK_ROOT亦可) %ANDROID_HOME%\tools %ANDROID_HOME%\plarform-tools 安装Cordova工具和Ant Cordova工具通过npm安装。6(注：尽量选取稍旧版本安装，如果对自己的电脑和操作系统很自信可选最新版安装) npm update -g cordova (升级已安装软体为最新) npm uninstall -g cordova (卸载当前软体) npm install -g cordova@*.0.0 (安装*.0.0版本软体) 安装Ant Ubuntu安装7 使用Cordova创建手机App Cordova工具可帮助创建一个基本App。在创建之前，需要先添加一个保存App的文件建夹。（ordova） $cordova create cordova 该目录下包含：config.xml、package.json两个文件和一个www目录。 添加Android平台 cd cordova cordova platform add android 增加了node_modules和platforms、plugins三个目录 编译Android App与安装SDK平台 $cordova build android 编译过程中可能提示缺少相应的android开发工具，使用sdkmanager安装相应的Android系统平台文件（如：android-22等）SDK下载完毕后，再次运行“cordova build android”命令就编译成功了。 启用Android手机的USB Debug功能 Cordova项目创建完成后，可直接上传到android手机测试。步骤如下： 在相应的Android手机设置项的“开发者选项”设置勾选“USB调试” 选项。 将手机通过USB线连接到电脑，然后在命令提示符输入如下命令，列举目前连接道电脑上的Android设备。初次连接，系统可能会提示“未授权” $adb devices adb8就是android设备调试器。 若系统回应unauthorized,请进入设置项“开发者选项”，按一下“撤回USB除错授权”选项。 运行如下两个命令，重新启动adb服务器。 $adb kill-server $adb start-server 此时手机将出现询问连接。 单击确定后，再次运行如下命令，手机与电脑将连接成功。 adb devices 将App部署到目前连接的手机上测试 cordova run android --device 一个实例 手机APP 控制aruino uno 点亮熄灭led灯 通过电脑USB配对蓝牙9或者通过arduino配置蓝牙10(注：具体参数依据个人) cordova官方 ↩ ubuntu安装JDK ↩ win7安装JDK和Android SDK ↩ ↩2 Xubuntu安装 Android SDK ↩ Android SDK下载地址 ↩ Cordova ↩ Ubuntu安装Ant ↩ adb ↩ 电脑蓝牙配对 ↩ arduino设置蓝牙 ↩">
+<meta property="og:description" content="认识Cordova 本章将介绍一款开发者使用HTML5,Javascript和CSS等Web技术,开发手机平板电脑等运行App框架:PhoneGap/ Cordova,及及创建运行App操作界面外观的JQuery Mobile框架。前者付费后者免费 手机网页与手机App的不同 其实Cordova1就是由一个Web浏览器核心，加上插件所组成的框架。这就是为什么我们可以用网页技术创建App ——因为每个Cordova App就相当于一个定制的Web浏览器。 Cordova的环境配置 博主曾在windows 7环境与Xubuntu20.04环境成功配置了Cordova Android手机App编译环境，现就配置体会与过程记录如下： 开发Android App需要安装软件如下： Java软件开发包（JDK）; Node.js(及内置npm); Apache Ant; Android 的软件开发工具（SDK）; Cordova命令行工具。 Node.js的安装参照试玉，其余软件的安装说明见下。 下载与安装JDK Xubuntu JDK 安装2 sudo apt-get install openjdk-8-jdk java -version Windows 7 安装需要在Oracle 官网下载相应软体3 下载设置Android SDK Android开发者网页提供的标准开发工具叫作Android Studio(注：博主刚参加工作时对Visual Studio一往情深) Xubuntu下安装Android SDK 4 Win7下安装Android SDK3 为了更敏捷的学习只安装需要的SDK工具并附软体下载地址5(注：对于windows用户，建议下载.exe格式安装程序，可免除后续一些设置) 默认安装路径： C:\Users\用户名\AppData\Local\Android\android-sdk 建议改为成其他路径，方便日后系统参数设置操作 C:\Users\用户名\Android\Android-sdk 利用SDK Manager下载其他必要的库。 维持默认选取Tools里的三个工具，以及Extra里的两个选项：Android Support Library 以及Google USB Driver(驱动 Linux下可不选)。单击（安装）进行安装。 环境变量设置 在 .bashrc文件或PATH变量中添加ANDROID_HOME，值设置成安装路径。接着再添加两项路径设置如下:(注：ANDROID_HOME可自定义 ANDROID_SDK_ROOT亦可) %ANDROID_HOME%\tools %ANDROID_HOME%\plarform-tools 安装Cordova工具和Ant Cordova工具通过npm安装。6(注：尽量选取稍旧版本安装，如果对自己的电脑和操作系统很自信可选最新版安装) npm update -g cordova (升级已安装软体为最新) npm uninstall -g cordova (卸载当前软体) npm install -g cordova@*.0.0 (安装*.0.0版本软体) 安装Ant Ubuntu安装7 使用Cordova创建手机App Cordova工具可帮助创建一个基本App。在创建之前，需要先添加一个保存App的文件建夹。（ordova） $cordova create cordova 该目录下包含：config.xml、package.json两个文件和一个www目录。 添加Android平台 cd cordova cordova platform add android 增加了node_modules和platforms、plugins三个目录 编译Android App与安装SDK平台 $cordova build android 编译过程中可能提示缺少相应的android开发工具，使用sdkmanager安装相应的Android系统平台文件（如：android-22等）SDK下载完毕后，再次运行“cordova build android”命令就编译成功了。 启用Android手机的USB Debug功能 Cordova项目创建完成后，可直接上传到android手机测试。步骤如下： 在相应的Android手机设置项的“开发者选项”设置勾选“USB调试” 选项。 将手机通过USB线连接到电脑，然后在命令提示符输入如下命令，列举目前连接道电脑上的Android设备。初次连接，系统可能会提示“未授权” $adb devices adb8就是android设备调试器。 若系统回应unauthorized,请进入设置项“开发者选项”，按一下“撤回USB除错授权”选项。 运行如下两个命令，重新启动adb服务器。 $adb kill-server $adb start-server 此时手机将出现询问连接。 单击确定后，再次运行如下命令，手机与电脑将连接成功。 adb devices 将App部署到目前连接的手机上测试 cordova run android --device 一个实例 手机APP 控制aruino uno 点亮熄灭led灯 通过电脑USB配对蓝牙9或者通过arduino配置蓝牙10(注：具体参数依据个人) cordova官方 ↩ ubuntu安装JDK ↩ win7安装JDK和Android SDK ↩ ↩2 Xubuntu安装 Android SDK ↩ Android SDK下载地址 ↩ Cordova ↩ Ubuntu安装Ant ↩ adb ↩ 电脑蓝牙配对 ↩ arduino设置蓝牙 ↩">
+<link rel="canonical" href="https://teddyandm.github.io/2021-11-13/cordova-framework">
+<meta property="og:url" content="https://teddyandm.github.io/2021-11-13/cordova-framework">
+<meta property="og:site_name" content="David’s soup">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-11-13T07:50:01+08:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Cordova框架试用">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"David chen","url":"https://teddyand.github.io"},"dateModified":"2021-11-13T07:50:01+08:00","datePublished":"2021-11-13T07:50:01+08:00","description":"认识Cordova 本章将介绍一款开发者使用HTML5,Javascript和CSS等Web技术,开发手机平板电脑等运行App框架:PhoneGap/ Cordova,及及创建运行App操作界面外观的JQuery Mobile框架。前者付费后者免费 手机网页与手机App的不同 其实Cordova1就是由一个Web浏览器核心，加上插件所组成的框架。这就是为什么我们可以用网页技术创建App ——因为每个Cordova App就相当于一个定制的Web浏览器。 Cordova的环境配置 博主曾在windows 7环境与Xubuntu20.04环境成功配置了Cordova Android手机App编译环境，现就配置体会与过程记录如下： 开发Android App需要安装软件如下： Java软件开发包（JDK）; Node.js(及内置npm); Apache Ant; Android 的软件开发工具（SDK）; Cordova命令行工具。 Node.js的安装参照试玉，其余软件的安装说明见下。 下载与安装JDK Xubuntu JDK 安装2 sudo apt-get install openjdk-8-jdk java -version Windows 7 安装需要在Oracle 官网下载相应软体3 下载设置Android SDK Android开发者网页提供的标准开发工具叫作Android Studio(注：博主刚参加工作时对Visual Studio一往情深) Xubuntu下安装Android SDK 4 Win7下安装Android SDK3 为了更敏捷的学习只安装需要的SDK工具并附软体下载地址5(注：对于windows用户，建议下载.exe格式安装程序，可免除后续一些设置) 默认安装路径： C:\\Users\\用户名\\AppData\\Local\\Android\\android-sdk 建议改为成其他路径，方便日后系统参数设置操作 C:\\Users\\用户名\\Android\\Android-sdk 利用SDK Manager下载其他必要的库。 维持默认选取Tools里的三个工具，以及Extra里的两个选项：Android Support Library 以及Google USB Driver(驱动 Linux下可不选)。单击（安装）进行安装。 环境变量设置 在 .bashrc文件或PATH变量中添加ANDROID_HOME，值设置成安装路径。接着再添加两项路径设置如下:(注：ANDROID_HOME可自定义 ANDROID_SDK_ROOT亦可) %ANDROID_HOME%\\tools %ANDROID_HOME%\\plarform-tools 安装Cordova工具和Ant Cordova工具通过npm安装。6(注：尽量选取稍旧版本安装，如果对自己的电脑和操作系统很自信可选最新版安装) npm update -g cordova (升级已安装软体为最新) npm uninstall -g cordova (卸载当前软体) npm install -g cordova@*.0.0 (安装*.0.0版本软体) 安装Ant Ubuntu安装7 使用Cordova创建手机App Cordova工具可帮助创建一个基本App。在创建之前，需要先添加一个保存App的文件建夹。（ordova） $cordova create cordova 该目录下包含：config.xml、package.json两个文件和一个www目录。 添加Android平台 cd cordova cordova platform add android 增加了node_modules和platforms、plugins三个目录 编译Android App与安装SDK平台 $cordova build android 编译过程中可能提示缺少相应的android开发工具，使用sdkmanager安装相应的Android系统平台文件（如：android-22等）SDK下载完毕后，再次运行“cordova build android”命令就编译成功了。 启用Android手机的USB Debug功能 Cordova项目创建完成后，可直接上传到android手机测试。步骤如下： 在相应的Android手机设置项的“开发者选项”设置勾选“USB调试” 选项。 将手机通过USB线连接到电脑，然后在命令提示符输入如下命令，列举目前连接道电脑上的Android设备。初次连接，系统可能会提示“未授权” $adb devices adb8就是android设备调试器。 若系统回应unauthorized,请进入设置项“开发者选项”，按一下“撤回USB除错授权”选项。 运行如下两个命令，重新启动adb服务器。 $adb kill-server $adb start-server 此时手机将出现询问连接。 单击确定后，再次运行如下命令，手机与电脑将连接成功。 adb devices 将App部署到目前连接的手机上测试 cordova run android --device 一个实例 手机APP 控制aruino uno 点亮熄灭led灯 通过电脑USB配对蓝牙9或者通过arduino配置蓝牙10(注：具体参数依据个人) cordova官方 &#8617; ubuntu安装JDK &#8617; win7安装JDK和Android SDK &#8617; &#8617;2 Xubuntu安装 Android SDK &#8617; Android SDK下载地址 &#8617; Cordova &#8617; Ubuntu安装Ant &#8617; adb &#8617; 电脑蓝牙配对 &#8617; arduino设置蓝牙 &#8617;","headline":"Cordova框架试用","mainEntityOfPage":{"@type":"WebPage","@id":"https://teddyandm.github.io/2021-11-13/cordova-framework"},"url":"https://teddyandm.github.io/2021-11-13/cordova-framework"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://teddyandm.github.io/feed.xml" title="David's soup">
+
+  <!-- Google Analytics-->
+  
+</head>
+
+
+  <body>
+
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">David's soup</h2>
+    </a>
+    <ul>
+      <li><a href="/">Posts</a></li>
+      <li><a href="/tags">Tags</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        David chen
+    
+
+    
+      <br>
+      <span>on </span><time datetime="2021-11-13 07:50:01 +0800">November 13, 2021</time>
+    
+  </div>
+
+  <h1 class="post-title">Cordova框架试用</h1>
+  <div class="post-line"></div>
+
+  <h2 id="认识cordova">认识Cordova</h2>
+<p>本章将介绍一款开发者使用HTML5,Javascript和CSS等Web技术,开发手机平板电脑等运行App框架:PhoneGap/
+Cordova,及及创建运行App操作界面外观的JQuery Mobile框架。前者付费后者免费</p>
+
+<center class="half">
+    <img src="https://spotsolutions.com/wp-content/uploads/2017/06/cordova_logo_normal_dark_large.png" width="300" height="100" data-zoomable=""><img src="https://cms-assets.tutsplus.com/uploads/users/1855/posts/29323/image/angular-ionic.jpg" width="300" height="100" data-zoomable="">        
+</center>
+
+<h4 id="手机网页与手机app的不同">手机网页与手机App的不同</h4>
+<p>其实Cordova<sup id="fnref:C" role="doc-noteref"><a href="#fn:C" class="footnote" rel="footnote">1</a></sup>就是由一个Web浏览器核心，加上插件所组成的框架。这就是为什么我们可以用网页技术创建App 
+——因为每个Cordova App就相当于一个定制的Web浏览器。</p>
+
+<h2 id="cordova的环境配置">Cordova的环境配置</h2>
+<p>博主曾在windows 7环境与Xubuntu20.04环境成功配置了Cordova Android手机App编译环境，现就配置体会与过程记录如下：
+开发Android App需要安装软件如下：</p>
+
+<ul>
+  <li>Java软件开发包（JDK）;</li>
+  <li>Node.js(及内置npm);</li>
+  <li>Apache Ant;</li>
+  <li>Android 的软件开发工具（SDK）;</li>
+  <li>Cordova命令行工具。</li>
+</ul>
+
+<p>Node.js的安装参照<a href="http://192.168.1.101:4000/Maker/blog/2022/jadeI/">试玉</a>，其余软件的安装说明见下。</p>
+
+<h3 id="下载与安装jdk">下载与安装JDK</h3>
+<ul>
+  <li>Xubuntu JDK 安装<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">2</a></sup>
+</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">sudo apt-get install openjdk-8-jdk</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">java -version</code></p>
+
+<ul>
+  <li>Windows 7 安装需要在<a href="https://www.oracle.com/java/technologies/downloads/#java8">Oracle 官网</a>下载相应软体<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">3</a></sup>
+</li>
+</ul>
+
+<h3 id="下载设置android-sdk">下载设置Android SDK</h3>
+<p>Android开发者网页提供的标准开发工具叫作Android Studio(注：博主刚参加工作时对Visual Studio一往情深)</p>
+<ul>
+  <li>Xubuntu下安装Android SDK <sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">4</a></sup>
+</li>
+  <li>Win7下安装Android SDK<sup id="fnref:2:1" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">3</a></sup>  <br>
+为了更敏捷的学习只安装需要的SDK工具并附软体下载地址<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">5</a></sup>(注：对于windows用户，建议下载.exe格式安装程序，可免除后续一些设置)</li>
+</ul>
+
+<p>默认安装路径：
+<code class="language-plaintext highlighter-rouge">C:\Users\用户名\AppData\Local\Android\android-sdk</code></p>
+
+<p>建议改为成其他路径，方便日后系统参数设置操作<br>
+<code class="language-plaintext highlighter-rouge">C:\Users\用户名\Android\Android-sdk</code></p>
+
+<ul>
+  <li>
+    <p>利用SDK Manager下载其他必要的库。  <br>
+维持默认选取Tools里的三个工具，以及Extra里的两个选项：Android Support Library 以及Google USB Driver(驱动 Linux下可不选)。单击（安装）进行安装。</p>
+  </li>
+  <li>
+    <p>环境变量设置  <br>
+在 .bashrc文件或PATH变量中添加ANDROID_HOME，值设置成安装路径。接着再添加两项路径设置如下:(注：ANDROID_HOME可自定义 ANDROID_SDK_ROOT亦可)</p>
+  </li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">%ANDROID_HOME%\tools</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">%ANDROID_HOME%\plarform-tools</code></p>
+
+<h3 id="安装cordova工具和ant">安装Cordova工具和Ant</h3>
+<p>Cordova工具通过npm安装。<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">6</a></sup>(注：尽量选取稍旧版本安装，如果对自己的电脑和操作系统很自信可选最新版安装)</p>
+
+<p><code class="language-plaintext highlighter-rouge">npm update -g cordova        (升级已安装软体为最新)</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">npm uninstall -g cordova     (卸载当前软体)</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">npm install -g cordova@*.0.0 (安装*.0.0版本软体)</code></p>
+
+<h4 id="安装ant">安装Ant</h4>
+<p>Ubuntu安装<sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote" rel="footnote">7</a></sup></p>
+
+<h3 id="使用cordova创建手机app">使用Cordova创建手机App</h3>
+<p>Cordova工具可帮助创建一个基本App。在创建之前，需要先添加一个保存App的文件建夹。（ordova）</p>
+
+<p><code class="language-plaintext highlighter-rouge">$cordova create cordova</code>
+该目录下包含：config.xml、package.json两个文件和一个www目录。</p>
+
+<h4 id="添加android平台">添加Android平台</h4>
+
+<p><code class="language-plaintext highlighter-rouge">cd cordova</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">cordova platform add android</code></p>
+
+<p>增加了node_modules和platforms、plugins三个目录</p>
+<h4 id="编译android-app与安装sdk平台">编译Android App与安装SDK平台</h4>
+
+<p><code class="language-plaintext highlighter-rouge">$cordova build android</code></p>
+
+<p>编译过程中可能提示缺少相应的android开发工具，使用sdkmanager安装相应的Android系统平台文件（如：android-22等）SDK下载完毕后，再次运行“cordova build android”命令就编译成功了。</p>
+
+<h3 id="启用android手机的usb-debug功能">启用Android手机的USB Debug功能</h3>
+<p>Cordova项目创建完成后，可直接上传到android手机测试。步骤如下：</p>
+<ul>
+  <li>在相应的Android手机设置项的“开发者选项”设置勾选“USB调试” 选项。</li>
+  <li>将手机通过USB线连接到电脑，然后在命令提示符输入如下命令，列举目前连接道电脑上的Android设备。初次连接，系统可能会提示“未授权”</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">$adb devices</code></p>
+
+<p>adb<sup id="fnref:7" role="doc-noteref"><a href="#fn:7" class="footnote" rel="footnote">8</a></sup>就是android设备调试器。</p>
+<ul>
+  <li>若系统回应unauthorized,请进入设置项“开发者选项”，按一下“撤回USB除错授权”选项。</li>
+  <li>运行如下两个命令，重新启动adb服务器。</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">$adb kill-server</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">$adb start-server</code></p>
+<ul>
+  <li>此时手机将出现询问连接。</li>
+  <li>单击确定后，再次运行如下命令，手机与电脑将连接成功。</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">adb devices</code></p>
+
+<h4 id="将app部署到目前连接的手机上测试">将App部署到目前连接的手机上测试</h4>
+
+<p><code class="language-plaintext highlighter-rouge">cordova run android --device</code></p>
+
+<h2 id="一个实例">一个实例</h2>
+<p>手机APP 控制aruino uno 点亮熄灭led灯 
+通过电脑USB配对蓝牙<sup id="fnref:8" role="doc-noteref"><a href="#fn:8" class="footnote" rel="footnote">9</a></sup>或者通过arduino配置蓝牙<sup id="fnref:9" role="doc-noteref"><a href="#fn:9" class="footnote" rel="footnote">10</a></sup>(注：具体参数依据个人)</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:C" role="doc-endnote">
+      <p><a href="https://cordova.apache.org/#getstarted">cordova官方</a> <a href="#fnref:C" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://www.leftso.com/blog/1009.html#:~:text=Ubuntu%2020.04%20%E5%AE%89%E8%A3%85jdk8%20%E5%A4%8D%E5%88%B6%20sudo,apt-get%20install%20openjdk-%208%20-jdk">ubuntu安装JDK</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://blog.csdn.net/xiaoyu_wu/article/details/102654343">win7安装JDK和Android SDK</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">↩</a> <a href="#fnref:2:1" class="reversefootnote" role="doc-backlink">↩<sup>2</sup></a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p><a href="https://blog.csdn.net/qq_25017839/article/details/89847824">Xubuntu安装 Android SDK</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p><a href="https://www.cnblogs.com/auguse/p/13807169.html">Android SDK下载地址</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p><a href="https://cordova.apache.org/#getstarted">Cordova</a> <a href="#fnref:5" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:6" role="doc-endnote">
+      <p><a href="https://www.yundongfang.com/Yun40649.html#:~:text=%E5%9C%A8%20Ubuntu%2020.04%20LTS%20Focal%20Fossa%E4%B8%8A%20%E5%AE%89%E8%A3%85Apache,Ant%20%E6%AD%A5%E9%AA%A41.%E9%A6%96%E5%85%88%EF%BC%8C%E9%80%9A%E8%BF%87apt%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E8%BF%90%E8%A1%8C%E4%BB%A5%E4%B8%8B%E4%BB%A5%E4%B8%8B%E5%91%BD%E4%BB%A4%EF%BC%8C%E7%A1%AE%E4%BF%9D%E6%89%80%E6%9C%89%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6%E5%8C%85%E9%83%BD%E6%98%AF%E6%9C%80%E6%96%B0%E7%9A%84%E3%80%82%20sudo%20apt%20update%20sudo%20apt%20upgrade">Ubuntu安装Ant</a> <a href="#fnref:6" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:7" role="doc-endnote">
+      <p><a href="https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn">adb</a> <a href="#fnref:7" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:8" role="doc-endnote">
+      <p><a href="https://blog.csdn.net/SH_LYPTK/article/details/108916676">电脑蓝牙配对</a> <a href="#fnref:8" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:9" role="doc-endnote">
+      <p><a href="https://github.com/rwaldron/johnny-five/wiki/Getting-Started-with-Johnny-Five-and-HC-05-Bluetooth-Serial-Port-Module">arduino设置蓝牙</a> <a href="#fnref:9" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+
+
+<div class="pagination">
+  
+    <a href="/2021-12-11/%E6%99%BA%E8%83%BD%E8%BD%A6PID" class="left arrow">←</a>
+  
+  
+    <a href="/2021-10-18/Ruby-scraper" class="right arrow">→</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+    </main>
+
+    <footer>
+  <span>
+    © <time datetime="2022-10-18 11:07:12 +0800">2022</time> David chen. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+  </span>
+</footer>
+
+  </body>
+</html>

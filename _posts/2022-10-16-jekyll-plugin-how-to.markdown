@@ -29,4 +29,3 @@ jobs:
 
 for more detail please reference [jekyll plugin how to](https://scaomath.github.io/blog/custom-plugins-jekyll-github/)
 
-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

@@ -1,29 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://teddyand.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://teddyand.github.io/" rel="alternate" type="text/html" /><updated>2022-10-18T08:11:06+08:00</updated><id>https://teddyand.github.io/feed.xml</id><title type="html">David’s soup</title><subtitle>Minimal Jekyll theme for storytellers</subtitle><author><name>David chen</name><email>davidchen1977@live.com</email></author><entry><title type="html">jekyll plugin how to deploy on github</title><link href="https://teddyand.github.io/2022-10-16/jekyll-plugin-how-to" rel="alternate" type="text/html" title="jekyll plugin how to deploy on github" /><published>2022-10-16T00:00:00+08:00</published><updated>2022-10-16T00:00:00+08:00</updated><id>https://teddyand.github.io/2022-10-16/jekyll-plugin-how-to</id><content type="html" xml:base="https://teddyand.github.io/2022-10-16/jekyll-plugin-how-to"><![CDATA[<h3 id="jekyll插件使用概述">jekyll插件使用概述</h3>
-<p>jekyll插件在github上只能使用部分白名單插件對於大部分插件需要定制workflow來使用,下面參考如下:<a href="https://github.com/jeffreytse/jekyll-spaceship">jekyll-spaceship使用與部署</a></p>
-<ul>
-  <li>首先來建立一個workflow並將它提交到個人repsitory(在.github/rkflows目錄下建立一個learn-github-action.yml文件):</li>
-</ul>
-
-<figure class="highlight"><pre><code class="language-yml" data-lang="yml"><span class="na">name</span><span class="pi">:</span> <span class="s">learn-github-actions</span>
-<span class="na">run-name</span><span class="pi">:</span> <span class="s">$ is learning GitHub Actions</span>
-<span class="na">on</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">push</span><span class="pi">]</span>
-<span class="na">jobs</span><span class="pi">:</span>
-  <span class="na">check-bats-version</span><span class="pi">:</span>
-    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
-    <span class="na">steps</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v3</span>
-      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/setup-node@v3</span>
-        <span class="na">with</span><span class="pi">:</span>
-         <span class="na">node-version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">14'</span>
-      <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="s">npm install -g bats</span>
-      <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="s">bats -v</span></code></pre></figure>
-
-<ul>
-  <li>之後導航到個人倉庫主目錄並且點擊Actions並且在All Workflows下將看到剛才所創建的learn-github-actin項
-最終會看到<img src="https://docs.github.com/assets/cb-69522/images/help/images/overview-actions-result-updated-2.png" alt="workflows actions job" />表明工作流運行正常.</li>
-</ul>
-
-<p>for more detail please reference <a href="https://scaomath.github.io/blog/custom-plugins-jekyll-github/">jekyll plugin how to</a></p>]]></content><author><name>Teddy</name></author><category term="jekyll" /><summary type="html"><![CDATA[jekyll插件使用概述 jekyll插件在github上只能使用部分白名單插件對於大部分插件需要定制workflow來使用,下面參考如下:jekyll-spaceship使用與部署 首先來建立一個workflow並將它提交到個人repsitory(在.github/rkflows目錄下建立一個learn-github-action.yml文件): name: learn-github-actions run-name: $ is learning GitHub Actions on: [push] jobs: check-bats-version: runs-on: ubuntu-latest steps: - uses: actions/checkout@v3 - uses: actions/setup-node@v3 with: node-version: '14' - run: npm install -g bats - run: bats -v]]></summary></entry><entry><title type="html">物联网开发之‘InnoWay’</title><link href="https://teddyand.github.io/2022-10-06/start-from-heart" rel="alternate" type="text/html" title="物联网开发之‘InnoWay’" /><published>2022-10-06T16:30:01+08:00</published><updated>2022-10-06T16:30:01+08:00</updated><id>https://teddyand.github.io/2022-10-06/start-from-heart</id><content type="html" xml:base="https://teddyand.github.io/2022-10-06/start-from-heart"><![CDATA[<h2 id="物联网iotinternet-of-things前言">物联网（IoT,internet of things）前言</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-10-18T08:20:15+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">David’s soup</title><subtitle>Minimal Jekyll theme for storytellers</subtitle><author><name>David chen</name><email>davidchen1977@live.com</email></author><entry><title type="html">物联网开发之‘InnoWay’</title><link href="http://localhost:4000/2022-10-06/start-from-heart" rel="alternate" type="text/html" title="物联网开发之‘InnoWay’" /><published>2022-10-06T16:30:01+08:00</published><updated>2022-10-06T16:30:01+08:00</updated><id>http://localhost:4000/2022-10-06/start-from-heart</id><content type="html" xml:base="http://localhost:4000/2022-10-06/start-from-heart"><![CDATA[<h2 id="物联网iotinternet-of-things前言">物联网（IoT,internet of things）前言</h2>
 
 <p><a href="https://baike.baidu.com/item/%E7%89%A9%E8%81%94%E7%BD%91/7306589">物联网</a>开发</p>
 
@@ -54,7 +29,7 @@
 
 <p><br /></p>
 
-<p><br /></p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="Language" /><summary type="html"><![CDATA[物联网（IoT,internet of things）前言]]></summary></entry><entry><title type="html">jekyll博客剪贴板拷贝功能开发有记</title><link href="https://teddyand.github.io/2022-09-22/clipboard-jekyll" rel="alternate" type="text/html" title="jekyll博客剪贴板拷贝功能开发有记" /><published>2022-09-22T17:30:01+08:00</published><updated>2022-09-22T17:30:01+08:00</updated><id>https://teddyand.github.io/2022-09-22/clipboard-jekyll</id><content type="html" xml:base="https://teddyand.github.io/2022-09-22/clipboard-jekyll"><![CDATA[<p>有位科学家说过，“造原子弹就像吃饭，别人碗里有啥自己也得有啥…”,同理看着别人的github文章独有剪贴板拷贝按钮，我也想有，可是凭借着仅仅两年的C语言程序员工作经验，对于Node.js语言能否学会掌握么？万事开头难，既然决定要学他，那就努力走下去就是了。</p>
+<p><br /></p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="Language" /><summary type="html"><![CDATA[物联网（IoT,internet of things）前言]]></summary></entry><entry><title type="html">jekyll博客剪贴板拷贝功能开发有记</title><link href="http://localhost:4000/2022-09-22/clipboard-jekyll" rel="alternate" type="text/html" title="jekyll博客剪贴板拷贝功能开发有记" /><published>2022-09-22T17:30:01+08:00</published><updated>2022-09-22T17:30:01+08:00</updated><id>http://localhost:4000/2022-09-22/clipboard-jekyll</id><content type="html" xml:base="http://localhost:4000/2022-09-22/clipboard-jekyll"><![CDATA[<p>有位科学家说过，“造原子弹就像吃饭，别人碗里有啥自己也得有啥…”,同理看着别人的github文章独有剪贴板拷贝按钮，我也想有，可是凭借着仅仅两年的C语言程序员工作经验，对于Node.js语言能否学会掌握么？万事开头难，既然决定要学他，那就努力走下去就是了。</p>
 
 <h2 id="博客中增加代码拷贝功能">博客中增加代码拷贝功能</h2>
 
@@ -64,7 +39,7 @@
 
 <p>总结：人不能拿着眼前的顺逆套用过去的失误并想着：<strong>“如果当时我…..那么我现在就…..”</strong>这是贪心，也许人生中的失去才是我们真正的得到。！感谢三位程序大佬的无私奉献，因为有你所以我也愿意。</p>
 
-<p><img src="//www.html5rocks.com/en/tutorials/video/basics/devstories.webm" alt="" /></p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="Language" /><summary type="html"><![CDATA[有位科学家说过，“造原子弹就像吃饭，别人碗里有啥自己也得有啥…”,同理看着别人的github文章独有剪贴板拷贝按钮，我也想有，可是凭借着仅仅两年的C语言程序员工作经验，对于Node.js语言能否学会掌握么？万事开头难，既然决定要学他，那就努力走下去就是了。]]></summary></entry><entry><title type="html">一个Node.js爬虫气象预报程序</title><link href="https://teddyand.github.io/2022-09-16/nodejs%E7%88%AC%E8%99%AB" rel="alternate" type="text/html" title="一个Node.js爬虫气象预报程序" /><published>2022-09-16T11:30:01+08:00</published><updated>2022-09-16T11:30:01+08:00</updated><id>https://teddyand.github.io/2022-09-16/nodejs%E7%88%AC%E8%99%AB</id><content type="html" xml:base="https://teddyand.github.io/2022-09-16/nodejs%E7%88%AC%E8%99%AB"><![CDATA[<h2 id="an-example-from-javascript-on-things">An example from 《javascript on things》<sup id="fnref:0" role="doc-noteref"><a href="#fn:0" class="footnote" rel="footnote">1</a></sup></h2>
+<p><img src="//www.html5rocks.com/en/tutorials/video/basics/devstories.webm" alt="" /></p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="Language" /><summary type="html"><![CDATA[有位科学家说过，“造原子弹就像吃饭，别人碗里有啥自己也得有啥…”,同理看着别人的github文章独有剪贴板拷贝按钮，我也想有，可是凭借着仅仅两年的C语言程序员工作经验，对于Node.js语言能否学会掌握么？万事开头难，既然决定要学他，那就努力走下去就是了。]]></summary></entry><entry><title type="html">一个Node.js爬虫气象预报程序</title><link href="http://localhost:4000/2022-09-16/nodejs%E7%88%AC%E8%99%AB" rel="alternate" type="text/html" title="一个Node.js爬虫气象预报程序" /><published>2022-09-16T11:30:01+08:00</published><updated>2022-09-16T11:30:01+08:00</updated><id>http://localhost:4000/2022-09-16/nodejs%E7%88%AC%E8%99%AB</id><content type="html" xml:base="http://localhost:4000/2022-09-16/nodejs%E7%88%AC%E8%99%AB"><![CDATA[<h2 id="an-example-from-javascript-on-things">An example from 《javascript on things》<sup id="fnref:0" role="doc-noteref"><a href="#fn:0" class="footnote" rel="footnote">1</a></sup></h2>
 
 <p><img align="right" src="https://ts1.cn.mm.bing.net/th/id/R-C.e700faf802f8cbbe2b700d2fedc397cf?rik=6YVDd1f4sBe0Mw&amp;riu=http%3a%2f%2fimg95.699pic.com%2fphoto%2f40162%2f1277.gif_wh300.gif&amp;ehk=%2bbSVVgmwZk0N4t%2f7bMYncg9PR7k0BZhLbss0elFRLQc%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" />
 秋风起秋天到，在这个暑气消退，秋意渐凉的季节，“风”是主角，他带来了干爽也降低了温度，作为一名maker如何获取最新的天气预报并且用肉眼可观的方法告诉我们是否改增减衣服，注意保暖避免风寒是我比较关心的事情。这里介绍一个利用node.js下的Johhny-five库配合arduino uno控制板加RGB LED开发的和风天气预报灯。首先我们需要登录和风天气<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">2</a></sup>控制台，获取天气预报API密钥，并clone一份常见城市列表（可用Sublime text3）打开并从中找到要查询城市的位置代码（9位），继续创建weatherball.js文件。将获得的数据存入’API_KEY’、’AREA_CODE’、’API_URL‘变量中。并使用request API调用 key 再实例化一个开发板变量代码如下：（由于和风天气采用gzip格式加密json数据因此需要注明gzip为true并且采用get方式获得数据，这与书中略有不同。RGB灯的应用可参考<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">3</a></sup>）蓝牙模块配对参考<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">4</a></sup>arduino蓝牙模块接线<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">5</a></sup></p>
@@ -163,7 +138,7 @@
       <p><a href="https://github.com/rwaldron/johnny-five/wiki/Getting-Started-with-Johnny-Five-and-HC-05-Bluetooth-Serial-Port-Module">arduino蓝牙接线</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="Language" /><summary type="html"><![CDATA[An example from 《javascript on things》1 javascript on things &#8617;]]></summary></entry><entry><title type="html">宋朝故事–书法菩提</title><link href="https://teddyand.github.io/2022-08-25/caligraph" rel="alternate" type="text/html" title="宋朝故事–书法菩提" /><published>2022-08-25T10:50:01+08:00</published><updated>2022-08-25T10:50:01+08:00</updated><id>https://teddyand.github.io/2022-08-25/caligraph</id><content type="html" xml:base="https://teddyand.github.io/2022-08-25/caligraph"><![CDATA[<h2 id="舛误">舛误</h2>
+</div>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="Language" /><summary type="html"><![CDATA[An example from 《javascript on things》1 javascript on things &#8617;]]></summary></entry><entry><title type="html">宋朝故事–书法菩提</title><link href="http://localhost:4000/2022-08-25/caligraph" rel="alternate" type="text/html" title="宋朝故事–书法菩提" /><published>2022-08-25T10:50:01+08:00</published><updated>2022-08-25T10:50:01+08:00</updated><id>http://localhost:4000/2022-08-25/caligraph</id><content type="html" xml:base="http://localhost:4000/2022-08-25/caligraph"><![CDATA[<h2 id="舛误">舛误</h2>
 
 <p>宋初，有位书法家名叫<a href="https://baike.baidu.com/item/%E7%8E%8B%E8%91%97/15705427">王著</a>，擅用笔，精临摹，楷、行、草兼善。大家都争着学习他的字，他的字继承了智永的《千字文》虞世南《乐毅论》和徐浩的风格被评论者推崇。如果有人不学他而学习二王或唐楷，就会被人认为怪咖。而他的出名主要是迎合了当时皇帝宋太宗–赵匡义的喜好。开始大臣们反对皇帝的爱好，但是皇帝为自己辩解道：“书法一道虽非帝王事业，但不胜于沉缅声色犬马中百倍吗？”  于是大臣们再也不反对帝王的嗜好了。其后王著被召入御书苑，专门陪皇帝切磋书法，从此与皇帝来往频繁，并时不时的陪皇帝看表演，吃饭喝酒。因此大臣们看他的眼神中也多了一些异样。有一次王著劝皇帝练二王，练过一阵子后皇帝让他看成果，他总是说“没把握好”，时间长了皇帝有些不高兴了，就派个太监去问 王对来人说：“皇帝初练就夸好，那么皇帝不会用心了”。太监把话告诉了皇帝。皇帝说：“这个王著真的要朕做个书法家了。”太监也狠狠的说：“这个不知天高地厚的东西” 皇帝摆摆手说：“算了 ”。后来皇帝要王收集历代帝王、名臣、书家的墨迹，刊印发行。王用了两年编好目录，用了六年走访荆、袁、谭、升等地遍寻历代法帖，终于在淳化三年法帖问世。太宗赐名《淳化阁帖》。</p>
 
@@ -172,7 +147,7 @@
 <p>不久太宗接到多分奏章，举报《淳》帖错误多多，辈份混淆，人名混乱….。太宗召来王著批评了一番，王回去后痛哭了一场，借酒浇愁并在酒后说了太宗许多的不是。这下王捅了马蜂窝，弹劾他的奏张云集。说他是国家的罪人，花巨资出假书，不学无数，蛊惑诋毁天子，贻害无穷，理应贬窜南海。
 太宗看得眼睛都花了，他把奏章一一置于地上，叹道：“这些人想干什么？王著不过一介书生，能犯多大错啊？”</p>
 
-<p><strong><em>人不怕犯错，只怕不努力————《浮士德》</em></strong></p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="caligraph" /><summary type="html"><![CDATA[舛误]]></summary></entry><entry><title type="html">how to make spice salt</title><link href="https://teddyand.github.io/2022-07-20/spice-salt-make" rel="alternate" type="text/html" title="how to make spice salt" /><published>2022-07-20T10:50:01+08:00</published><updated>2022-07-20T10:50:01+08:00</updated><id>https://teddyand.github.io/2022-07-20/spice-salt-make</id><content type="html" xml:base="https://teddyand.github.io/2022-07-20/spice-salt-make"><![CDATA[<h2 id="introduce">Introduce:</h2>
+<p><strong><em>人不怕犯错，只怕不努力————《浮士德》</em></strong></p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="caligraph" /><summary type="html"><![CDATA[舛误]]></summary></entry><entry><title type="html">how to make spice salt</title><link href="http://localhost:4000/2022-07-20/spice-salt-make" rel="alternate" type="text/html" title="how to make spice salt" /><published>2022-07-20T10:50:01+08:00</published><updated>2022-07-20T10:50:01+08:00</updated><id>http://localhost:4000/2022-07-20/spice-salt-make</id><content type="html" xml:base="http://localhost:4000/2022-07-20/spice-salt-make"><![CDATA[<h2 id="introduce">Introduce:</h2>
 <p>Would you like some more spice salt chicken? some more spice salt fish? some more spice salt lamb chop? and so on….  spice salt is a kind of flavour in our cook. but do you know how to make it?….today we will led you the way to make spice salt. come on …let’s go</p>
 
 <p><img src="http://img.mp.itc.cn/upload/20170111/40e408be50d741ec9e2aab5c2c341209_th.jpg" alt="spice salt" /></p>
@@ -189,7 +164,7 @@
 
 <p>fry flavour above in order with soft-fire untill  smell is wonderful.finally pour it in a dish or any other container。  that’s all. Is it easy aha?   Now i will wait for your main course!  lala…..</p>
 
-<p><img src="http://p2.itc.cn/q_70/images03/20200928/94e5dac67a084b3d888b64a1ae08cf16.jpeg" alt="椒盐排骨" /></p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="recipe" /><summary type="html"><![CDATA[Introduce: Would you like some more spice salt chicken? some more spice salt fish? some more spice salt lamb chop? and so on…. spice salt is a kind of flavour in our cook. but do you know how to make it?….today we will led you the way to make spice salt. come on …let’s go]]></summary></entry><entry><title type="html">试玉行动I</title><link href="https://teddyand.github.io/2022-07-16/jadeI" rel="alternate" type="text/html" title="试玉行动I" /><published>2022-07-16T11:50:01+08:00</published><updated>2022-07-16T11:50:01+08:00</updated><id>https://teddyand.github.io/2022-07-16/jadeI</id><content type="html" xml:base="https://teddyand.github.io/2022-07-16/jadeI"><![CDATA[<h2 id="概述">概述：</h2>
+<p><img src="http://p2.itc.cn/q_70/images03/20200928/94e5dac67a084b3d888b64a1ae08cf16.jpeg" alt="椒盐排骨" /></p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="recipe" /><summary type="html"><![CDATA[Introduce: Would you like some more spice salt chicken? some more spice salt fish? some more spice salt lamb chop? and so on…. spice salt is a kind of flavour in our cook. but do you know how to make it?….today we will led you the way to make spice salt. come on …let’s go]]></summary></entry><entry><title type="html">试玉行动I</title><link href="http://localhost:4000/2022-07-16/jadeI" rel="alternate" type="text/html" title="试玉行动I" /><published>2022-07-16T11:50:01+08:00</published><updated>2022-07-16T11:50:01+08:00</updated><id>http://localhost:4000/2022-07-16/jadeI</id><content type="html" xml:base="http://localhost:4000/2022-07-16/jadeI"><![CDATA[<h2 id="概述">概述：</h2>
 <p>“试玉要烧三日满,辨才须待七年期.”故人的智慧实在是不过时呀,当今64位系统,i5 i7大盛的时代,我的奔腾e2140能否抵挡得住高配置的诱惑而独善其身呢?也许答案在行动中.</p>
 
 <h2 id="rbenv的安装">rbenv的安装：</h2>
@@ -295,7 +270,7 @@
       <p><a href="https://www.jb51.net/article/244980.htm">ruby快速安装</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="system" /><category term="system" /><summary type="html"><![CDATA[概述： “试玉要烧三日满,辨才须待七年期.”故人的智慧实在是不过时呀,当今64位系统,i5 i7大盛的时代,我的奔腾e2140能否抵挡得住高配置的诱惑而独善其身呢?也许答案在行动中.]]></summary></entry><entry><title type="html">非线性现象、蚊音探测及若干相关话题</title><link href="https://teddyand.github.io/2022-01-26/nolinear" rel="alternate" type="text/html" title="非线性现象、蚊音探测及若干相关话题" /><published>2022-01-26T00:00:00+08:00</published><updated>2022-01-26T00:00:00+08:00</updated><id>https://teddyand.github.io/2022-01-26/nolinear</id><content type="html" xml:base="https://teddyand.github.io/2022-01-26/nolinear"><![CDATA[<p>线性或非线性通常是指在一个系统中，输出物理量随着输入物理量变化的函数关系。比如，对一个扬声器输入一个电信号，其输出声压与输入的电信号相关。在真实系统中，这种函数关系的复杂性有两个方面：首先，输出量不仅与输入量本身有关，还可能与输入量的变化速率有关；其次，输出量的增减与输入量的增减可能不一定成比例，也就是说，系统可能不一定是线性的。</p>
+</div>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="system" /><summary type="html"><![CDATA[概述： “试玉要烧三日满,辨才须待七年期.”故人的智慧实在是不过时呀,当今64位系统,i5 i7大盛的时代,我的奔腾e2140能否抵挡得住高配置的诱惑而独善其身呢?也许答案在行动中.]]></summary></entry><entry><title type="html">非线性现象、蚊音探测及若干相关话题</title><link href="http://localhost:4000/2022-01-26/nolinear" rel="alternate" type="text/html" title="非线性现象、蚊音探测及若干相关话题" /><published>2022-01-26T00:00:00+08:00</published><updated>2022-01-26T00:00:00+08:00</updated><id>http://localhost:4000/2022-01-26/nolinear</id><content type="html" xml:base="http://localhost:4000/2022-01-26/nolinear"><![CDATA[<p>线性或非线性通常是指在一个系统中，输出物理量随着输入物理量变化的函数关系。比如，对一个扬声器输入一个电信号，其输出声压与输入的电信号相关。在真实系统中，这种函数关系的复杂性有两个方面：首先，输出量不仅与输入量本身有关，还可能与输入量的变化速率有关；其次，输出量的增减与输入量的增减可能不一定成比例，也就是说，系统可能不一定是线性的。</p>
 
 <h3 id="一大振幅与非线性效应">一、大振幅与非线性效应</h3>
 <p>首先介绍一下系统的非线性是怎么回事。</p>
@@ -438,7 +413,7 @@ $\left(119/2\right)/30=1.98$秒
 
 <p><br /></p>
 
-<p>文章摘自　吴进远　著《触物及理－令人眼界大开的物理小实验》　<br /></p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="物理建模" /><category term="theory" /><summary type="html"><![CDATA[线性或非线性通常是指在一个系统中，输出物理量随着输入物理量变化的函数关系。比如，对一个扬声器输入一个电信号，其输出声压与输入的电信号相关。在真实系统中，这种函数关系的复杂性有两个方面：首先，输出量不仅与输入量本身有关，还可能与输入量的变化速率有关；其次，输出量的增减与输入量的增减可能不一定成比例，也就是说，系统可能不一定是线性的。]]></summary></entry><entry><title type="html">正反馈与负反馈</title><link href="https://teddyand.github.io/2022-01-24/test" rel="alternate" type="text/html" title="正反馈与负反馈" /><published>2022-01-24T11:50:01+08:00</published><updated>2022-01-24T11:50:01+08:00</updated><id>https://teddyand.github.io/2022-01-24/test</id><content type="html" xml:base="https://teddyand.github.io/2022-01-24/test"><![CDATA[<h3 id="前言">前言　</h3>
+<p>文章摘自　吴进远　著《触物及理－令人眼界大开的物理小实验》　<br /></p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="物理建模" /><category term="theory" /><summary type="html"><![CDATA[线性或非线性通常是指在一个系统中，输出物理量随着输入物理量变化的函数关系。比如，对一个扬声器输入一个电信号，其输出声压与输入的电信号相关。在真实系统中，这种函数关系的复杂性有两个方面：首先，输出量不仅与输入量本身有关，还可能与输入量的变化速率有关；其次，输出量的增减与输入量的增减可能不一定成比例，也就是说，系统可能不一定是线性的。]]></summary></entry><entry><title type="html">正反馈与负反馈</title><link href="http://localhost:4000/2022-01-24/test" rel="alternate" type="text/html" title="正反馈与负反馈" /><published>2022-01-24T11:50:01+08:00</published><updated>2022-01-24T11:50:01+08:00</updated><id>http://localhost:4000/2022-01-24/test</id><content type="html" xml:base="http://localhost:4000/2022-01-24/test"><![CDATA[<h3 id="前言">前言　</h3>
 <p>反馈现象存在于世界的各个角落，影响到我们生活的方方面面。不仅在物理学中，在其他自然科学领域甚至人文科学领域，都广泛存在着各
 式各样的反馈现象。
 我们日常生活中经常提到的恶性循环与良性循环，实质上就是不同的反馈现象。比如，有的同学出现了夜里睡眠不良的问题，就可能影响
@@ -478,7 +453,7 @@ $\left(119/2\right)/30=1.98$秒
 
 <p>上图为一个二阶倒立摆实验系统。关于倒立摆的实验早在上世纪九十年代北京航空航天大学自动化系就已经成功的实现了，如今这样一个负反馈系统甚至可以用四轴飞行器来实现，以此验证更多的新技术和新产品。<br />
 <br />
-	文章摘自　吴进远　著《触物及理》　略有改动 <br /></p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="物理建模" /><category term="theory" /><summary type="html"><![CDATA[前言　 反馈现象存在于世界的各个角落，影响到我们生活的方方面面。不仅在物理学中，在其他自然科学领域甚至人文科学领域，都广泛存在着各 式各样的反馈现象。 我们日常生活中经常提到的恶性循环与良性循环，实质上就是不同的反馈现象。比如，有的同学出现了夜里睡眠不良的问题，就可能影响 学习效率。学习效率降低又会使同学延长夜里的学习时间，加重睡眠不良的问题。这实质上是一个正反馈，正是由于正反馈形成了这样一个恶性循环。 深入地了解反馈现象的各种性质，对我们学好物理学及相关科学技术，如电子学、计算机科学等很有帮助。同时，由于反馈现象产生的各种 特性也往往可以类推到其他学科。]]></summary></entry><entry><title type="html">智能车PID入门</title><link href="https://teddyand.github.io/2021-12-11/%E6%99%BA%E8%83%BD%E8%BD%A6PID" rel="alternate" type="text/html" title="智能车PID入门" /><published>2021-12-11T11:50:01+08:00</published><updated>2021-12-11T11:50:01+08:00</updated><id>https://teddyand.github.io/2021-12-11/%E6%99%BA%E8%83%BD%E8%BD%A6PID</id><content type="html" xml:base="https://teddyand.github.io/2021-12-11/%E6%99%BA%E8%83%BD%E8%BD%A6PID"><![CDATA[<h3 id="旧梦一场">旧梦一场</h3>
+	文章摘自　吴进远　著《触物及理》　略有改动 <br /></p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="物理建模" /><category term="theory" /><summary type="html"><![CDATA[前言　 反馈现象存在于世界的各个角落，影响到我们生活的方方面面。不仅在物理学中，在其他自然科学领域甚至人文科学领域，都广泛存在着各 式各样的反馈现象。 我们日常生活中经常提到的恶性循环与良性循环，实质上就是不同的反馈现象。比如，有的同学出现了夜里睡眠不良的问题，就可能影响 学习效率。学习效率降低又会使同学延长夜里的学习时间，加重睡眠不良的问题。这实质上是一个正反馈，正是由于正反馈形成了这样一个恶性循环。 深入地了解反馈现象的各种性质，对我们学好物理学及相关科学技术，如电子学、计算机科学等很有帮助。同时，由于反馈现象产生的各种 特性也往往可以类推到其他学科。]]></summary></entry><entry><title type="html">智能车PID入门</title><link href="http://localhost:4000/2021-12-11/%E6%99%BA%E8%83%BD%E8%BD%A6PID" rel="alternate" type="text/html" title="智能车PID入门" /><published>2021-12-11T11:50:01+08:00</published><updated>2021-12-11T11:50:01+08:00</updated><id>http://localhost:4000/2021-12-11/%E6%99%BA%E8%83%BD%E8%BD%A6PID</id><content type="html" xml:base="http://localhost:4000/2021-12-11/%E6%99%BA%E8%83%BD%E8%BD%A6PID"><![CDATA[<h3 id="旧梦一场">旧梦一场</h3>
 
 <p><img src="https://tse1-mm.cn.bing.net/th/id/R-C.e051d6f90ba39cff637fcfe6a651c397?rik=ycyruSD3kQgPkg&amp;riu=http%3a%2f%2fbpic.588ku.com%2fart_pic%2f19%2f03%2f18%2f2f4ff968ca4f3853ea57a749a523c1a8.jpg!%2ffw%2f254%2fquality%2f90%2funsharp%2ftrue%2fcompress%2ftrue&amp;ehk=LebJeC11OEOJEdGhgmXtixqZcPewGG1mFjDoAsdR%2bJM%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0&amp;sres=1&amp;sresct=1" alt="图片替换文本" width="900" height="350" align="bottom" />
 梦想是什么？对于年轻人来说，梦想可能是对未来的憧憬，是美好人生的开始。而对于我来说年轻时的梦想似乎飘渺不定，如蓬莱仙山般的存在。经历了岁月之后，蓦然回首原来梦想就存在于过往和当下那一段段的遗憾与失去之中，“对于只有一次生命的人生，失去便是得到！”中年人的梦想是责任与义务，如果说年轻人的眼中有山河的话，那么中年人的河山在肩上。</p>
@@ -486,4 +461,169 @@ $\left(119/2\right)/30=1.98$秒
 <p>我的制作<a href="https://github.com/teddyand/balance-vehicle">圆满一号</a>；
 我看过的文章<a href="https://zhuanlan.zhihu.com/p/113308638">智能车PID简介</a>；
 还有视频<a href="https://www.bilibili.com/video/BV1jr4y1P7qK?t=37.2">PID演示视频</a>；
-<a href="https://bbs.21ic.com/icview-3172850-1-1.html">采集Ｎ20电机转速</a>。</p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="AI" /><summary type="html"><![CDATA[旧梦一场]]></summary></entry></feed>
+<a href="https://bbs.21ic.com/icview-3172850-1-1.html">采集Ｎ20电机转速</a>。</p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="AI" /><summary type="html"><![CDATA[旧梦一场]]></summary></entry><entry><title type="html">Cordova框架试用</title><link href="http://localhost:4000/2021-11-13/cordova-framework" rel="alternate" type="text/html" title="Cordova框架试用" /><published>2021-11-13T07:50:01+08:00</published><updated>2021-11-13T07:50:01+08:00</updated><id>http://localhost:4000/2021-11-13/cordova-framework</id><content type="html" xml:base="http://localhost:4000/2021-11-13/cordova-framework"><![CDATA[<h2 id="认识cordova">认识Cordova</h2>
+<p>本章将介绍一款开发者使用HTML5,Javascript和CSS等Web技术,开发手机平板电脑等运行App框架:PhoneGap/
+Cordova,及及创建运行App操作界面外观的JQuery Mobile框架。前者付费后者免费</p>
+
+<center class="half">
+    <img src="https://spotsolutions.com/wp-content/uploads/2017/06/cordova_logo_normal_dark_large.png" width="300" height="100" data-zoomable="" /><img src="https://cms-assets.tutsplus.com/uploads/users/1855/posts/29323/image/angular-ionic.jpg" width="300" height="100" data-zoomable="" />        
+</center>
+
+<h4 id="手机网页与手机app的不同">手机网页与手机App的不同</h4>
+<p>其实Cordova<sup id="fnref:C" role="doc-noteref"><a href="#fn:C" class="footnote" rel="footnote">1</a></sup>就是由一个Web浏览器核心，加上插件所组成的框架。这就是为什么我们可以用网页技术创建App 
+——因为每个Cordova App就相当于一个定制的Web浏览器。</p>
+
+<h2 id="cordova的环境配置">Cordova的环境配置</h2>
+<p>博主曾在windows 7环境与Xubuntu20.04环境成功配置了Cordova Android手机App编译环境，现就配置体会与过程记录如下：
+开发Android App需要安装软件如下：</p>
+
+<ul>
+  <li>Java软件开发包（JDK）;</li>
+  <li>Node.js(及内置npm);</li>
+  <li>Apache Ant;</li>
+  <li>Android 的软件开发工具（SDK）;</li>
+  <li>Cordova命令行工具。</li>
+</ul>
+
+<p>Node.js的安装参照<a href="http://192.168.1.101:4000/Maker/blog/2022/jadeI/">试玉</a>，其余软件的安装说明见下。</p>
+
+<h3 id="下载与安装jdk">下载与安装JDK</h3>
+<ul>
+  <li>Xubuntu JDK 安装<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">2</a></sup></li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">sudo apt-get install openjdk-8-jdk</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">java -version</code></p>
+
+<ul>
+  <li>Windows 7 安装需要在<a href="https://www.oracle.com/java/technologies/downloads/#java8">Oracle 官网</a>下载相应软体<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">3</a></sup></li>
+</ul>
+
+<h3 id="下载设置android-sdk">下载设置Android SDK</h3>
+<p>Android开发者网页提供的标准开发工具叫作Android Studio(注：博主刚参加工作时对Visual Studio一往情深)</p>
+<ul>
+  <li>Xubuntu下安装Android SDK <sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">4</a></sup></li>
+  <li>Win7下安装Android SDK<sup id="fnref:2:1" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">3</a></sup>  <br />
+为了更敏捷的学习只安装需要的SDK工具并附软体下载地址<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">5</a></sup>(注：对于windows用户，建议下载.exe格式安装程序，可免除后续一些设置)</li>
+</ul>
+
+<p>默认安装路径：
+<code class="language-plaintext highlighter-rouge">C:\Users\用户名\AppData\Local\Android\android-sdk</code></p>
+
+<p>建议改为成其他路径，方便日后系统参数设置操作<br />
+<code class="language-plaintext highlighter-rouge">C:\Users\用户名\Android\Android-sdk</code></p>
+
+<ul>
+  <li>
+    <p>利用SDK Manager下载其他必要的库。  <br />
+维持默认选取Tools里的三个工具，以及Extra里的两个选项：Android Support Library 以及Google USB Driver(驱动 Linux下可不选)。单击（安装）进行安装。</p>
+  </li>
+  <li>
+    <p>环境变量设置  <br />
+在 .bashrc文件或PATH变量中添加ANDROID_HOME，值设置成安装路径。接着再添加两项路径设置如下:(注：ANDROID_HOME可自定义 ANDROID_SDK_ROOT亦可)</p>
+  </li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">%ANDROID_HOME%\tools</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">%ANDROID_HOME%\plarform-tools</code></p>
+
+<h3 id="安装cordova工具和ant">安装Cordova工具和Ant</h3>
+<p>Cordova工具通过npm安装。<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">6</a></sup>(注：尽量选取稍旧版本安装，如果对自己的电脑和操作系统很自信可选最新版安装)</p>
+
+<p><code class="language-plaintext highlighter-rouge">npm update -g cordova        (升级已安装软体为最新)</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">npm uninstall -g cordova     (卸载当前软体)</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">npm install -g cordova@*.0.0 (安装*.0.0版本软体)</code></p>
+
+<h4 id="安装ant">安装Ant</h4>
+<p>Ubuntu安装<sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote" rel="footnote">7</a></sup></p>
+
+<h3 id="使用cordova创建手机app">使用Cordova创建手机App</h3>
+<p>Cordova工具可帮助创建一个基本App。在创建之前，需要先添加一个保存App的文件建夹。（ordova）</p>
+
+<p><code class="language-plaintext highlighter-rouge">$cordova create cordova</code>
+该目录下包含：config.xml、package.json两个文件和一个www目录。</p>
+
+<h4 id="添加android平台">添加Android平台</h4>
+
+<p><code class="language-plaintext highlighter-rouge">cd cordova</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">cordova platform add android</code></p>
+
+<p>增加了node_modules和platforms、plugins三个目录</p>
+<h4 id="编译android-app与安装sdk平台">编译Android App与安装SDK平台</h4>
+
+<p><code class="language-plaintext highlighter-rouge">$cordova build android</code></p>
+
+<p>编译过程中可能提示缺少相应的android开发工具，使用sdkmanager安装相应的Android系统平台文件（如：android-22等）SDK下载完毕后，再次运行“cordova build android”命令就编译成功了。</p>
+
+<h3 id="启用android手机的usb-debug功能">启用Android手机的USB Debug功能</h3>
+<p>Cordova项目创建完成后，可直接上传到android手机测试。步骤如下：</p>
+<ul>
+  <li>在相应的Android手机设置项的“开发者选项”设置勾选“USB调试” 选项。</li>
+  <li>将手机通过USB线连接到电脑，然后在命令提示符输入如下命令，列举目前连接道电脑上的Android设备。初次连接，系统可能会提示“未授权”</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">$adb devices</code></p>
+
+<p>adb<sup id="fnref:7" role="doc-noteref"><a href="#fn:7" class="footnote" rel="footnote">8</a></sup>就是android设备调试器。</p>
+<ul>
+  <li>若系统回应unauthorized,请进入设置项“开发者选项”，按一下“撤回USB除错授权”选项。</li>
+  <li>运行如下两个命令，重新启动adb服务器。</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">$adb kill-server</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">$adb start-server</code></p>
+<ul>
+  <li>此时手机将出现询问连接。</li>
+  <li>单击确定后，再次运行如下命令，手机与电脑将连接成功。</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">adb devices</code></p>
+
+<h4 id="将app部署到目前连接的手机上测试">将App部署到目前连接的手机上测试</h4>
+
+<p><code class="language-plaintext highlighter-rouge">cordova run android --device</code></p>
+
+<h2 id="一个实例">一个实例</h2>
+<p>手机APP 控制aruino uno 点亮熄灭led灯 
+通过电脑USB配对蓝牙<sup id="fnref:8" role="doc-noteref"><a href="#fn:8" class="footnote" rel="footnote">9</a></sup>或者通过arduino配置蓝牙<sup id="fnref:9" role="doc-noteref"><a href="#fn:9" class="footnote" rel="footnote">10</a></sup>(注：具体参数依据个人)</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:C" role="doc-endnote">
+      <p><a href="https://cordova.apache.org/#getstarted">cordova官方</a> <a href="#fnref:C" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://www.leftso.com/blog/1009.html#:~:text=Ubuntu%2020.04%20%E5%AE%89%E8%A3%85jdk8%20%E5%A4%8D%E5%88%B6%20sudo,apt-get%20install%20openjdk-%208%20-jdk">ubuntu安装JDK</a> <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://blog.csdn.net/xiaoyu_wu/article/details/102654343">win7安装JDK和Android SDK</a> <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:2:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p><a href="https://blog.csdn.net/qq_25017839/article/details/89847824">Xubuntu安装 Android SDK</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p><a href="https://www.cnblogs.com/auguse/p/13807169.html">Android SDK下载地址</a> <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p><a href="https://cordova.apache.org/#getstarted">Cordova</a> <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:6" role="doc-endnote">
+      <p><a href="https://www.yundongfang.com/Yun40649.html#:~:text=%E5%9C%A8%20Ubuntu%2020.04%20LTS%20Focal%20Fossa%E4%B8%8A%20%E5%AE%89%E8%A3%85Apache,Ant%20%E6%AD%A5%E9%AA%A41.%E9%A6%96%E5%85%88%EF%BC%8C%E9%80%9A%E8%BF%87apt%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E8%BF%90%E8%A1%8C%E4%BB%A5%E4%B8%8B%E4%BB%A5%E4%B8%8B%E5%91%BD%E4%BB%A4%EF%BC%8C%E7%A1%AE%E4%BF%9D%E6%89%80%E6%9C%89%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6%E5%8C%85%E9%83%BD%E6%98%AF%E6%9C%80%E6%96%B0%E7%9A%84%E3%80%82%20sudo%20apt%20update%20sudo%20apt%20upgrade">Ubuntu安装Ant</a> <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:7" role="doc-endnote">
+      <p><a href="https://developer.android.google.cn/studio/command-line/adb?hl=zh-cn">adb</a> <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:8" role="doc-endnote">
+      <p><a href="https://blog.csdn.net/SH_LYPTK/article/details/108916676">电脑蓝牙配对</a> <a href="#fnref:8" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:9" role="doc-endnote">
+      <p><a href="https://github.com/rwaldron/johnny-five/wiki/Getting-Started-with-Johnny-Five-and-HC-05-Bluetooth-Serial-Port-Module">arduino设置蓝牙</a> <a href="#fnref:9" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[认识Cordova 本章将介绍一款开发者使用HTML5,Javascript和CSS等Web技术,开发手机平板电脑等运行App框架:PhoneGap/ Cordova,及及创建运行App操作界面外观的JQuery Mobile框架。前者付费后者免费 手机网页与手机App的不同 其实Cordova1就是由一个Web浏览器核心，加上插件所组成的框架。这就是为什么我们可以用网页技术创建App ——因为每个Cordova App就相当于一个定制的Web浏览器。 Cordova的环境配置 博主曾在windows 7环境与Xubuntu20.04环境成功配置了Cordova Android手机App编译环境，现就配置体会与过程记录如下： 开发Android App需要安装软件如下： Java软件开发包（JDK）; Node.js(及内置npm); Apache Ant; Android 的软件开发工具（SDK）; Cordova命令行工具。 Node.js的安装参照试玉，其余软件的安装说明见下。 下载与安装JDK Xubuntu JDK 安装2 sudo apt-get install openjdk-8-jdk java -version Windows 7 安装需要在Oracle 官网下载相应软体3 下载设置Android SDK Android开发者网页提供的标准开发工具叫作Android Studio(注：博主刚参加工作时对Visual Studio一往情深) Xubuntu下安装Android SDK 4 Win7下安装Android SDK3 为了更敏捷的学习只安装需要的SDK工具并附软体下载地址5(注：对于windows用户，建议下载.exe格式安装程序，可免除后续一些设置) 默认安装路径： C:\Users\用户名\AppData\Local\Android\android-sdk 建议改为成其他路径，方便日后系统参数设置操作 C:\Users\用户名\Android\Android-sdk 利用SDK Manager下载其他必要的库。 维持默认选取Tools里的三个工具，以及Extra里的两个选项：Android Support Library 以及Google USB Driver(驱动 Linux下可不选)。单击（安装）进行安装。 环境变量设置 在 .bashrc文件或PATH变量中添加ANDROID_HOME，值设置成安装路径。接着再添加两项路径设置如下:(注：ANDROID_HOME可自定义 ANDROID_SDK_ROOT亦可) %ANDROID_HOME%\tools %ANDROID_HOME%\plarform-tools 安装Cordova工具和Ant Cordova工具通过npm安装。6(注：尽量选取稍旧版本安装，如果对自己的电脑和操作系统很自信可选最新版安装) npm update -g cordova (升级已安装软体为最新) npm uninstall -g cordova (卸载当前软体) npm install -g cordova@*.0.0 (安装*.0.0版本软体) 安装Ant Ubuntu安装7 使用Cordova创建手机App Cordova工具可帮助创建一个基本App。在创建之前，需要先添加一个保存App的文件建夹。（ordova） $cordova create cordova 该目录下包含：config.xml、package.json两个文件和一个www目录。 添加Android平台 cd cordova cordova platform add android 增加了node_modules和platforms、plugins三个目录 编译Android App与安装SDK平台 $cordova build android 编译过程中可能提示缺少相应的android开发工具，使用sdkmanager安装相应的Android系统平台文件（如：android-22等）SDK下载完毕后，再次运行“cordova build android”命令就编译成功了。 启用Android手机的USB Debug功能 Cordova项目创建完成后，可直接上传到android手机测试。步骤如下： 在相应的Android手机设置项的“开发者选项”设置勾选“USB调试” 选项。 将手机通过USB线连接到电脑，然后在命令提示符输入如下命令，列举目前连接道电脑上的Android设备。初次连接，系统可能会提示“未授权” $adb devices adb8就是android设备调试器。 若系统回应unauthorized,请进入设置项“开发者选项”，按一下“撤回USB除错授权”选项。 运行如下两个命令，重新启动adb服务器。 $adb kill-server $adb start-server 此时手机将出现询问连接。 单击确定后，再次运行如下命令，手机与电脑将连接成功。 adb devices 将App部署到目前连接的手机上测试 cordova run android --device 一个实例 手机APP 控制aruino uno 点亮熄灭led灯 通过电脑USB配对蓝牙9或者通过arduino配置蓝牙10(注：具体参数依据个人) cordova官方 &#8617; ubuntu安装JDK &#8617; win7安装JDK和Android SDK &#8617; &#8617;2 Xubuntu安装 Android SDK &#8617; Android SDK下载地址 &#8617; Cordova &#8617; Ubuntu安装Ant &#8617; adb &#8617; 电脑蓝牙配对 &#8617; arduino设置蓝牙 &#8617;]]></summary></entry></feed>

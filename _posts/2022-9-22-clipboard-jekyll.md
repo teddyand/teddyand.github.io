@@ -16,4 +16,3 @@ categories: [Language]
 
 总结：人不能拿着眼前的顺逆套用过去的失误并想着：**“如果当时我.....那么我现在就.....”**这是贪心，也许人生中的失去才是我们真正的得到。！感谢三位程序大佬的无私奉献，因为有你所以我也愿意。
 
-![](//www.html5rocks.com/en/tutorials/video/basics/devstories.webm)

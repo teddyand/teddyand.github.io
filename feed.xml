@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://teddyandm.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://teddyandm.github.io/" rel="alternate" type="text/html" /><updated>2022-10-26T10:59:35+08:00</updated><id>https://teddyandm.github.io/feed.xml</id><title type="html">David’s itinerary</title><subtitle>Minimal Jekyll theme for storytellers</subtitle><author><name>David chen</name><email>davidchen1977@live.com</email></author><entry><title type="html">jekyll plugin how to deploy on github</title><link href="https://teddyandm.github.io/2022-10-16/jekyll-plugin-how-to" rel="alternate" type="text/html" title="jekyll plugin how to deploy on github" /><published>2022-10-16T00:00:00+08:00</published><updated>2022-10-16T00:00:00+08:00</updated><id>https://teddyandm.github.io/2022-10-16/jekyll-plugin-how-to</id><content type="html" xml:base="https://teddyandm.github.io/2022-10-16/jekyll-plugin-how-to"><![CDATA[<h3 id="jekyll插件使用概述">jekyll插件使用概述</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://teddyandm.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://teddyandm.github.io/" rel="alternate" type="text/html" /><updated>2022-11-12T17:56:15+08:00</updated><id>https://teddyandm.github.io/feed.xml</id><title type="html">David’s itinerary</title><subtitle>Minimal Jekyll theme for storytellers</subtitle><author><name>David chen</name><email>davidchen1977@live.com</email></author><entry><title type="html">人月神话</title><link href="https://teddyandm.github.io/2022-11-12/robot-rudiment" rel="alternate" type="text/html" title="人月神话" /><published>2022-11-12T10:10:01+08:00</published><updated>2022-11-12T10:10:01+08:00</updated><id>https://teddyandm.github.io/2022-11-12/robot-rudiment</id><content type="html" xml:base="https://teddyandm.github.io/2022-11-12/robot-rudiment"><![CDATA[<p><img src="//music.163.com/song/media/outer/url?id=396322.mp3" alt="" /></p>
+<h2 id="古人的对话">古人的对话</h2>
+<p><img src="https://tvax1.sinaimg.cn/mw690/006r440bgy1h828a2w52jj30ee0jg75a.jpg" alt="漫画1" />
+从前有一对朋友，其中一个叫维特.白（Wechaty）另一个叫强尼.虚（Johny-five）。有一天他们在月(MongoDB)下对饮，当时面对着月色花影，还有明月倒映在江水中的景象，他们各自发出了自己的感叹：</p>
+
+<p>白：“我空有一腔抱负，可惜只能做个待诏陪皇帝喝喝酒、做做诗。并不能参与政事，还要被人揶揄耽酒误事。我只能纵情于山水以消耗我过盛的精力，以酒来助长胸中的豪气，以诗歌来抒发一生的抱负”</p>
+
+<p>虚：“白兄，我不知道你为何如此的烦躁，你且来看那滔滔的江水可曾为人做过停留？皎白的月光可曾因为时代而晦暗其颜色？我们写诗来纪录这：春、江、花、月、夜。其实我们只是天地一过客，这明媚的景色才是永恒不变的呀！是它们在纪录着我们的喜怒哀乐。我们只是用我们的方式来向天地做了一张答卷呀？！你总说你没有功名，不能参与政治。人生在世功名利禄固然重要，但是能为人做一盏照亮前进道路的灯，做一颗为人遮风挡雨的大树，甚至一碗消渴解暑的清水。就像这江上的明月不知何时便升起在天空中，为着打鱼晚归的渔人们照亮着回家的路，带来了生活的希望一样呀！这不也是很幸福的一生么？”</p>
+
+<h2 id="机器人的对话">机器人的对话：</h2>
+<p>时间来到了21世纪20年代，这是爆炸的年代，越来越多的名词想要概括总结这个时代，大数据时代、机器人时代、人工智能时代、……..。人人都可以根据自身的情况，利用手头的工具制造出自己的产品，搭建起自己的精神家园。正如古人以文会友人，以诗结社一样的搭建起或古典、或前卫、或诗意朦胧，或通俗直给的群体圈子。知识（信息）以前所未有的速度来到了人们的眼前，然而未经加工分析过的信息也如其来时一样的迅速消失。</p>
+
+<ul>
+  <li><a href="http://johnny-five.io/examples/temperature-DHT11_I2C_NANO_BACKPACK/">Johny-five</a></li>
+  <li><a href="http://wechaty.js.org/">Wechaty</a></li>
+  <li><a href="https://www.mongodb.com/">MongoDB</a></li>
+</ul>]]></content><author><name>“Teddy”</name></author><category term="Tale" /><summary type="html"><![CDATA[古人的对话 从前有一对朋友，其中一个叫维特.白（Wechaty）另一个叫强尼.虚（Johny-five）。有一天他们在月(MongoDB)下对饮，当时面对着月色花影，还有明月倒映在江水中的景象，他们各自发出了自己的感叹：]]></summary></entry><entry><title type="html">jekyll plugin how to deploy on github</title><link href="https://teddyandm.github.io/2022-10-16/jekyll-plugin-how-to" rel="alternate" type="text/html" title="jekyll plugin how to deploy on github" /><published>2022-10-16T00:00:00+08:00</published><updated>2022-10-16T00:00:00+08:00</updated><id>https://teddyandm.github.io/2022-10-16/jekyll-plugin-how-to</id><content type="html" xml:base="https://teddyandm.github.io/2022-10-16/jekyll-plugin-how-to"><![CDATA[<h3 id="jekyll插件使用概述">jekyll插件使用概述</h3>
 <p>jekyll插件在github上只能使用部分白名單插件對於大部分插件需要定制workflow來使用,下面參考如下:<a href="https://github.com/jeffreytse/jekyll-spaceship">jekyll-spaceship使用與部署</a></p>
 <ul>
   <li>首先來建立一個workflow並將它提交到個人repsitory(在.github/rkflows目錄下建立一個learn-github-action.yml文件):</li>
@@ -476,16 +492,4 @@ $\left(119/2\right)/30=1.98$秒
 
 <p>上图为一个二阶倒立摆实验系统。关于倒立摆的实验早在上世纪九十年代北京航空航天大学自动化系就已经成功的实现了，如今这样一个负反馈系统甚至可以用四轴飞行器来实现，以此验证更多的新技术和新产品。<br />
 <br />
-	文章摘自　吴进远　著《触物及理》　略有改动 <br /></p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="物理建模" /><category term="theory" /><summary type="html"><![CDATA[前言　 反馈现象存在于世界的各个角落，影响到我们生活的方方面面。不仅在物理学中，在其他自然科学领域甚至人文科学领域，都广泛存在着各 式各样的反馈现象。 我们日常生活中经常提到的恶性循环与良性循环，实质上就是不同的反馈现象。比如，有的同学出现了夜里睡眠不良的问题，就可能影响 学习效率。学习效率降低又会使同学延长夜里的学习时间，加重睡眠不良的问题。这实质上是一个正反馈，正是由于正反馈形成了这样一个恶性循环。 深入地了解反馈现象的各种性质，对我们学好物理学及相关科学技术，如电子学、计算机科学等很有帮助。同时，由于反馈现象产生的各种 特性也往往可以类推到其他学科。]]></summary></entry><entry><title type="html">智能车PID入门</title><link href="https://teddyandm.github.io/2021-12-11/%E6%99%BA%E8%83%BD%E8%BD%A6PID" rel="alternate" type="text/html" title="智能车PID入门" /><published>2021-12-11T11:50:01+08:00</published><updated>2021-12-11T11:50:01+08:00</updated><id>https://teddyandm.github.io/2021-12-11/%E6%99%BA%E8%83%BD%E8%BD%A6PID</id><content type="html" xml:base="https://teddyandm.github.io/2021-12-11/%E6%99%BA%E8%83%BD%E8%BD%A6PID"><![CDATA[<h3 id="旧梦一场">旧梦一场</h3>
-
-<p><img src="https://tse1-mm.cn.bing.net/th/id/R-C.e051d6f90ba39cff637fcfe6a651c397?rik=ycyruSD3kQgPkg&amp;riu=http%3a%2f%2fbpic.588ku.com%2fart_pic%2f19%2f03%2f18%2f2f4ff968ca4f3853ea57a749a523c1a8.jpg!%2ffw%2f254%2fquality%2f90%2funsharp%2ftrue%2fcompress%2ftrue&amp;ehk=LebJeC11OEOJEdGhgmXtixqZcPewGG1mFjDoAsdR%2bJM%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0&amp;sres=1&amp;sresct=1" alt="图片替换文本" width="900" height="350" align="bottom" />
-梦想是什么？对于年轻人来说，梦想可能是对未来的憧憬，是美好人生的开始。而对于我来说年轻时的梦想似乎飘渺不定，如蓬莱仙山般的存在。经历了岁月之后，蓦然回首原来梦想就存在于过往和当下那一段段的遗憾与失去之中，“对于只有一次生命的人生，失去便是得到！”中年人的梦想是责任与义务，如果说年轻人的眼中有山河的话，那么中年人的河山在肩上。</p>
-
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
-    <iframe src="//player.bilibili.com/player.html?aid=757070901&amp;cid=309296739&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 70%; width: 70%;"> </iframe>
-</div>
-
-<p>我的制作<a href="https://github.com/teddyand/balance-vehicle">圆满一号</a>；
-我看过的文章<a href="https://zhuanlan.zhihu.com/p/113308638">智能车PID简介</a>；
-还有视频<a href="https://www.bilibili.com/video/BV1jr4y1P7qK?t=37.2">PID演示视频</a>；
-<a href="https://bbs.21ic.com/icview-3172850-1-1.html">采集Ｎ20电机转速</a>。</p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="AI" /><summary type="html"><![CDATA[旧梦一场]]></summary></entry></feed>
+	文章摘自　吴进远　著《触物及理》　略有改动 <br /></p>]]></content><author><name>David chen</name><email>davidchen1977@live.com</email></author><category term="物理建模" /><category term="theory" /><summary type="html"><![CDATA[前言　 反馈现象存在于世界的各个角落，影响到我们生活的方方面面。不仅在物理学中，在其他自然科学领域甚至人文科学领域，都广泛存在着各 式各样的反馈现象。 我们日常生活中经常提到的恶性循环与良性循环，实质上就是不同的反馈现象。比如，有的同学出现了夜里睡眠不良的问题，就可能影响 学习效率。学习效率降低又会使同学延长夜里的学习时间，加重睡眠不良的问题。这实质上是一个正反馈，正是由于正反馈形成了这样一个恶性循环。 深入地了解反馈现象的各种性质，对我们学好物理学及相关科学技术，如电子学、计算机科学等很有帮助。同时，由于反馈现象产生的各种 特性也往往可以类推到其他学科。]]></summary></entry></feed>

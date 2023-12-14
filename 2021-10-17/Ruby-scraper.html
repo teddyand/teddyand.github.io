@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Ruby爬虫初探 | David’s soup</title>
+<meta name="generator" content="Jekyll v4.2.2">
+<meta property="og:title" content="Ruby爬虫初探">
+<meta name="author" content="David chen">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="写作本文的目的借博主关注的作家岳南的新浪博客介绍Ruby爬虫的使用。">
+<meta property="og:description" content="写作本文的目的借博主关注的作家岳南的新浪博客介绍Ruby爬虫的使用。">
+<link rel="canonical" href="https://teddyand.github.io/2021-10-17/Ruby-scraper">
+<meta property="og:url" content="https://teddyand.github.io/2021-10-17/Ruby-scraper">
+<meta property="og:site_name" content="David’s soup">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2021-10-17T21:50:01-04:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Ruby爬虫初探">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"David chen","url":"https://teddyand.github.io"},"dateModified":"2021-10-17T21:50:01-04:00","datePublished":"2021-10-17T21:50:01-04:00","description":"写作本文的目的借博主关注的作家岳南的新浪博客介绍Ruby爬虫的使用。","headline":"Ruby爬虫初探","mainEntityOfPage":{"@type":"WebPage","@id":"https://teddyand.github.io/2021-10-17/Ruby-scraper"},"url":"https://teddyand.github.io/2021-10-17/Ruby-scraper"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://teddyand.github.io/feed.xml" title="David's soup">
+
+  <!-- Google Analytics-->
+  
+</head>
+
+
+  <body>
+
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">David's soup</h2>
+    </a>
+    <ul>
+      <li><a href="/">Posts</a></li>
+      <li><a href="/tags">Tags</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        David chen
+    
+
+    
+      <br>
+      <span>on </span><time datetime="2021-10-17 21:50:01 -0400">October 17, 2021</time>
+    
+  </div>
+
+  <h1 class="post-title">Ruby爬虫初探</h1>
+  <div class="post-line"></div>
+
+  <p><strong><em>写作本文的目的借博主关注的作家岳南的新浪博客介绍Ruby爬虫的使用。</em></strong></p>
+
+<h2 id="借助交互ruby控制台改善">借助交互Ruby控制台改善</h2>
+<p>Mechanize为编写爬取工具提供了强大的基础，有两个原因：其一，便于发送HTTP请求；其二，为搜索远程文档提供了强大的句法。我们已经见识到如何使用Mechanize轻松发送GET请求，下面探索如何使用它过滤大量文档，获取重要文本内容。我们可以在Ruby IRB（交互式Ruby shell）中手动探索爬取过程。</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">irb</span> <span class="o">-</span><span class="n">r</span><span class="p">.</span><span class="nf">/</span><span class="n">scraper</span>
+<span class="mf">2.7</span><span class="o">.</span><span class="mi">2</span> <span class="p">:</span><span class="mo">001</span> <span class="o">&gt;</span> <span class="n">scraper</span><span class="o">=</span><span class="no">Scraper</span><span class="p">.</span><span class="nf">new</span>
+ <span class="o">=&gt;</span> <span class="c1">#&lt;Scraper:0x090e36d0 @root="http://blog.sina.com.cn/s/articlelist_1311... </span>
+<span class="mf">2.7</span><span class="o">.</span><span class="mi">2</span> <span class="p">:</span><span class="mo">002</span> <span class="o">&gt;</span> <span class="n">page</span><span class="o">=</span><span class="n">scraper</span><span class="p">.</span><span class="nf">agent</span><span class="p">.</span><span class="nf">get</span> <span class="s2">"</span><span class="si">#{</span><span class="n">scraper</span><span class="p">.</span><span class="nf">root</span><span class="si">}#{</span><span class="mi">1</span><span class="si">}</span><span class="s2">.html"</span>
+ <span class="o">=&gt;</span> 	
+<span class="c1">#&lt;Mechanize::Page</span>
+<span class="o">...</span> 
+<span class="mf">2.7</span><span class="o">.</span><span class="mi">2</span> <span class="p">:</span><span class="mo">003</span> <span class="o">&gt;</span> <span class="n">items</span><span class="o">=</span><span class="n">page</span> <span class="o">/</span> <span class="s2">"a[title=</span><span class="se">\"\"</span><span class="s2">]"</span>
+ <span class="o">=&gt;</span> <span class="p">[</span><span class="c1">#&lt;Nokogiri::XML::Element:0x6cca name="a" attributes=[#&lt;Nokogiri::XML:... </span>
+<span class="mf">2.7</span><span class="o">.</span><span class="mi">2</span> <span class="p">:</span><span class="mo">004</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nf">text</span>
+ <span class="o">=&gt;</span> <span class="s2">"西南联大缘何大师辈出？"</span> 
+<span class="mf">2.7</span><span class="o">.</span><span class="mi">2</span> <span class="p">:</span><span class="mo">005</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nf">values</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+ <span class="o">=&gt;</span> <span class="s2">"http://blog.sina.com.cn/s/blog_4e3308af01032aht.html"</span> 
+<span class="mf">2.7</span><span class="o">.</span><span class="mi">2</span> <span class="p">:</span><span class="mo">006</span> <span class="o">&gt;</span> <span class="n">page1</span><span class="o">=</span><span class="n">scraper</span><span class="p">.</span><span class="nf">agent</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="n">items</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nf">values</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> 
+ <span class="o">=&gt;</span> 
+<span class="c1">#&lt;Mechanize::Page</span>
+<span class="o">...</span> 
+<span class="mf">2.7</span><span class="o">.</span><span class="mi">2</span> <span class="p">:</span><span class="mo">007</span> <span class="o">&gt;</span> <span class="n">body</span> <span class="o">=</span> <span class="n">page1</span> <span class="o">/</span> <span class="s2">"div[id=sina_keyword_ad_area2]"</span>
+ <span class="o">=&gt;</span> <span class="p">[</span><span class="c1">#&lt;Nokogiri::XML::Element:0xac08 name="div" attributes=[#&lt;Nokogiri::XM... </span>
+<span class="mf">2.7</span><span class="o">.</span><span class="mi">2</span> <span class="p">:</span><span class="mo">00</span><span class="mi">8</span> <span class="o">&gt;</span> <span class="n">body</span><span class="p">.</span><span class="nf">text</span><span class="p">.</span><span class="nf">strip</span></code></pre></figure>
+
+<p>第一行启动IRB,并使用-r开关加载当前目录中的爬虫库。如果你以前没用过IRB,有几件事要知道，了解这些事之后，你的生活会变得更轻松。IRB中有提示符，指明使用Ruby的版本和运行命令的序号。IRB的功能众多，这里所涉极少。命令序号可用于重放历史，还能用于控制作业，这与很多其他类型的shell相似。在IRB提示符后面可以输入Ruby代码，irb会立即执行，然后输出结果，在=&gt;符号后面打印返回值。在试验Ruby的过程中，经常会遇到复杂的返回值，例如scraper.agent.get的返回值是一个Mechanize Ruby对象。这个对象很大，打印时要消耗大量资源。这里，我们简略了返回值的大部分。为了节省空间，以后讨论IRB时对复杂对象依然如此。上述命令中第二行将HTTP GET请求保存为一个page对象。获得这个对象之后如何从中提取信息呢？Mechanize提供了一个精巧的语法糖（syntatic sugar）　,搜索DOM结构特别方便，即“/”运算符。如第三行代码中如果查询找到了内容，那么将返回一个由Mechanize对象组成的数组。这里它将返回页面代码中 <code class="language-plaintext highlighter-rouge">&lt;a titile=　.../&gt;”</code>既“作家岳南”的博客相关网页内容。第四行代码显示其作家第一篇文章标题。第五行显示作家第一篇文章链接地址。第六行代码接着爬取第五行链接相关的html代码。第七行搜索正文相关的html位置。第八行显示正文内容并去皮。
+<a href="https://github.com/teddyand/teddyand.github.io/blob/main/scraper.rb">代码详见</a>　”run.rb“　运行结果显示为：</p>
+<details>
+	<summary>作家岳南的新浪博客目录（截至　2021 Oct 8th）</summary>
+	<pre><code>西南联大缘何大师辈出？
+觉醒与混饨的年代
+1948：多少黄金与国宝运往台湾
+一段飘零的岁月一批远去的大师
+文人写就的文人的历史
+大师之后再无大师
+一位走过白银时代的骑士
+徐志摩该不该烧死？
+南渡北归：大师远去，再无大师
+王侯将相，就是有种
+李霖灿：从圣地归来
+秦始皇帝陵是否被盗？
+杨振宁晚年重返清华园的隐秘
+“九一八”夜晚,影星胡蝶在哪里？
+清华校长梅贻琦，一个传奇的存在
+抗战胜利，首都为何设在北平
+我的写作缘起
+在彼此忧患的眼睛里
+诗人穆旦与远征军
+地雷战：知识者未被引爆的命运
+微斯人，吾谁与归？
+一个遥远美丽的地方
+胡适：考上大学选啥专业最好？
+大师之后还有无大师？
+贺绍俊：重述中国现代知识分子的心…
+你是一部清华史
+梁鸿鹰：触摸一代文化英才的精神脉…
+西南联合大学的定胜糕与耗子肉
+为何影片与样板戏中的反面人物都姓…
+卢沟桥事变真相
+七七忆南渡
+1909：庚子赔款第一期留美生
+克林顿会见陕西老杨引发的官司
+何兆武点评西南联大教授
+大师远去，星辉依旧
+为什么这么多人关注西南联大？
+《南渡北归》:一部可以留下来的文…
+四十年前高考往事
+111年前京城的一场考试
+五台山佛光寺是如何发现的？
+张东荪教授一家的悲剧
+“护国娘娘”赛金花
+金岳霖晚年最后一位女友
+老铁匠砸壶
+诗歌：《南渡北归》增订本读后
+毛泽东与傅斯年夜谈北大五四运动
+陈总司令的位子该放在哪里？
+南渡北归永离别
+清华大学今犹在，不见当年梅贻琦
+庆祝清华大学建校110周年
+From 2021-04-22 14:18 to the 2021-11-11 17:14 作家岳南 have writen 50 articles 106856  characters about 2137 characters per article
+.................
+.................
+
+考古纪实会终结盗墓文学吗
+[转载]魂牵梦绕诺奖梦：祝贺莫言荣…
+辅仁－－台湾最好的私立大学
+[转载]读者是不能欺骗的
+大学排名涵有什么信息
+2012年兩岸清華大學學術硏討會結語
+天涯也有江南信，梅破知春近。
+中秋节前，大陆作家代表团来台访问
+中国考古探秘丛书写作缘起与新版
+拒人门外的“黑大个儿”
+[转载]格言摘录
+《如果我的心是一朵莲花——林徽因时…
+国立清华大学毕业生
+国立清华大学校長 陳力俊 博士
+国立清华大学迎来诺贝尔奖
+昆明市經貿文化參訪團访问台湾清华…
+江苏赠新竹清华大学图书 邀台生赴…
+[转载]“花园村”“新貌”
+[转载]老家  东河
+憶清華名師演講會致詞
+第三十五屆全國比較文學會議
+清華大學清華建校一百零一年
+遠方的祝福 - 卓以玉的詩與畫
+[转载]客人造访！！
+岳南：严肃的文学更有营养
+台北中正纪念堂巡礼
+2012年04月01日
+[转载]孙萌的诗：2011年5月2日在敦…
+[转载]孙萌的诗（9首）
+[转载]《不为繁华易素心.民国文人…
+[转载]《不为繁华易素心.民国文人…
+[转载]新书《不为繁华易素心.民国…
+2012国窖1573 封藏大典
+[转载]细数西拐庄之最
+[转载]突飞猛进、漂亮大气的诸城市…
+春节家乡行
+國立清華大學校長陳力俊院士
+12.28梁任公來臺百年紀念會
+同学发来的名信片
+驻校台湾国立清华大学
+作家富了，文学“富”了没有？
+[转载]2011第六届中国作家富豪榜震…
+文學的寂寞與期望
+《南渡北归》装帧谈屑
+[转载]12元人民币在中国旅游能干什…
+[转载]岳南老师与华文粉丝
+民族使命感成就大师
+[转载]带时钟的日历，很实用
+岳南谈新作《南渡北归》再现大师风…
+[转载]学者岳南印象
+From 2011-10-23 23:09 to the 2012-10-13 18:01 作家岳南 have writen 50 articles 41749  characters about 834 characters per article
+	</code></pre>	
+</details>
+
+<h2 id="爬取指定关键字文章">爬取指定关键字文章</h2>
+<p>岳南是一位从事考古纪实文学写作的作家，其作品《风雪定陵》《日暮东陵》《万世法门》　《银雀山竹简》《南渡北归－三部曲》都是我们耳熟悉能详的作品，他的新浪博客从2011十月开通至今已经十年，累计博客近400篇，几十万字，从程序可以分析出它的写作字数从最初的平均八百字到现在的平均两千字增长，这和他多年累积的读书量有关，这可以从他会复粉丝的文字中找到佐证。匆匆浏览一番博客目录不难发现作家当前的写作重点－－既近代民国学术大师们的治学经历（胡适、傅思年、陈寅恪、…..）及他们在特殊岁月中为中国学术氛围留下的宝贵遗产。虽然在外人看来有些孤芳自赏，但是作为学者内行们因该能从中体味获得许多治学的方法与途径。相信作为一个有志于学习甚至是文学写作的人会从他的文章中获取不少的灵感。下面这段代码可以通过关键字正则匹配而快速爬取需要浏览的文章主体：</p>
+<details>
+	<summary>正则搜索关键字</summary>
+	 <pre><code>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">run</span>	
+	<span class="n">scrape</span><span class="p">()</span>
+	<span class="n">character</span> <span class="o">=</span><span class="mi">0</span>
+	<span class="n">articles</span> <span class="o">=</span><span class="mi">0</span>
+	<span class="vi">@pages</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">page</span><span class="o">|</span> 
+		<span class="n">rows</span> <span class="o">=</span><span class="p">(</span><span class="n">page</span> <span class="sr">/"a[title=\"\"]")  #爬取博文目录
+		finds = rows.grep(/</span><span class="err">东陵</span><span class="o">/</span><span class="p">)</span> <span class="c1">#正则匹配关键字</span>
+		<span class="n">finds</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">find</span><span class="o">|</span>
+			<span class="nb">puts</span> <span class="n">find</span><span class="p">.</span><span class="nf">text</span>
+			<span class="vi">@agent</span><span class="p">.</span><span class="nf">get</span><span class="p">\(</span><span class="n">find</span><span class="p">.</span><span class="nf">values</span><span class="p">\[</span><span class="mi">2</span><span class="p">])</span> <span class="k">do</span> <span class="o">|</span><span class="n">page1</span><span class="o">|</span>
+				<span class="n">body</span> <span class="o">=</span><span class="p">(</span><span class="n">page1</span> <span class="sr">/"div[id=sina_keyword_ad_area2]")#爬取博文正文
+				puts body.text.strip.gsub(/</span><span class="p">\</span><span class="n">n</span><span class="p">\</span><span class="n">n</span><span class="o">/</span><span class="p">,</span><span class="s1">''</span><span class="p">)</span>
+			<span class="k">end</span>
+		<span class="k">end</span>
+	<span class="k">end</span>
+<span class="k">end</span>	</code></pre></figure>
+
+	</code></pre>	
+</details>
+
+<p>通过输入感兴趣的文字既可</p>
+
+
+</div>
+
+
+
+<div class="pagination">
+  
+    <a href="/2021-11-12/cordova-framework" class="left arrow">←</a>
+  
+  
+    <a href="/2021-10-05/full-stack" class="right arrow">→</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+    </main>
+
+    <footer>
+  <span>
+    © <time datetime="2023-12-14 07:11:27 -0500">2023</time> David chen. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+  </span>
+</footer>
+
+  </body>
+</html>

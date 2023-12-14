@@ -16,12 +16,4 @@ I wish this is not a site that makes sb. doze!! :+1:!
 .... <br>
 ![More sheep](https://github.com/teddyand/)
 
-```
-git clone -b source --single-branch  git@github.com:teddyand/teddyand.github.io.git
-cd  teddyand.github.io
-jekyll build
-cd _site
-git add .
-git commit
-git push origin master
-```
+[How to  custom Jekyll plugin on Github pages](https://scaomath.github.io/blog/custom-plugins-jekyll-github/)

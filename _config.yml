@@ -2,7 +2,11 @@
 title:          David's soup
 description:    "Minimal Jekyll theme for storytellers"
 #baseurl:        "/tale"
+<<<<<<< HEAD
 url:            "https://teddyand.github.io"
+=======
+url:            "https://teddyandm.github.io"
+>>>>>>> 5312d2d (refresh)
 
 
 remote_theme: chesterhow/tale
@@ -21,7 +25,10 @@ markdown:       kramdown
 #theme:  minima
 include:
   - _pages
+<<<<<<< HEAD
   - .nojekyll
+=======
+>>>>>>> 5312d2d (refresh)
 
 # Assets
 sass:

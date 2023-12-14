@@ -17,6 +17,8 @@ I wish this is not a site that makes sb. doze!! :+1:!
 ![More sheep](https://github.com/teddyand/)
 
 ```
+git clone -b source --single-branch  git@github.com:teddyand/teddyand.github.io.git
+cd  teddyand.github.io
 jekyll build
 cd _site
 git add .

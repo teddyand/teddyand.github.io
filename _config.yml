@@ -1,8 +1,8 @@
 # Site settings
-title:          David's itinerary
+title:          David's soup
 description:    "Minimal Jekyll theme for storytellers"
 #baseurl:        "/tale"
-url:            "https://teddyandm.github.io"
+url:            "https://teddyand.github.io"
 
 
 remote_theme: chesterhow/tale
@@ -21,7 +21,6 @@ markdown:       kramdown
 #theme:  minima
 include:
   - _pages
-  - .nojekyll
 
 # Assets
 sass:
@@ -35,11 +34,19 @@ plugins:
   - jekyll-seo-tag
   - jekyll-remote-theme
   - jekyll-spaceship
+  - jekyll-scholar
   # - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
 paginate:       5
+scholar:
+      style:   china-national-standard-gb-t-7714-2015-author-date
+      source:  ./_bibliography
+      bibliography:  papers.bib
+
+      bibliography_template: bib
+
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]

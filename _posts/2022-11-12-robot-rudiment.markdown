@@ -17,7 +17,14 @@ tags:	Tale
 
 ## 机器人的对话：
 时间来到了21世纪20年代，这是爆炸的年代，越来越多的名词想要概括总结这个时代，大数据时代、机器人时代、人工智能时代、........。人人都可以根据自身的情况，利用手头的工具制造出自己的产品，搭建起自己的精神家园。正如古人以文会友人，以诗结社一样的搭建起或古典、或前卫、或诗意朦胧，或通俗直给的群体圈子。知识（信息）以前所未有的速度来到了人们的眼前，然而未经加工分析过的信息也如其来时一样的迅速消失。
+![manhua2](http://rnydhjwpt.hb-bkt.clouddn.com/images/manhua2.png)
+强尼.五[^1]：“我是一个机器人，我出生于澳大利亚，我的母语是javascript,我可是一个大家族，兄弟姐妹众多，堂亲、表亲一大堆，其中最著名的要属，Arduino家族和其派生出的Uno系列相当的接地气；另外众多品牌 Intel、DFrobot、sparkfun也为我们壮大了力量；而这其中不得不提到近年来最为火爆的树莓派，在某宝上简直是一票难求呀！另外我们的拉丁表亲Particle血统高贵，但很少走动；现在不断的还有后续的仰慕者加入了进来呢。我们各个伸手不凡，或作为微控制单元，或作为微处理器单元（小电脑）在商业金融、工业自动化、化工能源、物流配送、教学科研....等众多领域中发挥着重要数据采集/计算，设备测量/控制等作用。也曾有人把我们叫做嵌入式系统，起初人们不看好我们，觉得我们只不过是玩具语言的产品，但随着硬件集成度的提高，网络操作系统的普及、手机开发的需要、以及软件开发思想--**人月神话**（效率至上）的侵入，我们的家族也人丁兴旺了起来！！也许是因为出身的原因，虽然我们能说一口流利的javascript语言，但其实我们每个兄弟姐妹都没有忘记我们的本土语言C，所以我们天生是双（多）语系民族”
 
-* [Johny-five](http://johnny-five.io/examples/temperature-DHT11_I2C_NANO_BACKPACK/)
-* [Wechaty](http://wechaty.js.org/)
-* [MongoDB](https://www.mongodb.com/)
+维特[^2]：”我也是一个机器人，我是一个基于自然语言的语义对话平台，人们也叫我聊天机器人。通过一种叫做puppet的中间层，我可以提供多种基于网络的即时消息服务（IM）wechat、whatsapp、Official Account、 Padlocal、gitter、lark。并且我的母语是javascript,当前我的开发者们正在积极拥抱Typescript语言。通过我们，人们可以在平台上通过正则来实践自然语言处理，最终实现智能化聊天机器人的功能。“
+
+MongoDB[^3]:“”
+![new](http://rnydhjwpt.hb-bkt.clouddn.com/images/wechat.jpeg-style2)
+
+[^1]:[Johny-five](http://johnny-five.io/)
+[^2]: [Wechaty](http://wechaty.js.org/)
+[^3]: [MongoDB](https://www.mongodb.com/)

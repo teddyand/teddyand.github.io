@@ -3,10 +3,11 @@ layout: post
 title:  "how to make spice salt "
 date:   2022-07-20 10:50:01 +0800
 categories: [recipe]
+excerpt_separator: <!--more-->
 ---
 
 ## Introduce:
-Would you like some more spice salt chicken? some more spice salt fish? some more spice salt lamb chop? and so on....  spice salt is a kind of flavour in our cook. but do you know how to make it?....today we will led you the way to make spice salt. come on ...let's go
+Would you like some more spice salt chicken? some more spice salt fish? some more spice salt lamb chop? and so on....  <!--more-->spice salt is a kind of flavour in our cook. but do you know how to make it?....today we will led you the way to make spice salt. come on ...let's go
 
 ![spice salt](http://img.mp.itc.cn/upload/20170111/40e408be50d741ec9e2aab5c2c341209_th.jpg)
 

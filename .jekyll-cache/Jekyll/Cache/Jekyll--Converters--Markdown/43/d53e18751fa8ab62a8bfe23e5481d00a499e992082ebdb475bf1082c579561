@@ -1,0 +1,8 @@
+I"<h3 id="拉取代码">拉取代码</h3>
+<p>```</p>
+<ol>
+  <li>mkdir myproj “建立目录”</li>
+  <li>git init	“初始化仓库”</li>
+  <li>git remote add origin git@github.com:<strong><em>/</em></strong>*.git “与远程仓库建立连接”</li>
+</ol>
+:ET

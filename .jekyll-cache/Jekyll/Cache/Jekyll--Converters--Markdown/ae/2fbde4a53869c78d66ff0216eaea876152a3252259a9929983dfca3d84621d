@@ -1,0 +1,46 @@
+I"	<p>I want to add local video and audio site to <a href="https://github.com/jeffreytse/jekyll-spaceship">jekyll-spaceship</a>. Would you give me some director on how to stat and how to do?</p>
+
+<h3 id="audio-plugin">audio plugin</h3>
+<p>There are 3 main audio site here I want to add:</p>
+<ol>
+  <li>QQ music</li>
+  <li>kugou muisc</li>
+  <li>netease music</li>
+</ol>
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&amp;id=1826179038&amp;auto=1&amp;height=32"></iframe>
+<p>網易音乐外链播放 大風吹</p>
+
+<p><img src="http://music.163.com/song/media/outer/url?id=170749.mp3" alt="" />
+網易音乐播放 沧海一声笑</p>
+
+<p><img src="//music.163.com/song/media/outer/url?id=4878606.mp3" alt="" />
+网易 播放　红尘笑</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![](//music.163.com/song/media/outer/url?id=4878606.mp3)
+</code></pre></div></div>
+<p>最終決定使用网易音樂播放,原因其臨時音頻文件播放地址以//music.163.com/<em>../</em>..mp3格式符合jekyll-spaceship普通音频插件播放格式．</p>
+
+<p>11月05日笔记　　待续．．．．．</p>
+
+<p>About how to write a jekyll plugin:</p>
+
+<ul>
+  <li>
+    <p><a href="https://ayastreb.me/writing-a-jekyll-plugin/">How to write jekyll plugin</a></p>
+  </li>
+  <li>
+    <p><a href="https://maxchadwick.xyz/blog/building-a-custom-jekyll-command-plugin#:~:text=Open%20the%20Gemfile%20of%20your%20Jekyll%20site.%20Specify,do%20gem%20%27jekyll-hello%27%2C%20%270.1.0%27%2C%20%3Apath%20%3D%3E%20%27%2FUsers%2Fmaxchadwick%2FProjects%2Fjekyll-hello%27%20end">Build a custom jekyll command plugin</a></p>
+  </li>
+</ul>
+
+<h3 id="video-plugin">video plugin</h3>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=757070901&amp;cid=309296739&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 70%; width: 70%;"> </iframe>    
+</div>
+
+<p><img src="//www.html5rocks.com/en/tutorials/video/basics/devstories.webm" alt="video" /></p>
+
+<p><img src="//techslides.com/demos/sample-videos/small.ogv?allow=autoplay" alt="video" /></p>
+
+:ET

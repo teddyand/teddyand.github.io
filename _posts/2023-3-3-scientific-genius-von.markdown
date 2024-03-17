@@ -2,11 +2,11 @@
 layout: post
 title:  "《天才的拓荒者——冯.诺伊曼传》有记"
 author: "david chen"
-tags: tale
+tags: Tale Reading
 excerpt_separator: <!--more-->
 ---
 
-![von neumann](https://bkimg.cdn.bcebos.com/pic/3b87e950352ac65ccbe52e41f3f2b21193138a24?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5)
+![von neumann](https://tse4-mm.cn.bing.net/th/id/OIP-C.94NZoZfydV7YmIekb0EhOAHaFo?rs=1&pid=ImgDetMain){:width="50%"}
 
 ### 冯.诺伊曼是谁
 1903年出生于匈牙利犹太家庭的神童1957年逝世于美国的数学家、物理学家、和诸多领域的专家：理论物理——应用物理——决策论——气象学——生物学——经济学——威慑论——计算机<!--more-->

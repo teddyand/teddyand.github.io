@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "宋朝故事--书法菩提"
+author: "Teddy Zhao"
 date:   2022-08-25 10:50:01 +0800
 excerpt_separator: <!--more-->
 categories: [caligraph]

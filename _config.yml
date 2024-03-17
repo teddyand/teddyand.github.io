@@ -70,7 +70,8 @@ jekyll-spaceship:
   mathjax-processor:
     src:
       - https://polyfill.io/v3/polyfill.min.js?features=es6
-      - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+      #- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+      - http://mathjax.josephjctang.com/MathJax.js?config=TeX-MML-AM_HTMLorMML
     config:
       tex:
         inlineMath:

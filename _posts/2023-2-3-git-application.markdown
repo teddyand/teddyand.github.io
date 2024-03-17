@@ -2,7 +2,7 @@
 layout: post
 title:  "git应用（一）"
 author: "david chen"
-tags: application
+tags: Tutorial
 excerpt_separator: <!--more-->
 ---
 

@@ -2,12 +2,13 @@
 layout: post
 title:  "试玉行动I"
 date:   2022-07-16 11:50:01 +0800
-categories: system
-tag:	system
+categories: [system]
+tags:  Tutorial
+excerpt_separator: <!--more-->
 ---
 
 ## 概述：
-"试玉要烧三日满,辨才须待七年期."故人的智慧实在是不过时呀,当今64位系统,i5 i7大盛的时代,我的奔腾e2140能否抵挡得住高配置的诱惑而独善其身呢?也许答案在行动中.
+"试玉要烧三日满,辨才须待七年期."故人的智慧实在是不过时呀,当今64位系统,i5 <!--more-->i7大盛的时代,我的奔腾e2140能否抵挡得住高配置的诱惑而独善其身呢?也许答案在行动中.
 
 ## rbenv的安装：
 ### GitHub 路径安装

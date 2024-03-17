@@ -2,7 +2,7 @@
 layout: post
 title: "jekyll plugin how to deploy on github"
 author: "Teddy"
-tags: jekyll
+tags: Jekyll
 ---
 
 ### jekyll插件使用概述
@@ -29,4 +29,3 @@ jobs:
 
 for more detail please reference [jekyll plugin how to](https://scaomath.github.io/blog/custom-plugins-jekyll-github/)
 
-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

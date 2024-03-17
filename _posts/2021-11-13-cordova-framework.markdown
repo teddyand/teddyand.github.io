@@ -3,11 +3,13 @@ layout: post
 title:  "Cordova框架试用"
 date:   2021-11-13 07:50:01 +0800
 categories: jekyll update
+tags:	Tutorial
+excerpt_separator: <!--more-->
 ---
 
 ## 认识Cordova
 本章将介绍一款开发者使用HTML5,Javascript和CSS等Web技术,开发手机平板电脑等运行App框架:PhoneGap/
-Cordova,及及创建运行App操作界面外观的JQuery Mobile框架。前者付费后者免费
+Cordova,及及创建运行App操作界面外观的JQuery Mobile框架。前者付费后者免费<!--more-->
 
 <center class="half">
     <img src="https://spotsolutions.com/wp-content/uploads/2017/06/cordova_logo_normal_dark_large.png" width=300 height=100 data-zoomable /><img src="https://cms-assets.tutsplus.com/uploads/users/1855/posts/29323/image/angular-ionic.jpg" width=300 height=100 data-zoomable />        

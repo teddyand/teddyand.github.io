@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Introduce"
+author: "david chen"
+//comments: true
+tags: Tale
+excerpt_separator: <!--more-->
+sticky: true
+hidden: true
+---
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5a235694-f18f-4b36-ba90-a6638db1f878/deploy-status)](https://app.netlify.com/sites/davidit/deploys)
+
+### tale:
+
+<img align="left" src="https://s1.ax1x.com/2023/01/09/pSeliu9.jpg"  />
+
+
+Long long ago there was a boy named David, he is a clever, calm but coward (3C) shepherd boy.He has been leading a steady life. <!--more-->Until one day he find none of his sheep. It makes him so vexation that jerking a long trip to find his sheep. He clime on the top of moutain, and roll across the sea. But he got nothing in the journey. This made him almost mad and gradualy drifting out of consciousness . On day he met two old man, both looks amiable, one named Pasion, he told him "it's ok .. it's ok ...,you'll be ok...", another named Terror, he told him "don't worry,..take it easy..." But through observation he found these two man was not so kindly that would help him lookiing for missing sheep. David recalled, at the beginning of his trip, there was a person of foresight named Faust, he said "In order to be successful,we would have to exert...." This word made him enduring the suffering from mental and body for a long time itinerary, until he met a wizards named Tries he told him "I have the best flavour in the world, who can lend me some more ingredients, I will let him taste the most delicious food in the world" This awakened a tender emotion in him, for his heart was softened by his return, and such a change hade come to pass, that he felt like one who was toiling home barefoot from distant travel and whose wandering had lasted many years. ......
+**More detail please browse in [netlify](https://davidit.netlify.app/)**
+
+### resume:
+David was born in Beijing in 1977 April the 29th. Graduated from Beijing Information Science and Technology University (origin: Bejing Machinery industry Institue ) at 1999 July, Major in Industrial Electrical automation. After that, at Bejing Medical Instrument instiute(BMII) he started his career as a program technician. Went through a long time strugle, Now he is a freelancer and amateur OSS(open source software) application user; And commit himself to provide scheme which depends on lowcost Open source software/hardware realize; Meanwhile he is also a Maker; hobbist of calligraphy、traditional novel、foreign literature(especialy in english literature);and even a history fanatic.
+

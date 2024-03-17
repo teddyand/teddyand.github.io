@@ -7,6 +7,9 @@ group:jekyll_plugins do
  gem 'jekyll-remote-theme'
  gem 'jekyll-paginate'
  gem 'jekyll-spaceship'
+ gem 'jekyll-scholar'
  #gem 'redcarpet'
 end
+
+
 

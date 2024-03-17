@@ -3,21 +3,38 @@ layout: post
 title:  "智能车PID入门"
 date:   2021-12-11 11:50:01 +0800
 categories: [AI] 
+tags:	[report]
+excerpt_separator: <!--more-->
 ---
 
 
 ### 旧梦一场
 
 <img src="https://tse1-mm.cn.bing.net/th/id/R-C.e051d6f90ba39cff637fcfe6a651c397?rik=ycyruSD3kQgPkg&riu=http%3a%2f%2fbpic.588ku.com%2fart_pic%2f19%2f03%2f18%2f2f4ff968ca4f3853ea57a749a523c1a8.jpg!%2ffw%2f254%2fquality%2f90%2funsharp%2ftrue%2fcompress%2ftrue&ehk=LebJeC11OEOJEdGhgmXtixqZcPewGG1mFjDoAsdR%2bJM%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="图片替换文本" width="900" height="350" align="bottom" />
-梦想是什么？对于年轻人来说，梦想可能是对未来的憧憬，是美好人生的开始。而对于我来说年轻时的梦想似乎飘渺不定，如蓬莱仙山般的存在。经历了岁月之后，蓦然回首原来梦想就存在于过往和当下那一段段的遗憾与失去之中，“对于只有一次生命的人生，失去便是得到！”中年人的梦想是责任与义务，如果说年轻人的眼中有山河的话，那么中年人的河山在肩上。
+梦想是什么？对于年轻人来说，梦想可能是对未来的憧憬，是美好人生的开始。<!--more-->而对于我来说年轻时的梦想似乎飘渺不定，如蓬莱仙山般的存在。经历了岁月之后，蓦然回首原来梦想就存在于过往和当下那一段段的遗憾与失去之中，“对于只有一次生命的人生，失去便是得到！”中年人的梦想是责任与义务，如果说年轻人的眼中有山河的话，那么中年人的河山在肩上。
+
+![](//images-1303887003.cos.ap-beijing.myqcloud.com/videos/car.mp4?height=200)
+
+
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=757070901&cid=309296739&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 70%; width: 70%;"> </iframe>    
+</div>
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+	<iframe src="//player.bilibili.com/player.html?aid=627065033&cid=235144459&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 70%; width: 70%;"> </iframe>
+</div>
+
 
 我的制作[圆满一号][我的智能小车]；
 我看过的文章[智能车PID简介][智能车PID介绍]；
+PID控制原理[PID控制原理][恒温控制原理]；
 还有视频[PID演示视频][PID视频]；
 [采集Ｎ20电机转速][从零开始制作正交编码器]。
 
 
 [智能车PID介绍]: https://zhuanlan.zhihu.com/p/113308638
 [PID视频]: https://www.bilibili.com/video/BV1jr4y1P7qK?t=37.2
+[恒温控制原理]: https://www.davidit.top/2024-03-03/%E6%81%92%E6%B8%A9PID%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86
 [从零开始制作正交编码器]: https://bbs.21ic.com/icview-3172850-1-1.html
 [我的智能小车]: https://github.com/teddyand/balance-vehicle

@@ -3,13 +3,14 @@ layout: post
 title:  "全桟工程入门"
 date:   2021-10-06 11:50:01 +0800
 categories: jekyll update
+excerpt_separator: <!--more-->
 ---
 
 <img src="https://tse1-mm.cn.bing.net/th/id/R-C.511656b8ad5267ee86c692bdcd85a5d6?rik=dnAP8enrKX8doA&riu=http%3a%2f%2fwww.weinan.org%2fuploads%2fpictures%2f2011-04%2f48_1302684295.jpg&ehk=hEKh3rXbE%2buHn4BvvFupHhI%2f7zIM7Lho9Mn0BALRhqM%3d&risl=&pid=ImgRaw&r=0" alt="图片替换文本" width="900" height="150" align="bottom" />
 
 
 ### 概述：
-在当今假日经济大力发展的时代，什么是保赚不陪的买卖呢？．．．对了旅店！也就是客栈　。放眼望去全国上下大江南北，无论是繁华都市还是边远荒漠　历史名城还是新兴市集，到了假日便成了人口流动的舞台。客栈中每个窗口的背后都是来自天南海北的人，有着不同的习惯文化生活背景，不同的人有着相同的目的（获得短暂的情绪放空）然后再回到各自的岗位继续努力的建设祖国。同理当今信息化时代网站建设特别是功能性网站的建设离不开各种技术（桟）比如LAMP桟（Ｌinux Apache MySQL PHP),　WAMP ,Java serverlet, Django ,Jekyll, MEAN（ＭongoDB Express AngularJS Node.js）其中每个桟（窗口后的家庭）可以由不同的技术（人员）组成。由此可以看出成为一名[全桟工程师][全桟工程师]便如同成为一名旅店经理一样需要具备一定的管理能力　协调能力和学习能力，也许可以不精专，但不能不博大（OPEN）,同时最应具备的是服务的意识（为谁服务，为何服务？怎眼服务？）
+在当今假日经济大力发展的时代，什么是保赚不陪的买卖呢？．．．对了旅店！也就是客栈　。放眼望去全国上下大江南北，无论是繁华都市还是边远荒漠　历史名城还是新兴市集，到了假日便成了人口流动的舞台。<!--more-->客栈中每个窗口的背后都是来自天南海北的人，有着不同的习惯文化生活背景，不同的人有着相同的目的（获得短暂的情绪放空）然后再回到各自的岗位继续努力的建设祖国。同理当今信息化时代网站建设特别是功能性网站的建设离不开各种技术（桟）比如LAMP桟（Ｌinux Apache MySQL PHP),　WAMP ,Java serverlet, Django ,Jekyll, MEAN（ＭongoDB Express AngularJS Node.js）其中每个桟（窗口后的家庭）可以由不同的技术（人员）组成。由此可以看出成为一名[全桟工程师][全桟工程师]便如同成为一名旅店经理一样需要具备一定的管理能力　协调能力和学习能力，也许可以不精专，但不能不博大（OPEN）,同时最应具备的是服务的意识（为谁服务，为何服务？怎眼服务？）
 
 ### MEAN全桟简介：
 自从有了Ｎode.js,javascript的春天来了。通过javascript这一项技术，把MEAN全桟贯穿在一起。Ｎode.js是专门为Ｉ/O密集型操作和快速构建可扩展性的实时网络应用而设计的，比如一些网游聊天室照片库等。用最少的系统资源来服务大量客户端。ＭEAN包括四项技术：

@@ -34,11 +34,19 @@ plugins:
   - jekyll-seo-tag
   - jekyll-remote-theme
   - jekyll-spaceship
+  - jekyll-scholar
   # - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
 paginate:       5
+scholar:
+      style:   china-national-standard-gb-t-7714-2015-author-date
+      source:  ./_bibliography
+      bibliography:  papers.bib
+
+      bibliography_template: bib
+
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
@@ -62,7 +70,8 @@ jekyll-spaceship:
   mathjax-processor:
     src:
       - https://polyfill.io/v3/polyfill.min.js?features=es6
-      - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+      #- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+      - http://mathjax.josephjctang.com/MathJax.js?config=TeX-MML-AM_HTMLorMML
     config:
       tex:
         inlineMath:

@@ -28,3 +28,4 @@ MongoDB[^3]:“”
 [^1]:[Johny-five](http://johnny-five.io/)
 [^2]: [Wechaty](http://wechaty.js.org/)
 [^3]: [MongoDB](https://www.mongodb.com/)
+6

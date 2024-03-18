@@ -5,7 +5,7 @@ author: "david chen"
 tags: tale
 excerpt_separator: <!--more-->
 ---
-
+![](https://img1.selfimg.com.cn/GQgalleryLowerrightWatermarkW/2015/05/25/1432538329_9e2ZDP.jpg){:width="40%"}
 
 ### 纳什是谁？
 1928年6月13日出生于西弗吉尼亚，布卢菲尔德的美国数学天才，家庭有教育背景，父亲是工程师，母亲是教师。1941年高中时期经历珍珠港事件，具有学术天才却缺少社交技能。逃避兵役成为其早期精神症状主要制造者。
@@ -69,7 +69,7 @@ excerpt_separator: <!--more-->
 
 **数学是一种年轻人的游戏。不过让人难以忍受的是经历一阵短暂的荣誉和勃发的活力后...接着就是持续一生的厌倦——维纳**
 				
-
+![](https://tse2-mm.cn.bing.net/th/id/OIP-C.kiSdz9Q4l_8D50Zy83XEHAHaEK?rs=1&pid=ImgDetMain){:width="40%"}
 
 ### 纳什的经历给我什么启示？
 精神类疾病具有遗传特性，但是社会环境也是诱发疾病的重要因素：纳什因为在非线性偏微分方程方面的研究比意大利数学家晚一步发表而导致精神崩溃;纳什的儿子约翰尼在父亲的影响下早早显示了数学的天才，但同样没有摆脱精神疾病的影响。

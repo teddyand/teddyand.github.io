@@ -2,7 +2,7 @@
 layout: post
 title: "jekyll plugin how to deploy on github"
 author: "Teddy"
-tags: Jekyll
+tags: jekyll
 ---
 
 ### jekyll插件使用概述

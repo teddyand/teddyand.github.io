@@ -3,7 +3,7 @@ layout: post
 title:  "jekyll spaceship plugin develop"
 author:	Teddy
 date:   2022-11-05 17:10:01 +0800
-tags:	Jekyll
+tags:	jekyll
 ---
 
 I want to add local video and audio site to [jekyll-spaceship](https://github.com/jeffreytse/jekyll-spaceship). Would you give me some director on how to stat and how to do?

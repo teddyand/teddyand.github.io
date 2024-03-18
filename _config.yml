@@ -2,7 +2,7 @@
 title:          David's soup
 description:    "Minimal Jekyll theme for storytellers"
 #baseurl:        "/tale"
-url:            "https://teddyand.github.io"
+url:            "https://davidit.top"
 
 
 remote_theme: chesterhow/tale
@@ -13,11 +13,12 @@ google_analytics: UA—XXXXXXXX-X
 # Author
 author:
   name:         David chen
-  url:          https://teddyand.github.io
+  url:          https://davidit.top
   email:        davidchen1977@live.com
 
 # Build settings
 markdown:       kramdown
+#mathjax:       true
 #theme:  minima
 include:
   - _pages

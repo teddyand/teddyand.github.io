@@ -2,7 +2,7 @@
 layout: post
 title:  "javascript中的异步编码"
 author: "teddy"
-tags: theory
+tags: language
 excerpt_separator: <!--more-->
 ---
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5a235694-f18f-4b36-ba90-a6638db1f878/deploy-status)](https://app.netlify.com/sites/davidit/deploys)

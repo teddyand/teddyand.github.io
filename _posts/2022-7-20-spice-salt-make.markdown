@@ -2,9 +2,7 @@
 layout: post
 title:  "how to make spice salt "
 date:   2022-07-20 10:50:01 +0800
-author: "Jean Young"
 categories: [recipe]
-tags:  Tutorial
 excerpt_separator: <!--more-->
 ---
 

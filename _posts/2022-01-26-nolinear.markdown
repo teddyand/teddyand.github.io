@@ -3,7 +3,7 @@ layout: post
 title:  "非线性现象、蚊音探测及若干相关话题"
 date:   2022-1-26 1２:0７:01 +0800
 categories: [物理建模] 
-tags:	[theory]
+tags:	theory
 excerpt_separator: <!--more-->
 ---
 

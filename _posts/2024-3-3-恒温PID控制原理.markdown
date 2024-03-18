@@ -2,7 +2,6 @@
 layout: post
 title:  "恒温PID控制原理"
 author: "david chen"
-tags: application
 tags:	theory Reading
 excerpt_separator: <!--more-->
 ---

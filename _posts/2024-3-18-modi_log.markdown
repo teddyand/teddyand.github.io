@@ -2,7 +2,6 @@
 layout: post
 title:  "修改记录"
 author: "david chen"
-tags: application
 tags:	report
 excerpt_separator: <!--more-->
 ---

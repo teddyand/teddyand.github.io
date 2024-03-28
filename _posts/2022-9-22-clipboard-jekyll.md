@@ -2,6 +2,7 @@
 layout: post
 title:  "jekyll博客剪贴板拷贝功能开发有记"
 date:   2022-09-22 17:30:01 +0800
+tags: Jekyll
 categories: [Language]
 tags: Jekyll
 ---

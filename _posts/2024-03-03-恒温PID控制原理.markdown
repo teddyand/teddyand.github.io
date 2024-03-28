@@ -6,6 +6,7 @@ date:   2024-01-17 1２:0７:01 +0800
 tags:	theory Reading
 excerpt_separator: <!--more-->
 ---
+
 ## 何为PID算法
 我们提到过用于控制恒温的PID算法，那么何谓PID呢？
 PID控制原理和特点：

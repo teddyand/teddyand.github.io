@@ -36,6 +36,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-spaceship
   - jekyll-scholar
+  - jekyll-pdf-embed
   # - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks

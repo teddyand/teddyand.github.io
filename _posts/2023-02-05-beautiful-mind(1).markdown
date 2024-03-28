@@ -2,7 +2,7 @@
 layout: post
 title:  "《美丽心灵——纳什传》有记"
 author: "david chen"
-tags: tale
+tags: Reading
 excerpt_separator: <!--more-->
 ---
 ![](https://img1.selfimg.com.cn/GQgalleryLowerrightWatermarkW/2015/05/25/1432538329_9e2ZDP.jpg){:width="40%"}

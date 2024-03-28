@@ -8,6 +8,7 @@ group:jekyll_plugins do
  gem 'jekyll-paginate'
  gem 'jekyll-spaceship'
  gem 'jekyll-scholar'
+ gem 'jekyll-pdf-embed'
  #gem 'redcarpet'
 end
 

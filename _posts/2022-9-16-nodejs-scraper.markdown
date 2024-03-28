@@ -3,6 +3,7 @@ layout: post
 title:  "一个Node.js爬虫气象预报程序"
 date:   2022-09-16 11:30:01 +0800
 categories: [Language]
+tags: Example
 ---
 
 ## An example from 《javascript on things》[^0]

@@ -2,7 +2,7 @@
 layout: post
 title:  "淘宝stm32F401C×板分析报告"
 author: "david chen"
-tags: application
+tags: report
 excerpt_separator: <!--more-->
 ---
 ### 前言

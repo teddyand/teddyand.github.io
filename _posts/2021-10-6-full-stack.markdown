@@ -3,6 +3,7 @@ layout: post
 title:  "全桟工程入门"
 date:   2021-10-06 11:50:01 +0800
 categories: jekyll update
+tags: report
 excerpt_separator: <!--more-->
 ---
 

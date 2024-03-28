@@ -3,6 +3,7 @@ layout: post
 title:  "Rakudo"
 date:   2021-09-09 07:50:01 +0800
 categories: jekyll update
+tags: Reading
 ---
 
 

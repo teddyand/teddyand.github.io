@@ -3,7 +3,7 @@ layout: post
 title:  "正反馈与负反馈"
 date:   2022-1-24 11:50:01 +0800
 categories: [物理建模] 
-tags:	[theory]
+tags:	theory
 excerpt_separator: <!--more-->
 ---
 

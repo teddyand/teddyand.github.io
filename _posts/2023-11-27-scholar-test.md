@@ -3,6 +3,7 @@ layout: post
 title:  "scholar test"
 date:   2023-11-27 11:50:01 +0800
 categories: [test] 
+tags: Example
 excerpt_separator: <!--more-->
 ---
 

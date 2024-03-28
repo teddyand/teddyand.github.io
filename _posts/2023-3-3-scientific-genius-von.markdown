@@ -2,7 +2,7 @@
 layout: post
 title:  "《天才的拓荒者——冯.诺伊曼传》有记"
 author: "david chen"
-tags: tale
+tags: Reading
 excerpt_separator: <!--more-->
 ---
 

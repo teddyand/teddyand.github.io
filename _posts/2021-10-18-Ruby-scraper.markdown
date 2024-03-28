@@ -3,6 +3,7 @@ layout: post
 title:  "Ruby爬虫初探"
 date:   2021-10-18 09:50:01 +0800
 categories: jekyll update
+tags: Example
 excerpt_separator: <!--more-->
 ---
 

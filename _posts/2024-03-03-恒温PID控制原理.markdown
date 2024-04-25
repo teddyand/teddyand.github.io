@@ -4,6 +4,7 @@ title:  "恒温PID控制原理"
 author: "david chen"
 date:   2024-01-17 1２:0７:01 +0800
 tags:	theory Reading
+latex: true
 excerpt_separator: <!--more-->
 ---
 

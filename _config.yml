@@ -71,14 +71,17 @@ jekyll-spaceship:
     - element-processor
   mathjax-processor:
     src:
-      - https://polyfill.io/v3/polyfill.min.js?features=es6
+      #- https://polyfill.io/v3/polyfill.min.js?features=es6
       #- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-      - http://mathjax.josephjctang.com/MathJax.js?config=TeX-MML-AM_HTMLorMML
+      #- http://mathjax.josephjctang.com/MathJax.js?config=TeX-MML-AM_HTMLorMML
+      #- https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js
+     -  https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML
     config:
       tex:
         inlineMath:
-          - ['$','$']
-          - ['\(','\)']
+          #- ['$','$']
+          #- ['\(','\)']
+          - ['\\(','\\)']
         displayMath:
           - ['$$','$$']
           - ['\[','\]']

@@ -28,3 +28,8 @@ git add .
 git commit -m "memo"
 git push origin
 ```
+
+```
+git checkout master -- src/main.js
+```
+上述命令将从名为master的分支中拉取src/main.js文件。[源](https://geek-docs.com/git/git-questions/197_git_how_to_pull_a_specific_file_with_git.html)

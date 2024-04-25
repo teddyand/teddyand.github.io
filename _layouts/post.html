@@ -37,3 +37,9 @@ layout: default
 
   <a href="#" class="top">Top</a>
 </div>
+
+{% if page.latex == true %}
+   <script type="text/x-mathjax-config">
+       MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$', '$'], ['\\(', '\\)'] ] } });
+   </script>
+{% endif %}

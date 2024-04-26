@@ -2,7 +2,7 @@
 layout: post
 title:  "脑功能食物"
 author: "david chen"
-date:   2024-04-23 11:50:01 +0800
+date:   2024-04-21 11:50:01 +0800
 tags:	report 
 latex: true
 excerpt_separator: <!--more-->

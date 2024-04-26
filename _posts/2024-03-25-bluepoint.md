@@ -2,7 +2,6 @@
 layout: post
 title:  "蓝点项目笔记（一）"
 author: "david chen"
-date:   2024-03-24 11:50:01 +0800
 tags:	report Tale
 excerpt_separator: <!--more-->
 ---

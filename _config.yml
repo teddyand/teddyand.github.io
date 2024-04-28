@@ -39,7 +39,7 @@ plugins:
   - jekyll-pdf-embed
   # - jemoji #Uncomment this to allow emoji in your post
 
-timezone:    Asia/Shanghai
+#timezone:    Asia/Shanghai
 
 # Permalinks
 permalink:            /post/:title          #/:year-:month-:day/:title

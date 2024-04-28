@@ -2,7 +2,7 @@
 layout: post
 title:  "恒温PID控制原理"
 author: "david chen"
-date:   2024-01-22 11:50:01 +0800
+date:   2024-04-27 11:50:01 +0800
 tags:	theory Reading
 latex: true
 excerpt_separator: <!--more-->

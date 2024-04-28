@@ -2,6 +2,7 @@
 layout: post
 title:  "淘宝stm32F401C×板分析报告"
 author: "david chen"
+date:   2023-03-04 11:50:01 +0800
 tags: report
 excerpt_separator: <!--more-->
 ---
@@ -16,9 +17,7 @@ excerpt_separator: <!--more-->
 
 #### 淘宝stm32F401C×单片机概述
 对于淘宝的感情，我们可以用又爱又恨来形容，有多少人为它“剁手”、它又为我们带来了多少便利？！然而对于一些创客群体，似乎视淘宝为创新精神的杀手。但在软件行业向来有“避免重复造轮”的说法，因此如何处理好淘宝的关系成了我们需要谨慎对待的问题
-话不多说言归正传：淘宝上stm32F401系列最小系统板价格在20～30元RMB，其核心为ARM Cortex -M4 32位 微控制单元和浮点运算单元 具有（105*100万）条指令/秒的运算能力 11路定时 1路数模转换 11路通讯接口（I2C 3、SPI 4、USART 3、SDIO 1）共81个IO端口 84M时钟频率 JTAG和SWD调试接口（本案例不会用到）UFQFPN48引脚封装。
-
-[STM32F401CUD6数据书](https://www.espruino.com/datasheets/STM32F401xD.pdf)、
+话不多说言归正传：淘宝上stm32F401系列最小系统板价格在20～30元RMB，其核心为ARM Cortex -M4 32位 微控制单元和浮点运算单元 具有（105*100万）条指令/秒的运算能力 11路定时 1路数模转换 11路通讯接口（I2C 3、SPI 4、USART 3、SDIO 1）共81个IO端口 84M时钟频率 JTAG和SWD调试接口（本案例不会用到）UFQFPN48引脚封装。[STM32F401CUD6数据书](https://www.espruino.com/datasheets/STM32F401xD.pdf)、
 [STM32F401CUD6应用手册](https://www.espruino.com/datasheets/STM32F401xD_ref.pdf)根据芯片具体型号的不同只有Flash存储大小不同，其余接口及复用功能全部相同。
 
 |  | CBU6  |  CCU6    | CDU6   | CEU6    |
@@ -31,13 +30,9 @@ excerpt_separator: <!--more-->
 启动模式说明：
 ![boot 逻辑表](https://tse1-mm.cn.bing.net/th/id/OIP-C.GiVrS97P96ilxx_IvOdDpgHaBh?pid=ImgDet&rs=1)
 当boot0为1、boot1为0时，单片机复位后将运行Bootloader程序。Bootloader程序是由ST公式在芯片出厂时写入单片机的一段程序用户不能修改。这段程序的任务就是与计算机上ISP软件相连把HEX、bin文件写入单片机flash或ram的。ISP模式多用于开发过程中的程序调试。Boot0为0无论Boot1为何状态，单片机再次复位后都会运行Flash里面的用户程序。
-
 因此针对stm32F4系列开发板通过USB转ttl时需要将IO口中的某路USART×（淘宝建议用PA9/PA10）与RX/TX连接来下载固件。
-
-
 #### 当前流行的计算机编程语言
 由于开源思想的注入，通过精通操作系统、编译原理...的计算机高手，对底层库的封装与编译。许多新的语言皆可作为硬件的直接编程语言来使用，也为本报告及其后相关板卡的应用开发提供了广阔的前景。
-
 * javascript
 产生于1995年的计算机语言
 * python
@@ -46,14 +41,12 @@ excerpt_separator: <!--more-->
 分别产生与1970年和1985年的计算机底层语言最为接近与硬件适配度极高
 
 ##### 学习资源
-
 [![Espruino pico](https://www.espruino.com/refimages/Pico_angled.jpg)](https://www.espruino.com/Pico)
 [![micropython](https://raw.githubusercontent.com/micropython/micropython/master/logo/upython-with-micro.jpg)](https://github.com/micropython/micropython/tree/v1.8.2)
-
 ### stm32F401C×板开发可行性分析
+
 #### 刷固件
 根据stm32F401C×最小系统原理图
-
 ![stm32F401C*](https://res.nuedc-training.com.cn/forum/202104/29/221134rfuuvnuzs4zl5is5.png)
 
 ##### Espruino下

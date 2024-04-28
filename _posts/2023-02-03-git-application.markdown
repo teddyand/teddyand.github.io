@@ -2,6 +2,7 @@
 layout: post
 title:  "git应用（一）"
 author: "david chen"
+date:   2023-02-03 11:50:01 +0800
 tags: Example
 excerpt_separator: <!--more-->
 ---

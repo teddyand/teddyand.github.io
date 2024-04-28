@@ -2,6 +2,7 @@
 layout: post
 title:  "javascript中的异步编码"
 author: "teddy"
+date:   2022-12-28 11:50:01 +0800
 tags: Reading Example
 excerpt_separator: <!--more-->
 ---
@@ -17,21 +18,17 @@ var textFileContent = fs.readFileSync('bicyle_routes.txt','utf8');
 console.log('...finished synchronous file load.');  
 ```
 @startuml
-
 [*] --> A 
 A : 在加载文件之前，代码执行
 A --> B
 B : 以同步方式加载bicycle_routes.txt
 B --> C
 C : 在文件加载完成后，代码继续执行 
-
 note left of A : console.log('Starting synchronous file load'); 
 note left of B : var textFileContent = fs.readFileSync('bicyle_routes.txt','utf8'); 
 note left of C : console.log('...finished synchronous file load.');  
 @enduml
-
 同步方式容易理解，也容易解释。但有一个问题，就是同步操作期间，它会阻止主线程执行任何其他工作。
-
 @startuml
 concise "用户接口" as UI
 scale 100 as 50 pixels

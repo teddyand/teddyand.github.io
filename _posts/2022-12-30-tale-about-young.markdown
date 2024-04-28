@@ -2,6 +2,7 @@
 layout: post
 title:  "烂泥的故事"
 author: "teddy"
+date:   2022-12-30 11:50:01 +0800
 tags: Tale theory
 excerpt_separator: <!--more-->
 ---

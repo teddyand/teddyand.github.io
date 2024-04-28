@@ -2,6 +2,7 @@
 layout: post
 title:  "《天才的拓荒者——冯.诺伊曼传》有记"
 author: "david chen"
+date:   2023-02-03 11:50:01 +0800
 tags: Reading
 excerpt_separator: <!--more-->
 ---

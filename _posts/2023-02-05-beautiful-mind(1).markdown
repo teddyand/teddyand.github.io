@@ -2,6 +2,7 @@
 layout: post
 title:  "《美丽心灵——纳什传》有记"
 author: "david chen"
+date:   2023-02-05 11:50:01 +0800
 tags: Reading
 excerpt_separator: <!--more-->
 ---

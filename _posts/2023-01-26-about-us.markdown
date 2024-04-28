@@ -2,7 +2,6 @@
 layout: post
 title:  "关于我们"
 author: "david chen"
-//comments: true
 tags: Tale
 excerpt_separator: <!--more-->
 ---

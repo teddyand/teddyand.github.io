@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gemspec
 
 group:jekyll_plugins do
-#gem  'github-pages','~>231'
+#gem  'github-pages','~>220'
  gem 'jekyll-remote-theme'
  gem 'jekyll-paginate'
  gem 'jekyll-spaceship'

@@ -28,8 +28,6 @@ sass:
   sass_dir:     _sass
   style:        compressed
 
-timezone:    Asia/Shanghai
-
 # Gems
 plugins:
   - jekyll-feed
@@ -41,8 +39,10 @@ plugins:
   - jekyll-pdf-embed
   # - jemoji #Uncomment this to allow emoji in your post
 
+timezone:    Europe/Amsterdam
+
 # Permalinks
-permalink:      /:year-:month-:day/:title
+permalink:            /post/:title          #/:year-:month-:day/:title
 paginate:       5
 scholar:
       style:   china-national-standard-gb-t-7714-2015-author-date

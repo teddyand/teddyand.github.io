@@ -10,11 +10,11 @@ excerpt_separator: <!--more-->
 
 ## * 认知功能相关主要食物成分功效：
 [脂肪酸](https://www.jianguoyun.com/p/DXlicZwQvvS-DBj52swFIAA)：多价不饱和脂肪酸包括亚油酸（C18: 2）即 $\omega$ -6系列不饱和脂肪酸、\\(\omega\\)-3系列不饱和脂肪酸（C18: 3）即亚麻酸<!--more-->人体无法合成的必须从食物中摄取。后者对预防老人认知功能障碍的发生或改善阿尔茨海默患者认知功能起到积极作用。在不饱和脂肪酸中二十二碳六烯酸（DHA）值得一提，它是顺畅传递神经细胞网络信息不可缺少的物质，大脑和神经组织中的DHA含量远高于机体其它组织。DHA作为一种必须脂肪酸，是大脑细胞及脑神经形成、发育及运作的物质基础；经常补充DHA，可提高记忆力 、判断力、想象力、充分激活大脑的“记忆仓库”，使思维活跃起来。据人群流行病学研究证实，体内DHA含量高者心理承受力强、智力发育指数高。
-[核桃](https://www.jianguoyun.com/p/DQca8cYQvvS-DBj628wFIAA)、[芝麻](https://www.jianguoyun.com/p/DT6qCuUQvvS-DBiv3MwFIAA)
- 、[橄榄油](https://www.jianguoyun.com/p/Db57Z8oQvvS-DBix3MwFIAA)
+[核桃](https://www.jianguoyun.com/p/DQca8cYQvvS-DBj628wFIAA)、[芝麻](https://www.jianguoyun.com/p/DT6qCuUQvvS-DBiv3MwFIAA)
+ 、[橄榄油](https://www.jianguoyun.com/p/Db57Z8oQvvS-DBix3MwFIAA)
 
-[多酚食物](https://www.jianguoyun.com/p/DT5ubFYQvvS-DBiO3swFIAA)
-：[西兰花](https://www.jianguoyun.com/p/DfGq6ikQvvS-DBi13MwFIAA)、甘蓝、水果（石榴、蓝莓、李子、樱桃、苹果、葡萄、梨、红枣、香瓜、草莓）[[03-28 09:03]]、茶叶：绿茶（抗衰老超明星）、豆类（菜豆、绿豆、豌豆、黄豆）、谷类（[荞麦](https://www.jianguoyun.com/p/DdQm788QvvS-DBiX3swFIAA)
+[多酚食物](https://www.jianguoyun.com/p/DT5ubFYQvvS-DBiO3swFIAA)
+：[西兰花](https://www.jianguoyun.com/p/DfGq6ikQvvS-DBi13MwFIAA)、甘蓝、水果（石榴、蓝莓、李子、樱桃、苹果、葡萄、梨、红枣、香瓜、草莓）[[03-28 09:03]]、茶叶：绿茶（抗衰老超明星）、豆类（菜豆、绿豆、豌豆、黄豆）、谷类（[荞麦](https://www.jianguoyun.com/p/DdQm788QvvS-DBiX3swFIAA)
 、燕麦、黑麦、）
 **麸质**类食品：小麦、黑麦、大麦、燕麦中的一组蛋白质容易引起过敏症（乳糜泻）引起的全身性炎症，尤其损害脑神经细胞导致退行性痴呆
 

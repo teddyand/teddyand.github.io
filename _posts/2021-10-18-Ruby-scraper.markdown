@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 Mechanize为编写爬取工具提供了强大的基础，有两个原因：其一，便于发送HTTP请求；其二，为搜索远程文档提供了强大的句法。<!--more-->我们已经见识到如何使用Mechanize轻松发送GET请求，下面探索如何使用它过滤大量文档，获取重要文本内容。我们可以在Ruby IRB（交互式Ruby shell）中手动探索爬取过程。
 
 {% highlight ruby %}
-$irb -r./scraper
+$ irb -r./scraper
 2.7.2 :001 > scraper=Scraper.new
  => #<Scraper:0x090e36d0 @root="http://blog.sina.com.cn/s/articlelist_1311... 
 2.7.2 :002 > page=scraper.agent.get "#{scraper.root}#{1}.html"

@@ -9,13 +9,7 @@ group:jekyll_plugins do
  gem 'jekyll-paginate'
  gem 'jekyll-spaceship'
  gem 'jekyll-scholar'
-<<<<<<< HEAD
- #gem 'jekyll-pdf-embed'
- gem 'jekyll-seo-tag'
- gem 'jekyll-feed'
-=======
  gem 'jekyll-pdf-embed'
->>>>>>> parent of 0cb7c66 (24 4 28th)
  #gem 'redcarpet'
 end
 

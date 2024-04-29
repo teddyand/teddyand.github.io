@@ -2,11 +2,6 @@
 layout: post
 title:  "关于我们"
 author: "david chen"
-<<<<<<< HEAD
-date:   2023-01-26 11:50:01 +0800
-=======
-//comments: true
->>>>>>> parent of 0cb7c66 (24 4 28th)
 tags: Tale
 excerpt_separator: <!--more-->
 ---

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>jekyll plugin how to deploy on github | David’s soup</title>
+<meta name="generator" content="Jekyll v4.3.3">
+<meta property="og:title" content="jekyll plugin how to deploy on github">
+<meta name="author" content="Teddy">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="jekyll插件使用概述 jekyll插件在github上只能使用部分白名單插件對於大部分插件需要定制workflow來使用,下面參考如下:jekyll-spaceship使用與部署 首先來建立一個workflow並將它提交到個人repsitory(在.github/rkflows目錄下建立一個learn-github-action.yml文件): name: learn-github-actions run-name: $ is learning GitHub Actions on: [push] jobs: check-bats-version: runs-on: ubuntu-latest steps: - uses: actions/checkout@v3 - uses: actions/setup-node@v3 with: node-version: '14' - run: npm install -g bats - run: bats -v">
+<meta property="og:description" content="jekyll插件使用概述 jekyll插件在github上只能使用部分白名單插件對於大部分插件需要定制workflow來使用,下面參考如下:jekyll-spaceship使用與部署 首先來建立一個workflow並將它提交到個人repsitory(在.github/rkflows目錄下建立一個learn-github-action.yml文件): name: learn-github-actions run-name: $ is learning GitHub Actions on: [push] jobs: check-bats-version: runs-on: ubuntu-latest steps: - uses: actions/checkout@v3 - uses: actions/setup-node@v3 with: node-version: '14' - run: npm install -g bats - run: bats -v">
+<link rel="canonical" href="https://teddyand.github.io/post/jekyll-plugin-how-to">
+<meta property="og:url" content="https://teddyand.github.io/post/jekyll-plugin-how-to">
+<meta property="og:site_name" content="David’s soup">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-10-16T00:00:00+08:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="jekyll plugin how to deploy on github">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Teddy"},"dateModified":"2022-10-16T00:00:00+08:00","datePublished":"2022-10-16T00:00:00+08:00","description":"jekyll插件使用概述 jekyll插件在github上只能使用部分白名單插件對於大部分插件需要定制workflow來使用,下面參考如下:jekyll-spaceship使用與部署 首先來建立一個workflow並將它提交到個人repsitory(在.github/rkflows目錄下建立一個learn-github-action.yml文件): name: learn-github-actions run-name: $ is learning GitHub Actions on: [push] jobs: check-bats-version: runs-on: ubuntu-latest steps: - uses: actions/checkout@v3 - uses: actions/setup-node@v3 with: node-version: &#39;14&#39; - run: npm install -g bats - run: bats -v","headline":"jekyll plugin how to deploy on github","mainEntityOfPage":{"@type":"WebPage","@id":"https://teddyand.github.io/post/jekyll-plugin-how-to"},"url":"https://teddyand.github.io/post/jekyll-plugin-how-to"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+
+
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="https://teddyand.github.io/feed.xml" title="David's soup">
+
+  <!-- Google Analytics-->
+  
+</head>
+
+
+  <body>
+
+    <nav class="nav">
+  <div class="nav-container">
+    <a href="/">
+      <h2 class="nav-title">David's soup</h2>
+    </a>
+    <ul>
+      <li><a href="/">Posts</a></li>
+      <li><a href="/tags">Tags</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        Teddy
+    
+
+    
+      <br>
+      <span>on </span><time datetime="2022-10-16 00:00:00 +0800">October 16, 2022</time>
+    
+  </div>
+
+  <h1 class="post-title">jekyll plugin how to deploy on github</h1>
+  <div class="post-line"></div>
+
+  <h3 id="jekyll插件使用概述">jekyll插件使用概述</h3>
+<p>jekyll插件在github上只能使用部分白名單插件對於大部分插件需要定制workflow來使用,下面參考如下:<a href="https://github.com/jeffreytse/jekyll-spaceship">jekyll-spaceship使用與部署</a></p>
+<ul>
+  <li>首先來建立一個workflow並將它提交到個人repsitory(在.github/rkflows目錄下建立一個learn-github-action.yml文件):</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-yml" data-lang="yml"><span class="na">name</span><span class="pi">:</span> <span class="s">learn-github-actions</span>
+<span class="na">run-name</span><span class="pi">:</span> <span class="s">$ is learning GitHub Actions</span>
+<span class="na">on</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">push</span><span class="pi">]</span>
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">check-bats-version</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v3</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/setup-node@v3</span>
+        <span class="na">with</span><span class="pi">:</span>
+         <span class="na">node-version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">14'</span>
+      <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="s">npm install -g bats</span>
+      <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="s">bats -v</span></code></pre></figure>
+
+<ul>
+  <li>之後導航到個人倉庫主目錄並且點擊Actions並且在All Workflows下將看到剛才所創建的learn-github-actin項
+最終會看到<img src="https://docs.github.com/assets/cb-69522/images/help/images/overview-actions-result-updated-2.png" alt="workflows actions job">表明工作流運行正常.</li>
+</ul>
+
+<p>for more detail please reference <a href="https://scaomath.github.io/blog/custom-plugins-jekyll-github/">jekyll plugin how to</a></p>
+
+
+</div>
+
+
+
+<div class="pagination">
+  
+    <a href="/post/talk-about-read" class="left arrow">←</a>
+  
+  
+    <a href="/post/start-from-heart" class="right arrow">→</a>
+  
+
+  <a href="#" class="top">Top</a>
+</div>
+
+
+    </main>
+
+    <footer>
+  <span>
+    © <time datetime="2024-04-29 12:19:26 +0800">2024</time> David chen. Made with Jekyll using the <a href="https://github.com/chesterhow/tale/">Tale</a> theme.
+  </span>
+</footer>
+
+  </body>
+</html>

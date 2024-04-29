@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "关于我们"
+author: "david chen"
+date:   2023-01-26 11:50:01 +0800
+tags: Tale
+excerpt_separator: <!--more-->
+---
+
+#### 介绍
+##### David Chen 男 信息科技大学，工业电气自动化专业。中科院控制工程专业进修,主修嵌入式系统设计<!--more-->
+##### Maggie Meng 女 公共社会大学 程序设计与新媒体应用专业   
+##### Teddy Zhao 男 公共社会大学 书法与新媒体设计专业
+#####  Jean Yang 女  公共社会大学  通信工程与公共关系专业

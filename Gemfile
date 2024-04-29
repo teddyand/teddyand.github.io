@@ -9,7 +9,7 @@ group:jekyll_plugins do
  gem 'jekyll-paginate'
  gem 'jekyll-spaceship'
  gem 'jekyll-scholar'
- gem 'jekyll-pdf-embed'
+ #gem 'jekyll-pdf-embed'
  gem 'jekyll-seo-tag'
  gem 'jekyll-feed'
  #gem 'redcarpet'

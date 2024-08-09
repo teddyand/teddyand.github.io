@@ -7,7 +7,7 @@ date:   2024-04-27 11:50:01 +0800
 categories: [理论,书摘]
 tags:  [自动化,算法]
 tags:	theory Reading
-math: true
+mathjax: true
 ---
 
 ## 何为PID算法

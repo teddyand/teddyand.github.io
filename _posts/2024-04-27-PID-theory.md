@@ -19,7 +19,7 @@ PID控制原理和特点：
 
 图中，\\(r(t)\\)是给定值\\(\gamma(t)\\)是实际输出，给定与实际输出值构成控制偏差\\(\epsilon(t)\\)，$$\epsilon(t)=r(t)-\gamma(t)$$
 
-$$\mu(t) = Kp[\epsilon(t)+\frac1{T_i} \int_0^t \epsilon(t) dt + Td \frac{d\epsilon(t)}{dt}]$$
+\\[\mu(t) = Kp[\epsilon(t)+\frac1{T_i} \int_0^t \epsilon(t) dt + Td \frac{d\epsilon(t)}{dt}]\\]
 其中：
 Kp ——控制器的比例系数
 T i——控制器的积分时间，也称积分系数

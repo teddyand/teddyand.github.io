@@ -1,13 +1,14 @@
 ---
 layout: post
 title:  "电脑DIY有记"
-description: 记录一次电脑DIY之旅，读书、写字、DIY人生之旅不亦乐乎？？
-author: David
-date:   2024-05-31 09:41:01 +0800
+author: "David"
+header-style: text
 tags:  
-    -计算机  
+    - 计算机  
+    - DIY
 mathjax: true
 ---
+
 
 根据冯.诺依曼关于经济发展理论的描述——当一个低技术水平工人被高技术企业吸收后薪资并没有增长，代表这社会经济高速发展....
 我和我的电脑也准备来一次相关的升级。

@@ -1,0 +1,118 @@
+---
+layout: post
+title:  "试玉行动I"
+author: David
+date:   2022-07-16 11:50:01 +0800
+categories: [书摘,计算机]
+tags:  [软件,安装]
+excerpt_separator: <!--more-->
+---
+
+## 概述：
+"试玉要烧三日满,辨才须待七年期."故人的智慧实在是不过时呀,当今64位系统,i5 <!--more-->i7大盛的时代,我的奔腾e2140能否抵挡得住高配置的诱惑而独善其身呢?也许答案在行动中.
+
+## rbenv的安装：
+### GitHub 路径安装
+
+``$ sudo apt-get install build-essential libssl-dev libreadline-dev zlib1g-dev git``
+
+安装完成后，从GitHub库把源码校验到本地。
+
+``git clone https://github.com/rbenv/rbenv.git ~/.rbenv``
+
+校验完成后，使用make命令构建源码。
+
+`` $ cd ~/.rbenv && src/configure && make -C src``
+
+源码构建完成后，构建路径。下方操作是bash为前题，如果使用zsh，请把.bashrc替换成.zprofile再运行下方命令。
+
+`` echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc``
+
+### Ruby-build
+为了能在rbenv上实现Ruby的安装和编译，请安装rbenv的插件ruby-build
+
+``$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build``
+
+
+## 使用rbenv安装Ruby
+在开始操作之前，为了不用每次登录shell时都运行rbenv init命令，我们向初始化脚本中添加.bashrc。
+下方的命令是以bash为前提的，zsh的用户请把代码中的.bashrc换成.zsh后再用。
+
+``$ echo 'eval "$(rbenv init -)"' >> ~/.bashrc``
+
+``$ source ~/.bashrc``
+
+运行下方的命令后，出现“rbenv是函数”的提示后说明安装成功，接下来就可以进行下一步了 。
+
+`type rbenv`
+
+`rbenv是函数`
+
+准备工作完成后，终于可以用rbenv来安装Ruby。首先我们要确认可以安装的Ruby版本。
+
+``$ rbenv install --list-all``
+
+运行下方的命令安装2.7.6版本。
+
+`$ rbenv install 2.7.6`
+
+`$ rbenv versions`
+
+如果忍受不了安装的速度,可参考[^1]
+安装完成后，设定成global版本的Ruby。
+
+`$ rbenv global 2.7.6`
+
+设置完成后，再次确认版本。如果原本在system的前面 *移到2.7.6的前面，说明更改成功了。`* 2.7.6`最后确认Ruby的版本为2.7.6,安装完成了。
+
+`$ ruby -v`
+
+`2.7.6`
+
+## 安装Node.js
+NodeJS是服务器版JavaScript。Javascript是唯一在Web客户端普遍使用的编程语言。使用Ruby和JavaScript可以构建任何所需要的Web应用。Hubot这样的工具体现了使用运行在NodeJS平台中的Javascript语言构建应用的好处。使用NodeJS可以构建“快速且可弹性伸缩的网络应用”
+### Node版本管理工具
+NVM是Node Version Manager的简称，类似于RVM。与RVM一样，使用NVM可以在一台设备中安装多个NodeJS版本，而且可以在不同版本之间无缝切换。这对快速迭代的NodeJS来说（NodeJS的模块通常只在最新版本中测试）十分有用。NVM可以运行在OS X 和linux中。在shell终端里执行下述命令，安装NVM。
+
+`$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
+
+这个命令会安装NVM。由于源下载较慢,可用以下命令修改~/.bashrc文件.
+
+`$ echo 'export NVM_NODEJS_ORG_MIRROT=https://npm.taobao.org/mirrors/node' >> ~/.bashrc`
+
+`$ source ~/.bashrc`
+
+
+安装好之后，可以执行NVM命令了
+
+`$ nvm ls-remote #查看远程服务器上可安装的node版本`
+
+`$ nvm install v8.17.0 #安装8.17.0版 `
+
+`$ nvm ls   #查看本机上已安装的node版本`
+
+`$ nvm  use v8.17.0  #指定使用的node版本`
+
+NVM提供了很多命令，详情参阅它的[仓库][nvm仓库]
+此时查看node版本与npm 版本
+
+`$ node -v`
+
+`v8.17.0`
+
+`$npm -v`
+
+`6.13.4`
+
+
+再使用以下命令修改npm源
+
+`$ npm config set registry=https://registry.npm.taobao.org/`
+
+`$ npm install -g cnpm`
+
+
+
+
+[nvm仓库]: https://github.com/creationix/nvm
+[^1]:[ruby快速安装](https://www.jb51.net/article/244980.htm) 

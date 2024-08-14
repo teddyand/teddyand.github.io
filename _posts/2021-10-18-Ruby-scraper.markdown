@@ -1,17 +1,18 @@
 ---
 layout: post
 title:  "Ruby爬虫初探"
-author: David
-date:   2021-10-18 09:50:01 +0800
-categories: [程序]
-tags: [爬虫,语言,Ruby]
-excerpt_separator: <!--more-->
+author: "David"
+
+header-style: text
+tags: 
+    - 爬虫
+    - 大数据
 ---
 
 ***写作本文的目的借博主关注的作家岳南的新浪博客介绍Ruby爬虫的使用。***
 
 ## 借助交互Ruby控制台改善
-Mechanize为编写爬取工具提供了强大的基础，有两个原因：其一，便于发送HTTP请求；其二，为搜索远程文档提供了强大的句法。<!--more-->我们已经见识到如何使用Mechanize轻松发送GET请求，下面探索如何使用它过滤大量文档，获取重要文本内容。我们可以在Ruby IRB（交互式Ruby shell）中手动探索爬取过程。
+Mechanize为编写爬取工具提供了强大的基础，有两个原因：其一，便于发送HTTP请求；其二，为搜索远程文档提供了强大的句法。我们已经见识到如何使用Mechanize轻松发送GET请求，下面探索如何使用它过滤大量文档，获取重要文本内容。我们可以在Ruby IRB（交互式Ruby shell）中手动探索爬取过程。
 
 {% highlight ruby %}
 $irb -r./scraper

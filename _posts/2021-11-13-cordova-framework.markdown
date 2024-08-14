@@ -1,11 +1,12 @@
 ---
 layout: post
 title:  "Cordova框架试用"
-author: David
-date:   2021-11-13 07:50:01 +0800
-categories: [笔记,计算机]
-tags:	[软件,arduino,Esp]
-excerpt_separator: <!--more-->
+author: "David"
+header-style: text
+
+tags:
+    - 软件
+    - 部署
 ---
 
 ## 认识Cordova

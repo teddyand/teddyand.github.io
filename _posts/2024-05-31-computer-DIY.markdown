@@ -3,9 +3,10 @@ layout: post
 title:  "电脑DIY有记"
 author: "David"
 header-style: text
-tags:  
+tags: 
     - 计算机  
     - DIY
+    - 知乎
 mathjax: true
 ---
 

@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "一个Node.js爬虫气象预报程序"
-author: David
-date:   2022-09-16 11:30:01 +0800
-categories: [程序,计算机]
-tags:  [语言,制作,javascript,johhny-five]
+author: "David"
+header-style: text
+tags:  
+    - 语言
+    - Maker
 ---
 
 ## An example from 《javascript on things》[^0]

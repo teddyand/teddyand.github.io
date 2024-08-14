@@ -1,11 +1,12 @@
 ---
 layout: post
 title:  "恒温PID控制原理"
-description: 对于一次成功的教育：也许最重要的不是当时掌握了多少知识点、通过了某次考试、获得了怎样的社会财富与地位；当一个人多年后重回起点时依然能够想起老师当初的某句名言金句，并让他依然对世界保持向往与探索的热情才是难能可贵的！！
-author: David
-date:   2024-04-27 11:50:01 +0800
-categories: [理论,书摘]
-tags:  [自动化,算法]
+author: "David"
+header-style: text
+tags:  
+    - 自动化
+    - 建模
+
 mathjax: true
 ---
 

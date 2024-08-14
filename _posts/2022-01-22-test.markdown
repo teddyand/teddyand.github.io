@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "正反馈与负反馈"
-author: David
-date:   2022-1-24 11:50:01 +0800
-categories: [理论,书摘] 
-tags:	[物理,建模]
+author: "David"
+header-style: text
+tags:
+    - 物理
+    - 建模
 mathjax: true
-excerpt_separator: <!--more-->
 ---
 
 

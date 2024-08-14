@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "非线性现象、蚊音探测及若干相关话题"
-author: David
-date:   2022-1-26 1２:0７:01 +0800
-categories: [理论,书摘] 
-tags:	[物理,建模]
+header-style: text
+author: ”David“
+tags:
+    - 物理
+    - 建模
 mathjax: true
-excerpt_separator: <!--more-->
 ---
 
 

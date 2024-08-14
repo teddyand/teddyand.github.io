@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "how to make spice salt "
-author: David
-date:   2022-07-20 10:50:01 +0800
-categories: [书摘,菜谱]
-tags: [美食,制作]
-excerpt_separator: <!--more-->
+author: "David"
+header-style: text
+tags: 
+    - 美食
+    - Maker	
 ---
 
 ## Introduce:

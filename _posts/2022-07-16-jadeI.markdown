@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "试玉行动I"
-author: David
-date:   2022-07-16 11:50:01 +0800
-categories: [书摘,计算机]
-tags:  [软件,安装]
-excerpt_separator: <!--more-->
+author: "David"
+header-style: text
+tags: 
+    - 软件
+    - 部署
 ---
 
 ## 概述：

@@ -31,7 +31,7 @@ Cordova,及及创建运行App操作界面外观的JQuery Mobile框架。前者�
 - Android 的软件开发工具（SDK）;
 - Cordova命令行工具。
 
-Node.js的安装参照[试玉]({{site.url}}/posts/jadeI/)，其余软件的安装说明见下。
+Node.js的安装参照[试玉]({{site.url}}/2022/07/16/jadeI/)，其余软件的安装说明见下。
 
 ### 下载与安装JDK
 * Xubuntu JDK 安装[^1]

@@ -29,6 +29,6 @@ tags:
 * Cloud studio 
 * 私人图床
 * markdown [沉浸式写作](https://cloud.tencent.com/developer/article/1831170?areaSource=104001.26&traceId=Qu3XJUn5N8e_LDvyNtE4J)
-* 搭建个人图书馆 [搭建图书馆](https://cloud.tencent.com/developer/article/1831170?areaSource=104001.26&traceId=Qu3XJUn5N8e_LDvyNtE4J)
+* 搭建个人图书馆 [搭建图书馆](https://zhuanlan.zhihu.com/p/366373896)
 
 [一个私人博客](aigow.xyz)

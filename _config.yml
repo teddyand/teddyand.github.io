@@ -91,12 +91,9 @@ page-mathjax: true
 # Friends
 friends:
   [
-    { title: "乱序（Midare）", href: "http://mida.re/" },
-    { title: "Ebn Zhang", href: "https://ebnbin.dev/" },
-    { title: "Kun Qian", href: "http://kunq.me" },
-    { title: "Sherry Woo", href: "https://sherrywoo.me/" },
-    { title: "SmdCn", href: "http://blog.smdcn.net" },
-    { title: "JiyinYiyong", href: "http://tiye.me/" },
-    { title: "DHong Say", href: "http://dhong.co" },
-    { title: "尹峰以为", href: "http://ingf.github.io/" },
+    { title: "Hackster", href: "https://www.hackster.io/" },
+    { title: "maker magzine", href: "https://maker.pro/" },
+    { title: "instructables", href: "https://www.instructables.com/" },
+    { title: "小马部落", href: "https://maqib.cn/" },
+    { title: "国家图书馆", href: "http://read.nlc.cn/user/index" },
   ]

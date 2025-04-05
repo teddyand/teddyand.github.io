@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "test"
+author: "David"
+header-style: text
+tags: 
+    - 计算机  
+    - DIY    
+mathjax: true
+---
+
+# test
+can you see

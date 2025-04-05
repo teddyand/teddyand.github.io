@@ -1,57 +1,43 @@
-Hey，我是黄玄（a.k.a. Hux, _@huxpro_），一个略懂计算机科学与艺术的斜杆不动青年，自诩是一个[广院](https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E4%BC%A0%E5%AA%92%E5%A4%A7%E5%AD%A6)数字媒体艺术系与 RIT 计算机科学系（师从 [Prof. Matthew Fluet](https://www.cs.rit.edu/~mtf/) 专攻编程语言）杂交出来的[黑客与画家](https://book.douban.com/subject/6021440/)。
-
-现为 <del>Facebook</del> Meta 签约软件工程师，就职于开源技术<del>网红</del>团队 [React](https://beta.reactjs.org/community/meet-the-team#react-core)，曾参与 [Hermes JavaScript 引擎](https://hermesengine.dev/)，[ReasonML](https://reasonml.github.io/) (现 [ReScript](https://rescript-lang.org/))，以及 [Reality Labs](https://tech.fb.com/ar-vr/) 某保密项目等。在国内期间，曾被招募为阿里巴巴 · [阿里旅行（飞猪）](http://alitrip.com)· 前端工程师、微影时代 · 微票儿 · 前端基础设施工程团队负责人、[饿了么](https://ele.me/) · 大前端团队 · [PWA 顾问](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509) 等。
 
 
-目前的物理活动范围主要在美帝纽约与硅谷，也想当个数字游<del>民</del>侠。虚拟分身日常出没于[微博](https://weibo.com/huxpro)、[知乎](https://www.zhihu.com/people/huxpro/pins/posts)、[B站](https://space.bilibili.com/43271611)、[Instagram](https://www.instagram.com/huxpro/)、[推特](https://twitter.com/Huxpro/)、[Github](https://github.com/huxpro) 等。
 
 
-##### 技术演讲
+## 2023大卫的创客工厂年终项目总结——拉清单
+立冬之后是小雪，今年总结提前写！！疫情这三年创客项目可圈可点，鉴于[试玉行动](https://davidit.top/2022/07/16/jadeI/)的原则——利用现有资源开展创客项目体验。将过往的创客项目列具清单以供后继展开可持续研究。
 
-- [React 国情咨文 2022][13] · 第七届中国开源年会 · 2023
-- [React Labs: What We've Been Working On – June 2022][12] · React Blog
-- [React Without Memo][11] · [React Conf 2021](https://conf.reactjs.org/)
-- [Toward Hermes being the Default][11] · React Native Blog · 2021
-- React Native 0.64 with Hermes for iOS · [The RN Show Podcast Ep #5](https://www.callstack.com/podcast-react-native-show) · 2021
-- [Upgrading to Progressive Web Apps][9] · [Youtube](https://www.youtube.com/watch?v=RWzMF-1fjJ8&t=1s) · [JSConf CN 上海 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI 广州 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux 北京 2017
-- 炒冷饭 · PWA 到底是个什么玩意？· Baidu HQ 北京 2017
-- [Service Worker 101][5] · GDG DevFest 北京 2016
-- [Progressive Web App，复兴序章][4] · [QCon 上海 2016](http://2016.qconshanghai.com/presentation/3111)
-- Progressive Web App 之我见 · GDG IO Redux 北京 2016
-- [CSS Still Sucks 2015][2] · 2015
-- [JavaScript 模块化七日谈][1] · 2015
+### 项目
+1. wechaty[^1]项目：是一个聊天机器人对话项目，该项目可以外挂于微信平台，通过一些条件甚至算法触发微信相关事件（推送图文、语音、视频消息;）支持多人群聊<!--more-->，智能对话，消息处理等功能。你可以通过6行代码，搭建一个聊天机器人。应用到nodejs、typescript、....等技术，具有javascript技术的人可以较顺利实现所需功能。该项目是一些具有留学背景的人利用业余时间开发起来的，并在国内实现了项目众筹，引起业界关注。但是目前似乎正被微信平台的智能推荐功能所取代，但不失为一个软件程序员学习typescript项目的很好的练手起始平台，但是每个月200元的token费用及服务器租用金（各平台不同）有些让人望而却步。
+
+2. espruino[^2]、micripython[^3]、arduino mblog、codecraft[^4]多语言控制智能车项目:在当前习近平主席出访美国旧金山参加23年度APEC会议的大背景下，主席强调的开放的大门只会继续打开而不会关闭的当下。该项目具有STEM教育的特色，结合blockly[^5]、Mixly[^6]——青少年图形化编程入门及算法思维养成的传习。在寓教于学中可以让青少年建立起计算思维、了解多种程序语言、具备模块化硬件知识、增强动手能力、强化抽象思维与发散型工程化思维能力。是AI时代最好的stem教学手段。
+
+3. 大数据与算法：作为一个初级程序员水平的创客，一直对算法爱恨交织，到底具有什么样的数学水平才是一个合格程序员应该具备的良好素质。鉴于此创客希望从一个入门级的水平来从新审视自己或者对后来有志于此的人提供一个参照。
+
+4. gollum[^7] wiki博客平台搭建：配合pandoc软件及github.io博客及自媒体平台（微信公众号等）起到卡片笔记写作的功能，将各种文档写作碎片化并专业化
+
+5. 文学作品阅读：阅读了多部名人传记《纳什》《冯.诺依曼》《狄更斯》《歌德》相关文学作品《远大前程》《大卫.科博菲尔》（中/英）《九三年》英文版从而引起对维多利亚时代，法国大革命时代文学家及其作品的兴趣，继而对写作发生兴趣。准备继续阅读《双城记》《悲惨世界》《教授与疯子》从而完成对人性救赎、勇气、父权、科学与革命共同体概念等问题的思考。
 
 
-##### 媒体关注
+### 项目列表
 
-- [Hux 黄玄：从全局视角看 React 生态][14] · 直播 · 图灵 8 点半 · 2023
-- [2022 中国开源先锋 33 人][18] · SegmentFault · 2023
-- [React 黄玄：不懂艺术的 B-Boy 不是 Swag 的程序员][16] · Gitee 封面人物 · 2022
-- [在硅谷当程序员是怎样的体验？][17] · 知乎[《我所向往的职业啊》](https://movie.douban.com/subject/36015036/) · 2022
+| 项目 | 程度描述 | 举例 | 参考书目 | 
+| ------ | ------ | ------ | ------ |
+| wechaty | [入门视频](https://v.qq.com/x/page/k0726ho4rce.html)、[本地运行起步](https://wechaty.js.org/docs/getting-started/running-locally) 通过[localtunel](https://localtunnel.github.io/www/)开放本机端口运行微信[official-account](https://github.com/wechaty/puppet-official-account)服务器 | [人月神话](https://teddyand.github.io/2022-11-12/robot-rudiment)、[javascript](https://teddyand.github.io/2022-09-16/nodejs-scraper) | [博客:应用文章](https://wechaty.js.org/blog/)、[wechaty 公众号开发](https://wechaty.js.org/2020/11/01/wechaty-puppet-oa-released/) |
+| 智能车 |  | [项目repo](https://github.com/teddyand/balance-vehicle)、[app制作](https://teddyand.github.io/2021-11-13/cordova-framework)、 [愿景](https://teddyand.github.io/2021-12-11/%E6%99%BA%E8%83%BD%E8%BD%A6PID)|   |
+| 大数据与算法 | 算法即神秘由高深似乎影响这我们的生活，如何将算法从生活中提炼又作用于生活是一个程序员对自我修养的高级要求 | [文1](https://mp.weixin.qq.com/s?__biz=MzU4MTQ3OTE1NQ==&mid=2247484886&idx=6&sn=ffc94bd6f489ccfcd5b7d081c3998113&chksm=fd47ba4aca30335c4c38c7abadd8a8d848c95de434644430dd02bd8772f0fa3602f8559347ff&token=329935964&lang=zh_CN#rd)、[文2](https://mp.weixin.qq.com/s?__biz=MzU4MTQ3OTE1NQ==&mid=2247484886&idx=4&sn=160b872b4362a5e746fbf2d926c3a49a&chksm=fd47ba4aca30335c737514a382a50ed66957539016faf3b1dcd2f3007f3ff4f519b8e7142d8d&token=564283773&lang=zh_CN#rd) | |
+| 温湿度监控 | 在例文的基础上希望实现esp8266+node.js 后台数据库方式实现现多点网络温度监控,进一步对esp32、esp8266的开发环境做深入了解 | [一个温湿度监控项目](https://www.jianshu.com/p/11808de7922f) |  |
+| django网站 |一个部署与新浪云的博客，熟悉python语言与Django框架的个人笔记博客每次充值云豆对于使用数据库的内容极其消耗云豆（每次充值10RMB）不经访问，因此考虑经济允许条件下租用服务器加域名的方式（已完成）|[repo](https://github.com/teddyand/django_on_SAE/tree/master)||
+| next.js框架 |一个使用了react类似框架技术、模板、rest api、json-server、等相关技术结合ai内容虚拟的人物简历、文章展示网站,后期结合graphql 与postgre数据库网络存取技术|[myrepo](https://github.com/teddyand/triple-city), [大卫三城记](https://www.triplecity.site/) ||
+| 我的wiki与博客 | [博客](https://teddyand.github.io/)、[维基](https://github.com/teddyand/balance-vehicle/wiki/Review),结合jekyll vitepress博客框架及文档工具pandoc、latex overleaf介绍博客搭建，写作等相关技术 |  [论文1](https://mp.weixin.qq.com/s?__biz=MzU4MTQ3OTE1NQ==&mid=2247484379&idx=5&sn=2d65b110f7c822fcdd3263ccc97077d4&chksm=fd47bc47ca303551cae9e45248dd47acdc1e1d85169a851c8a74bd4e7af792ac08f18e200183&token=1004565564&lang=zh_CN#rd),[论文2](https://mp.weixin.qq.com/s/CEFcK2jr145Bd7P5EholzQ) |  |
+| 我的阅读 | 通过书籍（纸质）的阅读，帮助AI时代的人们（程序员）找到心理与技术的平衡点，不卷，不颓、不凡尔赛。如何保持一个良好的终生编程习惯 | [笔记1](https://davidit.top/2023/03/03/scientific-genius-von/)、[笔记2](https://davidit.top/2023/02/05/beautiful-mind/)、[笔记3](https://mp.weixin.qq.com/s?__biz=MzU4MTQ3OTE1NQ==&mid=2247484886&idx=7&sn=b286c185d71a2d55d4611d4351747b8f&chksm=fd47ba4aca30335cdb5f809e12331b79efc935a86def149832a52b59ffa0fc13c855c7048714&token=329935964&lang=zh_CN#rd) | [书目](https://mp.weixin.qq.com/s/heuMaSWijv6HOYeZPwsdjQ) |
 
-<!--
-- [掘金 AMA：我是前端娱乐圈的老人 & Facebook 实习生 -- 黄玄][19] · 2018
--->
 
 
-[1]: //huangxuan.me/2015/07/09/js-module-7day/
-[2]: //huangxuan.me/2015/12/28/css-sucks-2015/
-[3]: //huangxuan.me/2016/06/05/pwa-in-my-pov/
-[4]: //huangxuan.me/2016/10/20/pwa-qcon2016/
-[5]: //huangxuan.me/2016/11/20/sw-101-gdgdf/
-[6]: https://yanshuo.io/assets/player/?deck=58ac8598b123db0067292f92 "PWA Rehashing"
-[7]: https://yanshuo.io/assets/player/?deck=593ad6fbfe88c2006a0a0d6d "The State of PWA"
-[8]: https://yanshuo.io/assets/player/?deck=594d673d570c357d0698a950 "Building PWA"
-[9]: //huangxuan.me/jsconfcn2017/
-[10]: https://reactnative.dev/blog/2021/10/26/toward-hermes-being-the-default
-[11]: https://youtu.be/lGEMwh32soc
-[12]: https://reactjs.org/blog/2022/06/15/react-labs-what-we-have-been-working-on-june-2022.html
-[13]: https://www.bilibili.com/video/BV1LY411Q7hC/?spm_id_from=333.999.0.0
-[14]: https://appycyfaqcq1951.pc.xiaoe-tech.com/p/t_pc/course_pc_detail/video/v_64477dbfe4b0cf39e6c11d2a
-[15]: https://segmentfault.com/a/1190000043208486
-[16]: https://gitee.com/gitee-stars/30
-[17]: https://www.zhihu.com/zvideo/1542577108190068737?page=ogv
-[18]: https://segmentfault.com/a/1190000043208486
-[19]: https://juejin.cn/post/6844903750155419655
+
+### Reference
+[^1]:[wechaty](https://github.com/wechaty/wechaty)
+[^2]:[espruino](https://www.espruino.com/)
+[^3]:[micropython](https://micropython.org/)
+[^4]:[codecraft](https://ide.tinkergen.com/)
+[^5]:[blockly](https://developers.google.cn/blockly?hl=zh-cn)
+[^6]:[mixly](https://mixly.readthedocs.io/zh-cn/latest)
+[^7]:[gollum](https://github.com/gollum/gollum)

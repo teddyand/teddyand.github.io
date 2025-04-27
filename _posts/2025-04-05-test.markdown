@@ -1,13 +1,168 @@
 ---
 layout: post
-title:  "test"
+title:  "物联网应用在探"
 author: "David"
 header-style: text
 tags: 
-    - 计算机  
+    - stem教育  
     - DIY    
 mathjax: true
 ---
 
-# test
-can you see
+>随着片上技术的发展，wifi集成于arduino like板，通过家庭网络实现局部温湿度数据的远程监控
+
+# esp32远程温湿度MQTT订阅与发布 [^0]
+
+## arduino uno 与wemos D1 R32引脚对应
+
+
+|   arduino pin   | wemos pin |     功能 |
+| :---- | :---- | :--------: |
+| A0 | IO2 | ADC&#124;TOUCH&#124;RTC12&#124;SD0&#124;HSPIWP |
+| A1 | IO4 | ADC/TOUCH/RTC10/SD1/HSPIHD |
+| A2 | IO35 | RTC/ADC |
+| A3 | IO34 | RTC/ADC |
+| A4 | IO36 | RTC/ADC |
+| A5 | IO39 | RTC/ADC |
+| 0 | IO3 | RX |
+| 1 | IO1 | TX |
+| 2 | IO26 | ADC/DAC/RTC |
+| 3 | IO25 | ADC/DAC/RTC |
+| 4 | IO17 | TX |
+| 5 | IO16 | RX |
+| 6 | IO27 | ADC/RTC/TOUCH |
+| 7 | IO14 | ADC/RTC/TOUCH/SD_CLK/HSPICL |
+| 8 | IO12 | ADC/RTC/TOUCH/SD_D2/HSPIQ |
+| 9 | IO13 | ADC/RTC/SD_D3/HSPID |
+| 10 | IO5 | SS |
+| 11 | IO23 | MOSI |
+| 12 | IO19 | MISO |
+| 13 | IO18 | SCK |
+
+
+![真相](https://makelogimg.dfrobot.com.cn/makelog/5ab819e19e087152393ebf1f/eb3a4efcf9ac42c87b4fe2b8e2b0db39.jpg)
+
+
+## arduino 代码
+
+```c++
+#include <WiFi.h>
+
+#include <PubSubClient.h>
+
+#include <DHT11.h>
+
+DHT11 dht11(2);
+
+const char* ssid = "your wifi ssid";
+const char* password = "your wifi password";
+//Mqtt服务器
+const char* mqtt_server = "test.mosquitto.org";
+
+WiFiClient espClient;
+//创建MQTT客户端对象
+PubSubClient client(espClient);
+//上一次发送数据的时间戳
+long lastMsg = 0;
+char msg[50]; //发送的消息字符串
+int value = 0;  //待发送数据
+int temperature = 0; //温度
+int humidity = 0; //湿度
+
+void setup() {
+  // put your setup code here, to run once:
+  //初始化串口通信
+  Serial.begin(115200);
+  //配置wifi连接
+  setup_wifi();
+  //配置mqtt服务器
+  client.setServer(mqtt_server,1883);
+  
+}
+
+void setup_wifi() {
+  delay(10);
+  Serial.println();
+  Serial.print("Connecting to ");
+  Serial.println(ssid);
+  //连接wifi网络
+  WiFi.begin(ssid,password);
+  while(WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("");
+  Serial.println("WiFi connected");
+  Serial.println("IP address: ");
+  Serial.println(WiFi.localIP());
+}
+
+void reconnect() {
+  //循环尝试mqtt连接
+  while(!client.connected()) {
+    Serial.print("Attempting MQTT connection...");
+    //String clientId = "ESP32Client-";
+    //clientId += String(random(0xffff), HEX);
+  //尝试连接mqtt服务器
+    if(client.connect("esp32c3_Telemetry")) {
+      Serial.println("connected");
+      //client.subscribe("esp32c3_Telemetry/temp");  //订阅主题
+    } else {
+      Serial.print("failed, rc=");
+      Serial.print(client.state());
+      Serial.println(" try again in 5 seconds");
+      delay(5000);
+    }
+  }
+}
+
+void loop() {  
+  // put your main code here, to run repeatedly:
+  //如果MQTT客户端没有连接
+  if(!client.connected()) {
+    reconnect();
+  }
+  //MQTT客户端保持连接
+  client.loop();
+  //获取当前时间
+  long now = millis();
+  //存储温湿度值的数组
+  //float temp_hum_val[2] = {0};
+  //如果当前时间与上次消息发送时间间隔超过5s
+  if(now - lastMsg > 5000) {
+    //更新上次发送消息时间
+    lastMsg = now;
+    //获取温湿度值
+    int result = dht11.readTemperatureHumidity(temperature, humidity);
+
+    //温度值转化为字符串缓冲区
+    char tempString[8];
+    dtostrf(temperature,1,2,tempString);    
+    Serial.print("Temerature: ");
+    Serial.println(tempString);    //打印温度字符
+    //String temp= tempString +" °C";
+    client.publish("esp32c3_Telemetry/Temperaturedataread",tempString); //发布mqtt温度数据
+
+    //湿度值转化为字符串缓冲区
+    char humString[8];
+    dtostrf(humidity,1,2,humString);    
+    Serial.print("Humidity: ");
+    Serial.println(humString);    //打印温度字符
+    //String hum = humString +" %";
+    client.publish("esp32c3_Telemetry/Humiditydataread",humString); //发布mqtt温度数据
+
+  }
+}
+
+```
+## 监控
+
+通过安装[mosquitto_client](https://mosquitto.org/download/) /[MQTTX](https://mqttx.app/)等命令/图形工具实现温湿度的在线监控
+
+```bash
+$ mosquitto_sub -h test.mosquitto.org -t esp32c3_Telemetry/# -v
+```
+
+# Reference
+
+[^0]:[ESP32 MQTT – Publish and Subscribe with Arduino IDE](https://randomnerdtutorials.com/esp32-mqtt-publish-subscribe-arduino-ide/)

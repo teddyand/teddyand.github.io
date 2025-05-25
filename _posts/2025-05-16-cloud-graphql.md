@@ -54,7 +54,7 @@ s deploy
 ```
 
 ### 查询添加
-我的[graphql](https://start-nest-graphql.fcv3.1898268482219373.cn-beijing.fc.devsapp.net/graphql)：
+我的[graphql](https://triplecity.fun)：
 
 ```graphql
 # Get all books

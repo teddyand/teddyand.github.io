@@ -54,7 +54,7 @@ s deploy
 ```
 
 ### 查询添加
-我的[graphql](https://triplecity.fun)：
+我的[graphql](https://triplecity.fun/graphql)：
 
 ```graphql
 # Get all books
@@ -63,6 +63,7 @@ query {
     id
     title
     author
+    description
     publishedYear
   }
 }
@@ -81,48 +82,39 @@ mutation {
   createBook(
     title: "New Book"
     author: "John Doe"
+    description: "this is a new book"
     publishedYear: 2024
   ) {
     id
     title
     author
+    description
     publishedYear
   }
 }
 
-# Update a book
-mutation {
-  updateBook(
-    id: 1
-    title: "Updated Title"
-  ) {
-    id
-    title
-    author
-    publishedYear
-  }
-}
-
-# Remove a book
-mutation {
-  removeBook(id: 1)
-}
 ```
 得到的响应
 ```json
-[
-  {
-    "id": 1,
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "publishedYear": 1925
-  },
-  {
-    "id": 2,
-    "title": "姚二嘎之死",
-    "author": "david",
-    "publishedYear": 2012
+{
+  "data": {
+    "books": [
+      {
+        "id": "1",
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "description": "A story of the fabulously wealthy Jay Gatsby",
+        "publishedYear": 1925
+      },
+      {
+        "id": "2",
+        "title": "1984",
+        "author": "George Orwell",
+        "description": "A dystopian social science fiction novel",
+        "publishedYear": 1949
+      }
+    ]
   }
-]
+}
 ```
 

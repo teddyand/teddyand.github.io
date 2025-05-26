@@ -78,21 +78,18 @@ query {
   }
 }
 # Create a new book
-mutation {
+mutation{
   createBook(
-    title: "New Book"
-    author: "John Doe"
-    description: "this is a new book"
-    publishedYear: 2024
-  ) {
+    title: "姚二嘎之死",
+    description:"瘾君子",
+    author:"david",
+    publishedYear: 1923)
+  {
     id
     title
     author
-    description
-    publishedYear
   }
 }
-
 ```
 得到的响应
 ```json

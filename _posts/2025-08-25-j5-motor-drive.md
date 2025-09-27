@@ -21,10 +21,10 @@ tags:
 
 
 ### 正转
-![正传](http://www.pyroelectro.com/tutorials/sn754410_dual_motor_control/img/dual_motor_fast.gif)
+![正传](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/dual_motor_fast.gif)
 
 ### 反转
-![反转](http://www.pyroelectro.com/tutorials/sn754410_dual_motor_control/img/dual_motor_slow.gif)
+![反转](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/dual_motor_slow.gif)
 
 
 |   1A(方向引脚)值   |       2A(速度引脚)值           |  结果  |

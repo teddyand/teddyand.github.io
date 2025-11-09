@@ -40,7 +40,6 @@ mathjax: true
 | 13 | IO18 | SCK |
 
 
-![wemos d1 r32](https://pic1.zhimg.com/v2-32e3bd3bb11c2117610ac07b5da3d980_r.jpg)
 ![接线](https://ts4.tc.mm.bing.net/th/id/OIP-C.x6Jir8SyGbjzwqmIJZ-21wHaEB?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3)
 
 ## arduino 代码

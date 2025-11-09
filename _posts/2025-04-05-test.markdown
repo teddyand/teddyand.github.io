@@ -26,7 +26,7 @@ mathjax: true
 | A5 | IO39 | RTC/ADC |
 | 0 | IO3 | RX |
 | 1 | IO1 | TX |
-| 2 | IO26 | ADC/DAC/RTC |
+| 2 | IO26(程序设定) | ADC/DAC/RTC |
 | 3 | IO25 | ADC/DAC/RTC |
 | 4 | IO17 | TX |
 | 5 | IO16 | RX |
@@ -40,8 +40,8 @@ mathjax: true
 | 13 | IO18 | SCK |
 
 
-![真相](https://makelogimg.dfrobot.com.cn/makelog/5ab819e19e087152393ebf1f/eb3a4efcf9ac42c87b4fe2b8e2b0db39.jpg)
-
+![wemos d1 r32](https://pic1.zhimg.com/v2-32e3bd3bb11c2117610ac07b5da3d980_r.jpg)
+![接线](https://ts4.tc.mm.bing.net/th/id/OIP-C.x6Jir8SyGbjzwqmIJZ-21wHaEB?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3)
 
 ## arduino 代码
 

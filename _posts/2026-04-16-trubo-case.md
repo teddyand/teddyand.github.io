@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一个Turbowarp案例"
+title:  "Turbowarp天气预报"
 author: "David"
 header-style: text
 tags: 
@@ -10,7 +10,7 @@ tags:
 
 ## 自定义功能积木
 
-turbowarp 可以通过加载.js文件自定义积木模块，下面是一个自定义和风天气预报程序，该程序通过固定的格式定义了模块功能，通过输入城市名称，使用Fetch函数调回和风天气预报的后端数据（城市名称、天气、温度、体感、湿度）
+turbowarp 可以通过加载.js文件自定义积木模块，下面是一个自定义和风天气预报程序，该程序通过固定的格式定义了模块功能，通过输入城市名称，使用Fetch函数调回和风天气预报的后端数据（城市名称、天气、温度、体感、湿度）<!--more-->
 
 ![turbowar IDE](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/turbowarp.png)
 
@@ -108,3 +108,5 @@ Scratch.extensions.register(new QWeatherExtension());
 <img src="https://images-1303887003.cos.ap-beijing.myqcloud.com//images/turbo_wea.png"/>
 
 查询结果：![乌鲁木齐当日天气](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/wulu.png)
+
+如果希望进一步了解，我们可以用元宝、deepseek等工具帮我们生成一个 智能体api调用，从而用turbowar作为我们的智能对话终端或知识库。

@@ -101,6 +101,8 @@ Scratch.extensions.register(new QWeatherExtension());
 }
 </details>
 
+用到扩展功能:
+![自定义扩展](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/turbo_define.png)
 
 自定义积木：<img src="https://images-1303887003.cos.ap-beijing.myqcloud.com//images/hefeng_tur.png"/>
 

@@ -12,7 +12,8 @@ tags:
 # 智能车（j5）mortor dirve by sn754410
 
 ## 总览
-![双桥驱动](https://johnny-five.io/img/breadboard/motor-hbridge-dual.png)
+
+![双桥驱动](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/motor_754410.png)
 
 ## 芯片引脚
 ![sn754410引脚图](https://ts1.tc.mm.bing.net/th/id/R-C.43c3655afbf3788ac3474528b3b01fc5?rik=waxmuGWJ6yI3WA&riu=http%3a%2f%2fwww.pyroelectro.com%2ftutorials%2fsn754410_dual_motor_control%2fimg%2fsn754410_pinout.jpg&ehk=v%2bHFgdwWPCy6T5EUg7g98%2bwRok3tz8W1aVTBa7PGV54%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1)

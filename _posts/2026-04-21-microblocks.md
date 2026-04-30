@@ -9,7 +9,7 @@ tags:
 ---
 
 
-![wemos d1 r32](https://imagemc.dfrobot.com.cn/data/attachment/forum/202106/30/081110wfplwzedv6onyw6i.jpg)
+![wemos d1 r32](https://www.botnroll.com/img/cms/pinOut-R32-compressor.png)
 
 - [Arduino接口](https://davidit.top/2025/04/05/test/)
 

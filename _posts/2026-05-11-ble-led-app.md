@@ -22,7 +22,8 @@ tags:
 - 1个app inventor app
 ## 3. 电路连接
 见下图：
-
+![](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/flow_led.png)
+于arduino uno板不同wemos d1 r32板属于低电平点亮，所以需要在led灯和引脚之间连接一个220欧电阻，（如图），来将led灯的负极连接到esp32的引脚，而引脚的正极连接到esp32板5V上。此处使用wemos d1 mini代替wemos d1 r32板。具体引脚见[积木式项目开发](https://davidit.top/2026/04/21/microblocks/)
 ## 4. 程序设计
 
 ### 第一步设计一个流水灯程序（见图）：

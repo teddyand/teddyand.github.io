@@ -40,5 +40,7 @@ app inventor端：
 ![app inventor端运行截图](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/appinventor_ble_led.png)
 
 ### 第四步加入手机加速度传感器来控制led灯（见图）：
+将手机加速度传感器与流水灯程序结合，实现通过手机加速度来控制led灯的亮灭。
+![](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/acce_ble_led.png)
 
-开发中........
+![](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/acce_ble_led1.png)

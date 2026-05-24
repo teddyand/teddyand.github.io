@@ -13,7 +13,7 @@ tags:
 
 app inventor端：
 界面：
-![](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/appinventor_ble_car2.png)
+![](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/ble_car.JPG)
 后台：
 ![控制](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/appinventor_ble_car.png)
 

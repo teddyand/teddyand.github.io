@@ -13,7 +13,7 @@ tags:
 
 app inventor端：
 界面：
-![](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/ble_car.JPG)
+![](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/blecar_speek.png)
 后台：
 ![控制](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/appinventor_ble_car.png)
 
@@ -22,3 +22,7 @@ app inventor端：
 将加入百度语音识别功能，实现通过语音来控制蓝牙车的运动。comming soon...
 
 小车控制代码见[蓝牙车再探](https://davidit.top/2026/05/16/arduino-ble-car/)
+
+![](https://images-1303887003.cos.ap-beijing.myqcloud.com//images/ble_car_speek.png)
+
+使用方法参考[APP INVENTOR百度语音识别](https://blog.csdn.net/my2035/article/details/113457865)及[腾讯云 开发者社区](https://cloud.tencent.com/developer/news/369968)

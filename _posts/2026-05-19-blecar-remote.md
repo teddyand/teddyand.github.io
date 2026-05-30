@@ -18,3 +18,8 @@ tags:
 随着现代科技的发展，远程控制成为了一种常见的方式。在蓝牙车远程控制中，电脑端通过蓝牙与车端进行通信，实现对车的控制。依靠百度ai的智能助手，电脑端可以通过语音指令来控制车的运动。以前我也不敢相信，今天却可以仅仅用一个晚上睡前加晨起的几个小时时间实现。
 
 结合前面提到的[j5智能车前端控制](https://davidit.top/2025/09/02/react-j5-car/)，我们可以实现网页按钮+语音指令来控制车的运动。
+
+
+<video width="620" height="440" controls>
+   <source src="https://images-1303887003.cos.ap-beijing.myqcloud.com/videos/ble_baidu_car.mp4" type="video/mp4">
+</video>

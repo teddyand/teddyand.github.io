@@ -107,6 +107,11 @@ function smoothRPM(rpm) {
 
 不过对我来说没必要——灯亮了就行。
 
+
+<video width="520" height="400" controls>
+   <source src="https://images-1303887003.cos.ap-beijing.myqcloud.com/videos/espruino_fan.mp4" type="video/mp4">
+</video>
+
 ## 实测数据
 
 | 转速       | 声音           |

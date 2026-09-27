@@ -1,3 +1,12 @@
+---
+layout: post
+title: "2026 fields award to Wang Hong "
+header-style: text
+tags:
+  - Math
+  - Fields
+---
+
 # 2026 年菲尔兹奖：王虹
 
 *王虹（Hong Wang）是纽约大学柯朗数学科学研究所和法国高等科学研究所的数学家，在 2026 年国际数学家大会（ICM）上荣获菲尔兹奖。菲尔兹奖是数学界最负盛名的奖项之一，每四年颁发一次，“以表彰已有的杰出数学成就，以及未来取得成果的潜力”。*
